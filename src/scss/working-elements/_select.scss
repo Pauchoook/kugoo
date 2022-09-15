@@ -1,0 +1,28 @@
+.select {
+   position: relative;
+   &__btn {
+      cursor: pointer;
+   }
+   &__item {
+      position: absolute;
+      width: 100%;
+      margin-top: 10px;
+      background-color: $white;
+      box-shadow: 0px 10px 30px rgba(111, 115, 238, 0.1);
+      border-radius: 5px;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(20px);
+      z-index: 100;
+      overflow: hidden;
+      transition: visibility .5s ease, opacity .5s ease, transform .5s ease;
+      &.open {
+         visibility: visible;
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+   &__element {
+      cursor: pointer;
+   }
+}

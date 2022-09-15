@@ -1,0 +1,214 @@
+.product-card {
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden;
+   border: 1px solid $gray2;
+   grid-column: 3 span;
+   &__type {
+      position: absolute;
+      padding: 4px 8px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 17px;
+      color: $white;
+      border-radius: 5px;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+      &--hit {
+         background-color: $red;
+      }
+      &--new {
+         background-color: $green;
+      }
+   }
+   &__compare {
+      @include flex-center;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid transparent;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+      transition: border-color .2s ease;
+      &:hover {
+         border-color: $main;
+         svg {
+            fill: $main;
+         }
+      }
+   }
+   &__compare-icon {
+      width: 20px;
+      height: 20px;
+      fill: $gray;
+      transition: fill .2s ease;
+   }
+   &__body {
+      padding: 20px 25px;
+      @media (max-width: 1200px) {
+         padding: 15px 20px;
+      }
+      @media (max-width: 768px) {
+         padding-right: 15px;
+         padding-left: 15px;
+      }
+   }
+   &__slider {
+      &:hover {
+         .product-card__slider-arrow {
+            &--prev {
+               left: 12px;
+            }
+            &--next {
+               right: 12px;
+            }
+         }
+      }
+      @media (max-width: 1200px) {
+         &:hover {
+            .product-card__slider-arrow {
+               &--prev {
+                  left: 10px;
+               }
+               &--next {
+                  right: 10px;
+               }
+            }
+         }
+      }
+   }
+   &__slider-img {
+      width: 100%;
+      height: auto;
+      max-height: 230px;
+      @media (max-width: 480px) {
+         max-height: none;
+      }
+   }
+   &__slider-arrow {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: $white;
+      z-index: 10;
+      transition: transform .2s ease;
+      &:hover {
+         background-color: $main;
+         svg {
+            fill: $white;
+         }
+      }
+      &--prev {
+         top: 40%;
+         left: -52px;
+         transition: left .2s ease;
+      }
+      &--next {
+         top: 40%;
+         right: -52px;
+         transition: right .2s ease;
+      }
+      @media (max-width: 992px) {
+         width: 35px;
+         height: 35px;
+      }
+   }
+   &__slider-icon-arrow {
+      width: 6px;
+      height: 11px;
+      fill: $main;
+      transition: fill .2s ease;
+   }
+   &__title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 20px;
+   }
+   &__characteristic-list {
+      @include flex-between;
+      flex-wrap: wrap;
+      row-gap: 15px;
+      margin-bottom: 25px;
+      @media (max-width: 1200px) {
+         flex-direction: column;
+         align-items: start;
+      }
+      @media (max-width: 992px) {
+         flex-direction: row;
+         align-items: center;
+      }
+      @media (max-width: 480px) {
+         column-gap: 10px;
+      }
+   }
+   &__characteristic-item {
+      display: flex;
+      align-items: center;
+   }
+   &__characteristic-icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      fill: $gray;
+   }
+   &__characteristic-content {
+      font-size: 14px;
+      line-height: 16px;
+      color: $gray;
+   }
+   &__nav {
+      @include flex-between;
+      margin-bottom: 15px;
+   }
+   &__nav-price {
+
+   }
+   &__old-price {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 17px;
+      color: $gray;
+      text-decoration: line-through;
+   }
+   &__price {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 29px;
+   }
+   &__nav-buttons {
+      display: flex;
+      align-items: center;
+   }
+   &__nav-btn {
+      @include flex-center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $gray2;
+      border-radius: 100%;
+      transition: border-color .2s ease;
+      &:not(:last-child) {
+         margin-right: 10px;
+      }
+      &:hover {
+         border-color: $main;
+      }
+   }
+   &__btn-icon {
+      width: 20px;
+      height: 20px;
+      fill: $main;
+   }
+   &__btn {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 10px 0px;
+      font-size: 12px;
+      line-height: 17px;
+   }
+}

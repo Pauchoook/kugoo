@@ -1,0 +1,381 @@
+[
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "hit",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": 39900,
+      "whom": "Хиты продаж"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Хиты продаж"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "hit",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": 39900,
+      "whom": "Хиты продаж"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Хиты продаж"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "hit",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": 39900,
+      "whom": "Хиты продаж"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Хиты продаж"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "hit",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": 39900,
+      "whom": "Хиты продаж"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Хиты продаж"
+   },
+
+   {
+      "name": "Kugoo Kirin M4",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для детей"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для детей"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для детей"
+   },
+
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "hit",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для взрослых"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для взрослых"
+   },
+   
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для города"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для города"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для города"
+   },
+   {
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg",
+         "../img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 39900,
+         "newPrice": 29900
+      },
+      "whom": "Для города"
+   }
+]

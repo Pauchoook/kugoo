@@ -1,0 +1,44 @@
+.fix-menu {
+   position: fixed;
+   z-index: 100;
+   padding: 8px 0px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: none;
+   background-color: $white;
+   @media (max-width: 768px) {
+      display: block;
+   }
+   &__list {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      justify-content: center;
+   }
+   &__el {
+      @include flex-center;
+      flex-direction: column;
+      &:hover {
+         svg {
+            fill: $main;
+         }
+         .fix-menu__content-el {
+            color: $main;
+         }
+      }
+   }
+   &__icon {
+      width: 20px;
+      height: 20px;
+      fill: $gray;
+      transition: fill .2s ease;
+   }
+   &__content-el {
+      font-size: 8px;
+      line-height: 12px;
+      color: $gray;
+      text-align: center;
+      transition: color .2s ease;
+   }
+}

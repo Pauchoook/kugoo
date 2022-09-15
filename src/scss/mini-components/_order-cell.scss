@@ -1,0 +1,76 @@
+.order-cell {
+   &__window {
+      width: 100%;
+      background: url('../img/pictures/woman.png') bottom right / auto 100% no-repeat;
+      background-color: $white;
+      @media (max-width: 768px) {
+         background-size: 235px 245px;
+      }
+      @media (max-width: 576px) {
+         background-image: none;
+      }
+   }
+   &__title {
+      max-width: 355px;
+      margin-bottom: 15px;
+      @media (max-width: 768px) {
+         max-width: 260px;
+         margin-bottom: 10px;
+      }
+      @media (max-width: 576px) {
+         max-width: none;
+      }
+   }
+   &__content {
+      max-width: 310px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 35px;
+      @media (max-width: 768px) {
+         max-width: 270px;
+         font-size: 14px;
+         line-height: normal;
+         margin-bottom: 15px;
+      }
+      @media (max-width: 576px) {
+         max-width: none;
+      }
+   }
+   &__form {
+      max-width: 265px;
+      @media (max-width: 576px) {
+         max-width: 100%;
+      }
+   }
+   &__input {
+      width: 100%;
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+         margin-bottom: 15px;
+      }
+   }
+   &__btn {
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 23px;
+      padding: 15px 0;
+      @media (max-width: 768px) {
+         font-size: 14px;
+         line-height: normal;
+      }
+   }
+   &__checkbox {
+      &:checked+label {
+         &::before {
+            background-color: $bg;
+         }
+      }
+   }
+   &__label {
+      display: inline-block;
+      padding-left: 28px;
+      font-size: 12px;
+      line-height: 14px;
+   }
+}

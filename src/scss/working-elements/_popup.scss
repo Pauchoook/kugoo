@@ -1,0 +1,94 @@
+.popup {
+   &.open {
+      .popup__overlay, .popup__window {
+         opacity: 1;
+         z-index: 1000;
+      }
+      .popup__overlay {
+         background-color: rgba(27, 27, 27, 0.15);
+      }
+      .popup__window {
+         transform: translateY(0);
+      }
+   }
+   &.hide {
+      .popup__overlay, .popup__window {
+         opacity: 1;
+         z-index: 1000;
+      }
+      .popup__overlay {
+         background-color: rgba(27, 27, 27, 0);
+      }
+      .popup__window {
+         transform: translateY(-1000px);
+      }
+   }
+   &__overlay, &__window {
+      opacity: 0;
+      z-index: -10;
+   }
+   &__overlay {
+      @include flex-center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(27, 27, 27, 0.15);
+      transition: background-color .5s ease, opacity .5s ease;
+   }
+   &__window {
+      position: relative;
+      overflow: hidden;
+      max-width: 790px;
+      border-radius: 5px;
+      background-color: $white;
+      padding: 40px;
+      transform: translateY(-1000px);
+      transition: transform .5s ease, opacity .5s ease;
+      &.scroll {
+         overflow: hidden;
+         overflow-y: scroll;
+         &::-webkit-scrollbar {
+            width: 0;
+         }
+      }
+      @media (max-width: 830px) {
+         max-width: calc(100vw - 40px);
+      }
+      @media (max-width: 768px) {
+         padding-right: 30px;
+         padding-left: 30px;
+      }
+   }
+   &__close {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      &:hover {
+         .popup__close-line {
+            background-color: $main;
+         }
+      }
+      @media (max-width: 576px) {
+         top: 15px;
+         right: 15px;
+      }
+   }
+   &__close-line {
+      pointer-events: none;
+      width: 100%;
+      height: 2px;
+      background-color: $gray;
+      transition: background-color .2s ease;
+      &--top {
+         transform: translateY(2px) rotate(-45deg);
+      }
+      &--bottom {
+         transform: rotate(45deg);
+      }
+   }
+}
