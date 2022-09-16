@@ -7,6 +7,7 @@ export class Product {
       const cardProduct = document.createElement('div');
       cardProduct.classList.add('product-card');
 
+      cardProduct.setAttribute('data-id', this.options.id);
       cardProduct.insertAdjacentHTML('afterbegin', `
          <button class="product-card__compare">
                <svg class="product-card__compare-icon">
@@ -152,7 +153,38 @@ export class Product {
    }
 }
 
-// productsJSON.forEach(obj => {
-//    const product = new Product(obj);
-//    console.log(product.createCard());
-// });
+export class ProductCart {
+   constructor() {
+      this.numbersProduct = 1;
+
+      this.createProduct = this.createProduct.bind(this);
+   }
+
+   createProduct(id, img, title, price) {
+      const productCart = document.createElement('a');
+
+      productCart.setAttribute('data-id', id)
+      productCart.setAttribute('href', '#');
+      productCart.classList.add('cart-drop__card-product');
+
+      productCart.insertAdjacentHTML('afterbegin', `
+          <div class="cart-drop__parent-card-img">
+              <img src="${img}" alt="Товар" class="cart-drop__card-img">
+          </div>
+          <div class="cart-drop__card-info">
+              <span class="cart-drop__card-title">
+                  ${title}
+              </span>
+              <span class="cart-drop__card-content cart-drop__card-content--price">${price}</span>
+              <div class="cart-drop__card-content cart-drop__card-content--numbers"><span class="numbers-product">1</span> шт.</div>
+          </div>
+          <button class="cart-drop__delete-btn">
+              <svg class="cart-drop__delete-icon">
+              <use xlink:href='img/icons/icons.svg#icon-del'></use>
+              </svg>
+          </button>
+      `);
+
+      return productCart;
+   }
+}

@@ -164,9 +164,10 @@
    &__nav {
       @include flex-between;
       margin-bottom: 15px;
-   }
-   &__nav-price {
-
+      min-height: 46px;
+      @media (max-width: 768px) {
+         min-height: 43px;
+      }
    }
    &__old-price {
       font-weight: 500;
@@ -179,6 +180,10 @@
       font-weight: 600;
       font-size: 20px;
       line-height: 29px;
+      @media (max-width: 768px) {
+         font-size: 18px;
+         line-height: normal;
+      }
    }
    &__nav-buttons {
       display: flex;

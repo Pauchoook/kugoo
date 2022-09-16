@@ -5,6 +5,7 @@
       visibility: hidden;
       opacity: 0;
       transform: translateY(20px);
+      z-index: 100;
       transition: visibility .5s ease, opacity .5s ease, transform .5s ease;
       &.open {
          z-index: 100;

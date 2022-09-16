@@ -1,5 +1,6 @@
 [
    {
+      "id": 1,
       "name": "Kugoo Kirin M4",
       "type": "hit",
       "weight": 22,
@@ -20,6 +21,7 @@
       "whom": "Хиты продаж"
    },
    {
+      "id": 2,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,
@@ -43,6 +45,7 @@
       "whom": "Хиты продаж"
    },
    {
+      "id": 3,
       "name": "Kugoo Kirin M4",
       "type": "hit",
       "weight": 22,
@@ -63,6 +66,7 @@
       "whom": "Хиты продаж"
    },
    {
+      "id": 4,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,
@@ -86,6 +90,7 @@
       "whom": "Хиты продаж"
    },
    {
+      "id": 5,
       "name": "Kugoo Kirin M4",
       "type": "hit",
       "weight": 22,
@@ -106,6 +111,7 @@
       "whom": "Хиты продаж"
    },
    {
+      "id": 6,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,
@@ -129,6 +135,7 @@
       "whom": "Хиты продаж"
    },
    {
+      "id": 7,
       "name": "Kugoo Kirin M4",
       "type": "hit",
       "weight": 22,
@@ -149,6 +156,7 @@
       "whom": "Хиты продаж"
    },
    {
+      "id": 8,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,
@@ -173,6 +181,7 @@
    },
 
    {
+      "id": 9,
       "name": "Kugoo Kirin M4",
       "weight": 22,
       "power": 500,
@@ -195,6 +204,7 @@
       "whom": "Для детей"
    },
    {
+      "id": 10,
       "name": "Kugoo Kirin M4",
       "weight": 22,
       "power": 500,
@@ -217,6 +227,7 @@
       "whom": "Для детей"
    },
    {
+      "id": 11,
       "name": "Kugoo Kirin M4",
       "weight": 22,
       "power": 500,
@@ -240,6 +251,7 @@
    },
 
    {
+      "id": 12,
       "name": "Kugoo Kirin M4",
       "type": "hit",
       "weight": 22,
@@ -263,6 +275,7 @@
       "whom": "Для взрослых"
    },
    {
+      "id": 13,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,
@@ -287,6 +300,7 @@
    },
    
    {
+      "id": 14,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,
@@ -310,6 +324,7 @@
       "whom": "Для города"
    },
    {
+      "id": 15,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,
@@ -333,6 +348,7 @@
       "whom": "Для города"
    },
    {
+      "id": 16,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,
@@ -356,6 +372,7 @@
       "whom": "Для города"
    },
    {
+      "id": 17,
       "name": "Kugoo Kirin M4",
       "type": "new",
       "weight": 22,

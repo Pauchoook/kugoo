@@ -35,6 +35,19 @@
          background-color: $main;
        }
    }
+   &__emptiness {
+      padding: 15px 20px;
+   }
+   &__emptiness-content {
+      text-align: center;
+      font-size: 16px;
+      line-height: 23px;
+      margin-bottom: 10px;
+   }
+   &__emptiness-btn {
+      width: fit-content;
+      margin: 0 auto;
+   }
    &__card-product {
       display: flex;
       align-items: center;
@@ -74,7 +87,10 @@
       font-size: 12px;
       line-height: 17px;
       &--numbers {
+         display: flex;
+         align-items: center;
          margin-left: auto;
+         column-gap: 4px;
       }
    }
    &__delete-btn {
@@ -110,7 +126,8 @@
       font-size: 18px;
       line-height: 26px;
    }
-   &__order {
+   &__btn {
+      display: block;
       padding: 9px 31px;
       font-size: 12px;
       line-height: 17px;
