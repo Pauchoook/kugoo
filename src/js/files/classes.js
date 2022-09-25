@@ -15,9 +15,9 @@ export class Product {
                </svg>
          </button>
          <div class="product-card__body">
-               <span class="product-card__title">
+               <h4 class="product-card__title">
                   ${this.options.name}
-               </span>
+               </h4>
                <ul class="product-card__characteristic-list">
                   <li class="product-card__characteristic-item">
                      <svg class="product-card__characteristic-icon">
@@ -172,15 +172,15 @@ export class ProductCart {
               <img src="${img}" alt="Товар" class="cart-drop__card-img">
           </div>
           <div class="cart-drop__card-info">
-              <span class="cart-drop__card-title">
+              <h5 class="cart-drop__card-title">
                   ${title}
-              </span>
+              </h5>
               <span class="cart-drop__card-content cart-drop__card-content--price">${price}</span>
-              <div class="cart-drop__card-content cart-drop__card-content--numbers"><span class="numbers-product">1</span> шт.</div>
+              <span class="cart-drop__card-content cart-drop__card-content--numbers">1 шт.</span>
           </div>
-          <button class="cart-drop__delete-btn">
+          <button type="button" class="cart-drop__delete-btn">
               <svg class="cart-drop__delete-icon">
-              <use xlink:href='img/icons/icons.svg#icon-del'></use>
+            <use xlink:href='img/icons/icons.svg#icon-del'></use>
               </svg>
           </button>
       `);

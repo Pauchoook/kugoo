@@ -40,6 +40,16 @@ h3 {
       line-height: normal;
    }
 }
+h4 {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 26px;
+}
+h5 {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+}
 button {
    cursor: pointer;
    border: none;
@@ -91,7 +101,7 @@ span {
    &._big {
       max-width: 1410px;
    }
-   @media (max-width: 1439px) {
+   @media (max-width: 1440px) {
       &._big {
          max-width: 1130px;
       }

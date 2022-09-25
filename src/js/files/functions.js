@@ -254,13 +254,16 @@ export function select() {
             let currentTitle;
 
             element.addEventListener('click', () => {
-                const parent = element.closest('.select');
-                const titleSelect = parent.querySelector('.select__title');
+                const select = element.closest('.select');
+                const titleSelect = select.querySelector('.select__title');
 
                 setTimeout(() => {
-                    currentTitle = element.textContent;
+                    currentTitle = element.innerText;
                     element.textContent = titleSelect.textContent;
                     titleSelect.textContent = currentTitle;
+
+                    console.log(currentTitle);
+                    select.setAttribute('data-value', currentTitle);
                 }, 0);
             });
         });
@@ -290,7 +293,7 @@ export function burger() {
 
         function burgerHeight() {
             const headerHeight = headerCenter.classList.contains('fixed') ? headerCenter.clientHeight : header.clientHeight; // отступ для меню бургера сверху
-            const burgerHeight = window.outerHeight - headerHeight; // высота меню бургера(иначе оно не перекрывает нижнее меню)
+            const burgerHeight = window.innerHeight - headerHeight; // высота меню бургера(иначе оно не перекрывает нижнее меню)
 
             burgerMenu.style.height = `${burgerHeight}px`;
             burgerMenu.style.top = `${headerHeight}px`;
@@ -479,10 +482,9 @@ export function products() {
     }
 }
 
-export async function shoppingCart() {
+export function shoppingCart() {
     document.addEventListener('DOMContentLoaded', () => {
         const bodyCart = document.querySelector('.cart-drop__body');
-        const emptinessCart = document.querySelector('.cart-drop__emptiness');
         const priceCart = document.querySelector('#sum-drop-cart');
         const numbersProductsCart = document.querySelector('#numbers-products-drop-cart');
         const addCartButtons = document.querySelectorAll('.product-card__nav-btn');
@@ -493,14 +495,50 @@ export async function shoppingCart() {
             let sumPriceCart = 0; // общая сумма корзины
             let numbersProducts = 0; // кол-во товаров в корзине
 
+            // удаление товаров из корзины
+            bodyCart.addEventListener('click', e => {
+                if (e.target.classList.contains('cart-drop__delete-btn')) {
+                    e.preventDefault();
+
+                    const currentCart = e.target.closest('.cart-drop__card-product');
+                    const numbersCurrentCart = currentCart.querySelector('.cart-drop__card-content--numbers').textContent.replace(/[^0-9]/g, ''); // количество экземпляров данного товара в корзине
+                    const priceCurrentCart = currentCart.querySelector('.cart-drop__card-content--price').textContent.replace(/[^0-9]/g, '');
+
+                    sumPriceCart -= parseInt(priceCurrentCart * numbersCurrentCart);
+                    numbersProducts -= parseInt(numbersCurrentCart);
+
+                    panelCart(sumPriceCart, numbersProducts)
+
+                    // удаление картчоки из сета
+                    setCart.forEach(item => {
+                        if (item.getAttribute('data-id') === currentCart.getAttribute('data-id')) setCart.delete(item);
+                    });
+                    currentCart.remove(); // удаление карточки
+                }
+
+                setTimeout(() => {
+                    const carts = bodyCart.querySelectorAll('.cart-drop__card-product');
+                    if (!carts.length) {
+                        bodyCart.insertAdjacentHTML('afterbegin', `
+                            <div class="cart-drop__body">
+                                <div class="cart-drop__emptiness">
+                                    <p class="cart-drop__emptiness-content">Ваша корзина пуста</p>
+                                    <a href="#" class="btn cart-drop__btn cart-drop__emptiness-btn">Перейти в каталог</a>
+                                </div>
+                            </div>
+                        `);
+                    }
+                }, 0);
+            });
+
             addCartButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
+                    const emptinessCart = document.querySelector('.cart-drop__emptiness');
                     const cardProduct = btn.closest('.product-card');
                     const idCardProduct = cardProduct.getAttribute('data-id');
                     const imgProduct = cardProduct.querySelector('.product-card__slider-img').src;
                     const titleProduct = cardProduct.querySelector('.product-card__title').textContent;
                     const priceProduct = cardProduct.querySelector('.product-card__price').textContent;
-
                     if (emptinessCart) emptinessCart.remove();
                     
                     // панель корзины
@@ -514,42 +552,30 @@ export async function shoppingCart() {
 
                         setCart.add(cardProduct);
                     } else {
-                        const productsCart = document.querySelectorAll('.cart-drop__card-product'); // карточки в корзине
-                        const idProductCart = Array.from(productsCart).findIndex(item => item.getAttribute('data-id') === idCardProduct);  // id краточки
-                        const currentProductCart = productsCart[idProductCart]; // текущая карточка
-                        const numbersCurrentProducts = currentProductCart.querySelector('.numbers-product'); // кол-во экземпляров текущей карточки в корзине
-                        
-                        numbersCurrentProducts.textContent = parseInt(numbersCurrentProducts.textContent) + 1;
+                        const productCart = document.querySelectorAll('.cart-drop__card-product'); // карточки в корзине
+                        const idProductCart = Array.from(productCart).findIndex(item => item.getAttribute('data-id') === idCardProduct);  // id краточки
+                        const currentProductCart = productCart[idProductCart]; // текущая карточка
+                        if (currentProductCart) {
+                            const numbersCurrentProductsContent = currentProductCart.querySelector('.cart-drop__card-content--numbers'); 
+                            const numbersCurrentProducts = currentProductCart.querySelector('.cart-drop__card-content--numbers').textContent.replace(/[^0-9]/g, ''); // кол-во экземпляров текущей карточки в корзине
+                            
+                            numbersCurrentProductsContent.textContent = parseInt(numbersCurrentProducts) + 1 + ' ' + 'шт.';
+                        }
                     }
-                    deleteProductsCart();
                 });
             });
 
-            function deleteProductsCart() {
-                const deleteCartButtons = document.querySelectorAll('.cart-drop__delete-btn');
-                if (deleteCartButtons.length > 0) {
-                    deleteCartButtons.forEach(btn => {
-                        btn.addEventListener('click', () => {
-                            const currentProduct = btn.closest('.cart-drop__card-product'); // текущая карточка, которую собираемся удалить
-                            const currentPriceProduct = currentProduct.querySelector('.cart-drop__card-content--price').textContent.replace(/[^0-9]/g, ''); // цена
-
-                            console.log(currentPriceProduct);
-
-                            // панель корзины
-                            sumPriceCart -= parseInt(currentPriceProduct);
-                            numbersProducts--;
-                            panelCart(sumPriceCart, numbersProducts);
-
-                            currentCard.remove();
-
-                            // удалить из коллекции 
-                        });
-                    });
-                }
-            }
-
             function panelCart(price, numbers) {
-                let contentProduct = numbers === 1 ? 'товар': 'товара';
+                const endNumber = parseInt(numbers.toString().split('').pop());
+                let contentProduct = '';
+                
+                if (endNumber === 1) {
+                    contentProduct = 'товар';
+                } else if (endNumber === 0 || endNumber >= 5) {
+                    contentProduct = 'товаров';
+                } else {
+                    contentProduct = 'товара';
+                }
 
                 priceCart.textContent = `${price}₽`;
                 numbersProductsCart.textContent = `${numbers} ${contentProduct}`;

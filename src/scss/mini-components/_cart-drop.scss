@@ -76,10 +76,6 @@
       flex-wrap: wrap;
    }
    &__card-title {
-      display: block;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
       margin-bottom: 2px;
    }
    &__card-content {
@@ -87,10 +83,7 @@
       font-size: 12px;
       line-height: 17px;
       &--numbers {
-         display: flex;
-         align-items: center;
          margin-left: auto;
-         column-gap: 4px;
       }
    }
    &__delete-btn {
@@ -104,6 +97,7 @@
       }
    }
    &__delete-icon {
+      pointer-events: none;
       width: 100%;
       height: 100%;
       fill: $gray;

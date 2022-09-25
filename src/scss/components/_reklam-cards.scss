@@ -1,0 +1,125 @@
+.reklam-cards {
+   padding-bottom: 105px;
+   @media (max-width: 768px) {
+      padding-bottom: 60px;
+   } 
+   &__body {
+      @include flex-between;
+      @media (max-width: 1200px) {
+         gap: 20px;
+      }
+      @media (max-width: 992px) {
+         flex-wrap: wrap;
+      }
+   }
+   &__card {
+      position: relative;
+      flex: 0 1 540px;
+      padding: 32px 40px;
+      border-radius: 10px;
+      background-color: $bg;
+      overflow: hidden;
+      z-index: 1;
+      &::after {
+         position: absolute;
+         content: '';
+         width: 445px;
+         height: 445px;
+         background-color: $main;
+         border-radius: 50%;
+         top: -105px;
+         right: -285px;
+         z-index: -2;
+      }
+      @media (max-width: 1200px) {
+         padding: 30px;
+      }
+      @media (max-width: 992px) {
+         flex-basis: 100%;
+         &::after {
+            right: -200px;
+         }
+      }
+      @media (max-width: 768px) {
+         padding: 25px;
+         &::after {
+            width: 400px;
+            height: 400px;
+         }
+      }
+      @media (max-width: 576px) {
+         &::after {
+            width: 250px;
+            height: 250px;
+            top: -30px;
+            right: -100px;
+         }
+      }
+      @media (max-width: 480px) {
+         &::after {
+            width: 180px;
+            height: 180px;
+            right: -75px;
+            top: -75px;
+         }
+      }
+   }
+   &__card-title {
+      max-width: 258px;
+      margin-bottom: 10px;
+   }
+   &__card-content {
+      font-size: 16px;
+      line-height: 23px;
+      max-width: 258px;
+      margin-bottom: 22px;
+      @media (max-width: 768px) {
+         margin-bottom: 15px;
+         font-size: 14px;
+         line-height: normal;
+      }
+      @media (max-width: 480px) {
+         max-width: 225px;
+      }
+   }
+   &__btn {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $main;
+      column-gap: 8px;
+      &:hover {
+         span {
+            text-decoration: underline;
+         }
+      }
+   }
+   &__btn-icon {
+      width: 12px;
+      height: 10px;
+      color: inherit;
+      fill: currentColor;
+   }
+   &__card-img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 235px;
+      z-index: -1;
+      @media (max-width: 1200px) {
+         right: -25px;
+      }
+      @media (max-width: 992px) {
+         right: 0;
+      }
+      @media (max-width: 576px) {
+         right: -60px;
+      }
+      @media (max-width: 480px) {
+         width: 165px;
+      }
+   }
+}

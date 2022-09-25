@@ -1,0 +1,71 @@
+.banner-delivery {
+   &__body {
+      background: radial-gradient(76.7% 707.77% at 23.3% 72.57%, #595959 0%, #3B3E46 100%);
+      &::before {
+         position: absolute;
+         content: '';
+         width: 856px;
+         height: 421px;
+         background: url('../img/pictures/drone.png') 0 0 / 100% 100% no-repeat;
+         left: 0;
+         bottom: 0;
+         z-index: -1;
+      }
+      @media (max-width: 1440px) {  
+         &::before {
+            width: 572px;
+            height: 328px;
+         }
+      }
+      @media (max-width: 1200px) {
+         &::before {
+            width: 500px;
+            height: 287px;
+            left: auto;
+            right: -50px;
+         }
+      }
+      @media (max-width: 992px) {   
+         &::before {
+            width: 318px;
+            height: 182px;
+            right: 0;
+            bottom: -23px;
+         }
+      }
+      @media (max-width: 768px) {
+         &::before {
+            width: 255px;
+            height: 146px;
+            right: 20px;
+            bottom: -10px;
+         }
+      }
+      @media (max-width: 577px) {
+         &::before {
+            width: 214px;
+            height: 123px;
+            right: 0;
+         }
+      }
+      @media (max-width: 480px) {
+         &::before {
+            display: none;
+         }
+      }
+   }
+   &__note {
+      background-color: $red;
+   }
+   &__title {
+      max-width: 441px;
+      @media (max-width: 1200px) {
+         max-width: 610px;
+      }
+      @media (max-width: 992px) {
+         max-width: none;
+      }
+   }
+   &__btn {
+   }
+}

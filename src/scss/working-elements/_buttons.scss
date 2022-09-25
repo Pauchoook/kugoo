@@ -4,7 +4,7 @@
    border-radius: 5px;
    color: $white;
    transition: background-color .2s ease, color .2s ease;
-   &.stroke {
+   &.bg-gray {
       background-color: $bg;
       border-color: transparent;
       color: $gray;
@@ -20,7 +20,7 @@
          border-color: $main;
       }
    }
-   &.stroke-main {
+   &.stroke {
       background: none;
       border-color: $main;
       color: $main;
