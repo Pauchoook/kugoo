@@ -1,14 +1,12 @@
 export class Product {
-   constructor(options) {
+   constructor(card, options) {
+      this.cardProduct = card;
       this.options = options;
    }
 
    createCard() {
-      const cardProduct = document.createElement('div');
-      cardProduct.classList.add('product-card');
-
-      cardProduct.setAttribute('data-id', this.options.id);
-      cardProduct.insertAdjacentHTML('afterbegin', `
+      this.cardProduct.setAttribute('data-id', this.options.id);
+      this.cardProduct.insertAdjacentHTML('afterbegin', `
          <button class="product-card__compare">
                <svg class="product-card__compare-icon">
                   <use xlink:href='img/icons/icons.svg#icon-balance-scale'></use>
@@ -62,11 +60,11 @@ export class Product {
          </div>
       `);
 
-      this.#createSlider(cardProduct, this.options.images);
-      this.#createType(cardProduct, this.options.type);
-      this.#createPrice(cardProduct, this.options.price);
+      this.#createSlider(this.cardProduct, this.options.images);
+      this.#createType(this.cardProduct, this.options.type);
+      this.#createPrice(this.cardProduct, this.options.price);
 
-      return cardProduct;
+      return this.cardProduct;
    }
 
    #createSlider(card ,images) {
@@ -154,28 +152,27 @@ export class Product {
 }
 
 export class ProductCart {
-   constructor() {
-      this.numbersProduct = 1;
+   constructor(card, options) {
+      this.card = card;
+      this.options = options;
 
       this.createProduct = this.createProduct.bind(this);
    }
 
-   createProduct(id, img, title, price) {
-      const productCart = document.createElement('a');
+   createProduct() {
+      this.card.setAttribute('data-id', this.options.idCardProduct)
+      this.card.setAttribute('href', '#');
+      this.card.classList.add('cart-drop__card-product');
 
-      productCart.setAttribute('data-id', id)
-      productCart.setAttribute('href', '#');
-      productCart.classList.add('cart-drop__card-product');
-
-      productCart.insertAdjacentHTML('afterbegin', `
+      this.card.insertAdjacentHTML('afterbegin', `
           <div class="cart-drop__parent-card-img">
-              <img src="${img}" alt="Товар" class="cart-drop__card-img">
+              <img src="${this.options.imgProduct}" alt="Товар" class="cart-drop__card-img">
           </div>
           <div class="cart-drop__card-info">
               <h5 class="cart-drop__card-title">
-                  ${title}
+                  ${this.options.titleProduct}
               </h5>
-              <span class="cart-drop__card-content cart-drop__card-content--price">${price}</span>
+              <span class="cart-drop__card-content cart-drop__card-content--price">${this.options.priceProduct}</span>
               <span class="cart-drop__card-content cart-drop__card-content--numbers">1 шт.</span>
           </div>
           <button type="button" class="cart-drop__delete-btn">
@@ -185,6 +182,6 @@ export class ProductCart {
           </button>
       `);
 
-      return productCart;
+      return this.card;
    }
 }

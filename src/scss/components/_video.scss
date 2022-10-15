@@ -1,0 +1,37 @@
+.video {
+   padding-bottom: 100px;
+   @media (max-width: 768px) {
+      padding-bottom: 60px;
+   }
+   &__video-player {
+      width: 100%;
+      height: 630px;
+      @media (max-width: 1200px) {
+         height: auto;
+      }
+   }
+   &__btn {
+      width: 136px;
+      height: 136px;
+      @media (max-width: 1200px) {
+         width: 100px;
+         height: 100px;
+      }
+      @media (max-width: 992px) {
+         width: 85px;
+         height: 85px;
+      }
+   }
+   &__btn-icon {
+      width: 36px;
+      height: 36px;
+      @media (max-width: 1200px) {
+         width: 30px;
+         height: 30px;
+      }
+      @media (max-width: 992px) {
+         width: 25px;
+         height: 25px;
+      }
+   }
+}

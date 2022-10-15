@@ -99,11 +99,11 @@ span {
    margin: 0 auto;
    padding: 0 10px;
    &._big {
-      max-width: 1410px;
+      max-width: 1400px;
    }
-   @media (max-width: 1440px) {
+   @media (max-width: 1439px) {
       &._big {
-         max-width: 1130px;
+         max-width: 1180px;
       }
    }
    @media (max-width: 1200px) {

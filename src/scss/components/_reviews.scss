@@ -1,0 +1,199 @@
+.reviews {
+   padding-bottom: 100px;
+   overflow: hidden;
+   @media (max-width: 768px) {
+      padding-bottom: 60px;
+   }
+   &__title {
+      text-align: center;
+      margin-bottom: 15px;
+   }
+   &__btn {
+      width: fit-content;
+      margin: 0 auto 60px auto;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $main;
+      &:hover {
+         span {
+            text-decoration: underline;
+         }
+      }
+      @media (max-width: 768px) {
+         margin-bottom: 25px;
+      }
+   }
+   &__btn-icon {
+      width: 11px;
+      height: 10px;
+      color: inherit;
+      fill: currentColor;
+      margin-left: 8px;
+   }
+   &__slider {
+      overflow: visible;
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+      .swiper-wrapper {
+         transition-timing-function: linear;
+      }
+      @media (max-width: 768px) {
+         &:not(:last-child) {
+            margin-bottom: 15px;
+         }
+      }
+   }
+   &__slider-slide {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      flex: 0 0 213px;
+      height: 284px;
+      margin-right: 20px;
+      transition: flex .3s ease;
+      &:nth-child(3n) {
+         flex-basis: 378px;
+      }
+      &:nth-child(6n) {
+         flex-basis: 129px;
+      }
+      &::before {
+         position: absolute;
+         content: '';
+         background: rgba(0, 0, 0, .4);
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         z-index: -1;
+         opacity: 0;
+         transition: opacity .3s ease;
+      }
+      &:hover {
+         flex-basis: 378px;
+         &::before {
+            opacity: 1;
+            z-index: 1;
+         }
+         .reviews__info-slide {
+            bottom: 22px;
+         }
+      }
+      @media (max-width: 992px) {
+         flex-basis: 165px;
+         &:nth-child(3n) {
+            flex-basis: 333px;
+         }
+         &:nth-child(6n) {
+            flex-basis: 113px;
+         }
+         height: 250px;
+         margin-right: 15px;
+         &:hover {
+            flex-basis: 333px;
+            .reviews__info-slide {
+               bottom: 15px;
+            }
+         }
+      }
+      @media (max-width: 576px) {
+         flex-basis: 149px;
+         &:nth-child(3n) {
+            flex-basis: 300px;
+         }
+         &:nth-child(6n) {
+            flex-basis: 102px;
+         }
+         height: 225px;
+         &:hover {
+            flex-basis: 300px;
+         }
+      }
+   }
+   &__slider-slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   &__info-slide {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 300px;
+      color: $white !important;
+      z-index: 2;
+      transition: bottom .3s ease;
+      @media (max-width: 768px) {
+         left: 15px;
+         right: 15px;
+         bottom: 250px;
+      } 
+   }
+   &__info-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+         margin-bottom: 10px;
+      }
+   }
+   &__info-avatar {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 50%;
+      @media (max-width: 768px) {
+         width: 38px;
+         height: 38px;
+      }
+   }
+   &__info-header-content {
+      margin-left: 15px;
+   }
+   &__info-name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 23px;
+      @media (max-width: 768px) {
+         font-size: 14px;
+         line-height: normal;
+      }
+   }
+   &__info-status {
+      font-size: 12px;
+      line-height: 17px;
+      opacity: 0.7;
+   }
+   &__info-estimation {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+   }
+   &__info-stars {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      margin-right: 15px;
+   }
+   &__info-icon-star {
+      width: 14px;
+      height: 14px;
+   }
+   &__info-date {
+      font-size: 12px;
+      line-height: 17px;
+      opacity: 0.7;
+   }
+   &__content {
+      font-size: 14px;
+      line-height: 17px;
+      @media (max-width: 768px) {
+         font-size: 12px;
+         line-height: normal;
+      }
+   }
+}

@@ -2,7 +2,7 @@
 @import 'base/vars';
 @import 'base/templates';
 @import 'base/settings';
-@import 'base/swiper1';
+@import 'base/swiper';
 
 // working
 @import 'working-elements/_dropdown';
@@ -14,8 +14,8 @@
 @import 'working-elements/_popup';
 @import 'working-elements/_form';
 @import 'working-elements/_slider';
-@import 'working-elements/_product-card';
 @import 'working-elements/_btn-more';
+@import 'working-elements/_spollers';
 
 // mini-components
 @import 'mini-components/_catalog-drop';
@@ -24,6 +24,8 @@
 @import 'mini-components/_order-cell';
 @import 'mini-components/_cart-drop';
 @import 'mini-components/_search-select';
+@import 'mini-components/_product-card';
+@import 'mini-components/_video-player';
 
 // components
 @import 'components/_header';
@@ -34,3 +36,13 @@
 @import 'components/_banner';
 @import 'components/_banner-delivery';
 @import 'components/_popular-category';
+@import 'components/_kugo-russia';
+@import 'components/_favorable-price';
+@import 'components/_video';
+@import 'components/_reviews';
+@import 'components/_video-reviews';
+@import 'components/_new-article';
+@import 'components/_questions-buyers';
+@import 'components/_often-buy';
+@import 'components/_subscription';
+@import 'components/_footer';

@@ -1,0 +1,30 @@
+.often-buy {
+   padding-bottom: 80px;
+   @media (max-width: 768px) {
+      padding-bottom: 50px;
+   }
+   &__title {
+      text-align: center;
+      margin-bottom: 60px;
+      @media (max-width: 768px) {
+         margin-bottom: 25px;
+      }
+   }
+   &__container-products {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 30px;
+      @media (max-width: 1200px) {
+         gap: 20px;
+      }
+      @media (max-width: 992px) {
+         grid-template-columns: repeat(9, 1fr);
+      }
+      @media (max-width: 768px) {
+         grid-template-columns: repeat(6, 1fr);
+      }
+      @media (max-width: 480px) {
+         grid-template-columns: repeat(3, 1fr);
+      }
+   }
+}

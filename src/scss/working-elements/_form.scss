@@ -3,25 +3,31 @@
       padding: 15px 25px;
       font-size: 16px;
       line-height: 23px;
-      letter-spacing: 0.155em;
       border-radius: 5px;
       border: 1px solid $gray2;
       &::placeholder {
          font-size: 16px;
          line-height: 23px;
-         letter-spacing: 0.155em;
          color: $gray;
       }
       &.error {
-         border-color: #FB3030;
+         border-color: #FB3030 !important;
          &::placeholder {
-            color: #FB3030;
+            color: #FB3030 !important;
+         }
+      }
+      &._no-bg {
+         background: rgba(255, 255, 255, 0.2);
+         border-color: transparent;
+         color: $white;
+         &::placeholder {
+            color: $white;
          }
       }
       @media (max-width: 768px) {
+         padding: 10px 15px;
          font-size: 14px;
-         line-height: normal;
-         letter-spacing: normal;
+         line-height: 20px;
          &::placeholder {
             font-size: 14px;
             line-height: normal;

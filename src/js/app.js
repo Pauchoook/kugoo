@@ -1,15 +1,14 @@
 import * as flsFunctions from "./files/functions.js";
-import {isWebp} from './files/webp.js';
+import * as flsSimple from './files/simple.js';
+import * as flsProducts from './files/products.js';
 import {slider} from './files/sliders.js';
 
-import products from './files/classes.js';
-
-isWebp();
+flsSimple.isWebp();
+flsSimple.videoClick();
 slider();
 
 flsFunctions.mediaAdaptive();
 flsFunctions.dropdown();
-flsFunctions.dropHover();
 flsFunctions.tab();
 flsFunctions.select();
 flsFunctions.burger();
@@ -17,5 +16,8 @@ flsFunctions.popup();
 flsFunctions.maskNumber();
 flsFunctions.validateForm();
 flsFunctions.fixedHeader();
-flsFunctions.products();
-flsFunctions.shoppingCart();
+flsFunctions.video();
+flsFunctions.spollers();
+
+flsProducts.products();
+flsProducts.shoppingCartDelete();

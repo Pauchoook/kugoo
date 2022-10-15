@@ -1,18 +1,21 @@
 .dropdown-hover {
    position: relative;
-   &__item {
-      position: absolute;
-      visibility: hidden;
-      opacity: 0;
-      transform: translateY(20px);
-      z-index: 100;
-      transition: visibility .5s ease, opacity .5s ease, transform .5s ease;
-      &.open {
+   &:hover {
+      .dropdown-hover__item {
          z-index: 100;
          visibility: visible;
          opacity: 1;
          transform: translateY(0);
       }
+   }
+   &__item {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      box-shadow: 0px 10px 30px rgba(111, 115, 238, 0.1);
+      transform: translateY(20px);
+      z-index: 100;
+      transition: visibility .5s ease, opacity .5s ease, transform .5s ease;
    }
    &__window {
       margin-top: 10px;

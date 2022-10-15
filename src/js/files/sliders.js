@@ -1,6 +1,6 @@
-import Swiper, {Navigation, Pagination, EffectFade, Autoplay} from 'swiper';
+import Swiper, {Navigation, Pagination, EffectFade, Autoplay, FreeMode} from 'swiper';
 
-export async function slider() {
+export function slider() {
    const lengthHeroSlider = document.querySelector('#hero-slider__length');
    const activeHeroSlide = document.querySelector('#hero-slider__active');
    let heroTimeout;
@@ -24,7 +24,6 @@ export async function slider() {
       },
       autoplay: {
          delay: 5000,
-         disableOnInteraction: false,
          disableOnInteraction: false
       },
       on: {
@@ -57,6 +56,55 @@ export async function slider() {
             }
          }
       }
+   });
+
+   const reviewsSliders = document.querySelectorAll('.reviews__slider');
+   if (reviewsSliders.length > 0) {
+      reviewsSliders.forEach(slider => {
+         const speed = parseInt(slider.dataset.speed);
+
+         const reviewsSlider = new Swiper(slider, {
+            modules: [Autoplay, FreeMode],
+            slidesPerView: 'auto',
+            freeMode: true,
+            loop: true,
+            speed,
+            touchRatio: 0.6,
+            grabCursor: true,
+            autoplay: {
+               delay: 0,
+               disableOnInteraction: false
+            }
+         });
+      });
+   }
+
+   const reviewsSlider = new Swiper('.video-reviews__slider', {
+      modules: [Navigation, Autoplay],
+      speed: 1000,
+      simulateTouch: true,
+      slideToClickedSlide: true,
+      slidesPerView: 'auto',
+      navigation: {
+         nextEl: '.video-reviews__slider-btn--next',
+         prevEl: '.video-reviews__slider-btn--prev',
+      },
+      // autoplay: {
+      //    delay: 3000,
+      //    disableOnInteraction: false
+      // },
+      breakpoints: {
+         577: {
+            centeredSlides: true,
+         }
+      }
+   });
+
+   const articleSlider = new Swiper('.new-article__slider', {
+      modules: [Navigation, Autoplay],
+      speed: 1000,
+      simulateTouch: true,
+      slidesPerView: 'auto'
    });
 }                                   
 

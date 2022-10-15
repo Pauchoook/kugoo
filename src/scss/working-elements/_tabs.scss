@@ -1,6 +1,6 @@
 .tab {
    display: none;
-   .open {
+   &.open {
       display: block;
    }
 }
