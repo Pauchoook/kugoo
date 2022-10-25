@@ -3,7 +3,7 @@
    background-color: $main;
    &__body {
       @include flex-between;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          flex-direction: column;
       }
    }
@@ -11,11 +11,11 @@
       max-width: 445px;
       color: $white;
       text-transform: uppercase;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          margin-bottom: 20px;
          text-align: center;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          font-size: 16px;
          line-height: normal;
       }
@@ -25,21 +25,30 @@
       }
    }
    &__form {
-      display: flex;
+      display: inline-flex;
       align-items: center;
+      justify-content: right;
+      @media (max-width: 1119px) {
+         justify-content: center;
+      }
       @media (max-width: 576px) {
          display: block;
+      }
+      @media (max-width: 480px) {
+         width: 100%;
       }
    }
    &__form-input {
       width: 410px;
       margin-right: 20px;
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          width: 330px;
       }
       @media (max-width: 576px) {
-         width: 100%;
          margin: 0px 0px 15px 0px;
+      }
+      @media (max-width: 480px) {
+         width: 100%;
       }
    }
    &__btn {
@@ -52,12 +61,12 @@
          border-color: $white;
          color: $white;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          padding: 10px 15px;
          font-size: 14px;
          line-height: normal;
       }
-      @media (max-width: 576px) {
+      @media (max-width: 480px) {
          width: 100%;
       }
    }

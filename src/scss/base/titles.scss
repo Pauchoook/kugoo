@@ -1,0 +1,20 @@
+.title-2 {
+   font-size: 35px;
+   line-height: 51px;
+   @media (max-width: 991px) {
+      font-size: 30px;
+      line-height: normal;
+   }
+   @media (max-width: 767px) {
+      font-size: 25px;
+   }
+}
+.title-3 {
+   font-size: 25px;
+   line-height: 36px;
+   line-height: 36px;
+   @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: normal;
+   }
+}

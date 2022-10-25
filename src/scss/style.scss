@@ -3,6 +3,7 @@
 @import 'base/templates';
 @import 'base/settings';
 @import 'base/swiper';
+@import 'base/titles';
 
 // working
 @import 'working-elements/_dropdown';
@@ -16,6 +17,7 @@
 @import 'working-elements/_slider';
 @import 'working-elements/_btn-more';
 @import 'working-elements/_spollers';
+@import 'working-elements/_scrollbar';
 
 // mini-components
 @import 'mini-components/_catalog-drop';
@@ -26,9 +28,11 @@
 @import 'mini-components/_search-select';
 @import 'mini-components/_product-card';
 @import 'mini-components/_video-player';
+@import 'mini-components/_select';
 
 // components
 @import 'components/_header';
+
 @import 'components/_hero';
 @import 'components/_hero-main';
 @import 'components/_electroscooters';
@@ -45,4 +49,10 @@
 @import 'components/_questions-buyers';
 @import 'components/_often-buy';
 @import 'components/_subscription';
+@import 'components/_hero-service';
+@import 'components/_diagnostics-repair';
+@import 'components/_cost-reapir';
+@import 'components/_reason-malfunction';
+@import 'components/_will-do';
+
 @import 'components/_footer';

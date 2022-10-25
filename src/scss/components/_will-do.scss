@@ -1,0 +1,39 @@
+.will-do {
+   padding: 100px 0px;
+   @media (max-width: 767px) {
+      padding: 60px 0;
+   }
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 70px;
+   }
+   &__btn-player {
+      width: 100px;
+      height: 100px;
+   }
+   &__btn-player-icon {
+      width: 25px;
+      height: 25px;
+   }
+   &__info {
+   }
+   &__title {
+   }
+   &__continuation-title {
+   }
+   &__descr {
+   }
+   &__title-list {
+   }
+   &__list {
+   }
+   &__list-item {
+   }
+   &__list-icon {
+   }
+   &__more {
+   }
+   &__more-link {
+   }
+}

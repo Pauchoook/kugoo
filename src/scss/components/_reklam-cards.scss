@@ -1,14 +1,14 @@
 .reklam-cards {
    padding-bottom: 105px;
-   @media (max-width: 768px) {
+   @media (max-width: 767px) {
       padding-bottom: 60px;
    } 
    &__body {
       @include flex-between;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          gap: 20px;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          flex-wrap: wrap;
       }
    }
@@ -31,16 +31,16 @@
          right: -285px;
          z-index: -2;
       }
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          padding: 30px;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          flex-basis: 100%;
          &::after {
             right: -200px;
          }
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          padding: 25px;
          &::after {
             width: 400px;
@@ -73,7 +73,7 @@
       line-height: 23px;
       max-width: 258px;
       margin-bottom: 22px;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          margin-bottom: 15px;
          font-size: 14px;
          line-height: normal;
@@ -109,10 +109,10 @@
       bottom: 0;
       width: 235px;
       z-index: -1;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          right: -25px;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          right: 0;
       }
       @media (max-width: 576px) {

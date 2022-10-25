@@ -89,10 +89,10 @@ export function slider() {
          nextEl: '.video-reviews__slider-btn--next',
          prevEl: '.video-reviews__slider-btn--prev',
       },
-      // autoplay: {
-      //    delay: 3000,
-      //    disableOnInteraction: false
-      // },
+      autoplay: {
+         delay: 3000,
+         disableOnInteraction: false
+      },
       breakpoints: {
          577: {
             centeredSlides: true,
@@ -104,7 +104,15 @@ export function slider() {
       modules: [Navigation, Autoplay],
       speed: 1000,
       simulateTouch: true,
-      slidesPerView: 'auto'
+      slidesPerView: 'auto',
+      navigation: {
+         nextEl: '.new-article__slider-btn--next',
+         prevEl: '.new-article__slider-btn--prev',
+      },
+      autoplay: {
+         delay: 4000,
+         disableOnInteraction: false
+      },
    });
 }                                   
 

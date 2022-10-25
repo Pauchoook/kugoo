@@ -4,27 +4,27 @@
          <h2 class="electroscooters__title">
             Электросамокаты
          </h2>
-         <ul class="electroscooters__nav">
+         <ul data-btns-products="electroscooters" class="electroscooters-buttons electroscooters__nav">
             <li data-product-type="hit" class="btn bg-gray btn-product-type electroscooters__nav-item _disabled active">Хиты продаж</li>
             <li data-product-type="city" class="btn bg-gray btn-product-type electroscooters__nav-item">Для города</li>
             <li data-product-type="adult" class="btn bg-gray btn-product-type electroscooters__nav-item">Для взрослых</li>
             <li data-product-type="children" class="btn bg-gray btn-product-type electroscooters__nav-item">Для детей</li>
          </ul>
-         <div data-value="Хиты продаж" class="select electroscooters__select">
-            <button class="btn stroke select__btn electroscooters__select-btn">
+         <div data-value="Хиты продаж" data-btns-products="electroscooters" class="select select-main electroscooters__select electroscooters-buttons">
+            <button class="btn stroke select__btn select-main__select-btn">
                <span class="select__title">Хиты продаж</span>
-               <svg class="electroscooters__select-arrow">
+               <svg class="select-main__select-arrow">
                   <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
                </svg>
             </button>
             <ul class="select__item">
-               <li data-product-type="city" class="btn-product-type select__element electroscooters__select-element _no-disabled">Для города</li>
-               <li data-product-type="adult" class="btn-product-type select__element electroscooters__select-element _no-disabled">Для взрослых</li>
-               <li data-product-type="children" class="btn-product-type select__element electroscooters__select-element _no-disabled">Для детей</li>
+               <li data-product-type="city" class="btn-product-type select__element select-main__select-element _no-disabled">Для города</li>
+               <li data-product-type="adult" class="btn-product-type select__element select-main__select-element _no-disabled">Для взрослых</li>
+               <li data-product-type="children" class="btn-product-type select__element select-main__select-element _no-disabled">Для детей</li>
             </ul>
          </div>
       </div>
-      <div data-length-products="8" class="electroscooters__body container-products"></div>
+      <div data-length-products="8" data-container-products="electroscooters" class="electroscooters__body container-products"></div>
       <a href="#" class="btn stroke btn-more">Смотреть все</a>
    </div>
 </section>

@@ -1,12 +1,12 @@
 .often-buy {
    padding-bottom: 80px;
-   @media (max-width: 768px) {
+   @media (max-width: 767px) {
       padding-bottom: 50px;
    }
    &__title {
       text-align: center;
       margin-bottom: 60px;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          margin-bottom: 25px;
       }
    }
@@ -14,13 +14,13 @@
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       gap: 30px;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          gap: 20px;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          grid-template-columns: repeat(9, 1fr);
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          grid-template-columns: repeat(6, 1fr);
       }
       @media (max-width: 480px) {

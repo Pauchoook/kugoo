@@ -1,0 +1,42 @@
+.select-main {
+   &__select-btn {
+      @include flex-center;
+      min-width: 135px;
+      padding: 9px 0px;
+      font-size: 12px;
+      line-height: 17px;
+      &:hover {
+         svg {
+            fill: $white;
+         }
+      }
+      &.active {
+         svg {
+            transform: rotate(-90deg);
+         }
+      }
+      .select__title {
+         pointer-events: none;
+         margin-right: 10px;
+      }
+   }
+   &__select-arrow {
+      pointer-events: none;
+      width: 5px;
+      height: 9px;
+      fill: $main;
+      transform: rotate(90deg);
+      transition: fill .2s ease, transform .2s ease;
+   }
+   &__select-element {
+      font-size: 12px;
+      line-height: 17px;
+      padding: 8px 10px;
+      width: 100%;
+      transition: color .2s ease, background-color .2s ease;
+      &:hover {
+         color: $white;
+         background-color: $main;
+      }
+   }
+}

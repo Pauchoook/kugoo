@@ -49,10 +49,10 @@
    }
    &__body {
       padding: 20px 25px;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          padding: 15px 20px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          padding-right: 15px;
          padding-left: 15px;
       }
@@ -68,7 +68,7 @@
             }
          }
       }
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          &:hover {
             .product-card__slider-arrow {
                &--prev {
@@ -112,7 +112,7 @@
          right: -52px;
          transition: right .2s ease;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          width: 35px;
          height: 35px;
       }
@@ -131,11 +131,11 @@
       flex-wrap: wrap;
       row-gap: 15px;
       margin-bottom: 25px;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          flex-direction: column;
          align-items: start;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          flex-direction: row;
          align-items: center;
       }
@@ -162,7 +162,7 @@
       @include flex-between;
       margin-bottom: 15px;
       min-height: 46px;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          min-height: 43px;
       }
    }
@@ -177,7 +177,7 @@
       font-weight: 600;
       font-size: 20px;
       line-height: 29px;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          font-size: 18px;
          line-height: normal;
       }

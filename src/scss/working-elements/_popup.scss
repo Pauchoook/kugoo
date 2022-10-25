@@ -54,9 +54,9 @@
          }
       }
       @media (max-width: 830px) {
-         max-width: calc(100vw - 40px);
+         max-width: calc(100vw - 40px) !important;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          padding-right: 30px;
          padding-left: 30px;
       }

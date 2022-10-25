@@ -1,6 +1,6 @@
 .kugo-russia {
    padding-bottom: 100px;
-   @media (max-width: 768px) {
+   @media (max-width: 767px) {
       padding-bottom: 60px;
    }
    &__body {
@@ -8,10 +8,10 @@
       padding: 30px;
       background-color: $bg;
       border-radius: 10px;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          flex-wrap: wrap;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          padding: 20px;
       }
    }
@@ -24,15 +24,15 @@
          width: 521px;
          height: 485px;
       }
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          width: 740px;
          margin-bottom: 30px;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          width: 100%;
          height: 420px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          height: auto;
          margin-bottom: 20px;
       }
@@ -41,14 +41,14 @@
       border-radius: 10px;
       width: 100%;
       height: 100%;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          object-fit: cover;
          object-position: 0 15%;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          object-position: top right;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          height: 290px;
          margin-bottom: 10px;
       }
@@ -64,10 +64,10 @@
       border-radius: 10px;
       right: 33px;
       bottom: 20px;
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          bottom: 10px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          width: auto;
          max-width: none;
          text-align: right;
@@ -78,10 +78,10 @@
    }
    &__block-img-content {
       padding: 15px 25px;
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          padding: 10px 15px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          padding: 0;
       }
    }
@@ -89,7 +89,7 @@
       color: $white;
       margin-bottom: 5px;
       font-weight: 500;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          font-size: 16px;
          line-height: normal;
          color: $black;
@@ -99,7 +99,7 @@
       color: $white;
       font-size: 14px;
       line-height: 17px;
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          display: none;
       }
    }
@@ -115,7 +115,7 @@
          color: $white;
          border-color: transparent;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          padding: 0;
          background: none;
          border: none;
@@ -135,19 +135,19 @@
       fill: currentColor;
       margin-left: auto;
       transition: fill .2s ease, color .2s ease;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          display: none;
       }
    }
    &__right {
       max-width: 540px;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          max-width: none;
       }
    }
    &__title {
       margin-bottom: 18px;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          margin-bottom: 12px;
       }
       @media (max-width: 577px) {
@@ -161,10 +161,10 @@
       @media (max-width: 1439px) {
          margin-bottom: 30px;
       }
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          max-width: 700px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          margin-bottom: 20px;
          font-size: 14px;
          line-height: normal;
@@ -174,10 +174,10 @@
       padding: 20px 25px;
       border-radius: 10px;
       background-color: $white;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          display: inline-block;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          padding: 15px;
       }
    }

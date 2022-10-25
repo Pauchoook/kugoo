@@ -4,52 +4,59 @@ import {Product, ProductCart} from './classes.js';
 
 export function products() {
    const containerProducts = document.querySelectorAll('.container-products');
+
    if (containerProducts.length > 0) {
       containerProducts.forEach(container => {
          const maxLengthProducts = parseInt(container.dataset.lengthProducts); // макс кол-во карточек в контейнере
-         const buttonsTypesProducts = document.querySelectorAll('.btn-product-type');
-
-         buttonsTypesProducts.forEach(btn => {
-            btn.addEventListener('click', () => {
-               const typeProduct = btn.textContent;
-               const containerCards = document.querySelector('.container-products');
-
-               if (!btn.classList.contains('_disabled')) {
-                  containerCards.innerHTML = ''; // очистка родительского контейнера перед загрузкой других карточек
-                  createCardProduct(productsJSON, typeProduct);
-               }
-
-               buttonsTypesProducts.forEach(btn => btn.classList.remove('_disabled', 'active'));
-               btn.classList.add('active');
-               if (!btn.classList.contains('_no-disabled')) btn.classList.add('_disabled');
-            });
-         });
 
          // загрузка карточек при загрузке страницы
          document.addEventListener('DOMContentLoaded', () => {
-            createCardProduct(productsJSON, 'Хиты продаж');
+            createCardProduct(productsJSON, 'Хиты продаж', maxLengthProducts, container);
          });
+      });
+   }
 
-         function createCardProduct(arr, whom) {
-            let i = 0;
-            arr.forEach(item => {
-               if (item.whom === whom) {
-                  // если указано количество карточек в контейнере, то прекратить при достижении лимита
-                  if (maxLengthProducts && i === maxLengthProducts) return;
+   const buttonsTypesProducts = document.querySelectorAll('.btn-product-type');
 
-                  const cardProduct = document.createElement('div');
-                  cardProduct.classList.add('product-card');
-                  const product = new Product(cardProduct, item);
-                  container.appendChild(product.createCard());
+   if (buttonsTypesProducts.length > 0) {
+      buttonsTypesProducts.forEach(btn => {
+         btn.addEventListener('click', () => {
+            const parent = btn.closest('.electroscooters-buttons'); // родитель кнопки с айдишником нужно контейнера
+            const idContainer = parent.dataset.btnsProducts;
+            const typeProduct = btn.textContent;
+            const containerCards = document.querySelector(`[data-container-products=${idContainer}]`);
+            const maxLengthProducts = parseInt(containerCards.dataset.lengthProducts);
+   
+            if (!btn.classList.contains('_disabled')) {
+               containerCards.innerHTML = ''; // очистка родительского контейнера перед загрузкой других карточек
+               createCardProduct(productsJSON, typeProduct, maxLengthProducts, containerCards);
+            }
+   
+            buttonsTypesProducts.forEach(btn => btn.classList.remove('_disabled', 'active'));
+            btn.classList.add('active');
+            if (!btn.classList.contains('_no-disabled')) btn.classList.add('_disabled');
+         });
+      });
+   }
 
-                  i++;
-               }
-            });
+   function createCardProduct(arr, whom, maxLength, container) {
+      let i = 0;
+      arr.forEach(item => {
+         if (item.whom === whom) {
+            // если указано количество карточек в контейнере, то прекратить при достижении лимита
+            if (maxLength && i === maxLength) return;
 
-            productSlider();
-            shoppingCartAdd();
+            const cardProduct = document.createElement('div');
+            cardProduct.classList.add('product-card');
+            const product = new Product(cardProduct, item);
+            container.appendChild(product.createCard());
+
+            i++;
          }
       });
+
+      productSlider();
+      shoppingCartAdd();
    }
 }
 
@@ -127,7 +134,6 @@ export function shoppingCartAdd() {
          const product = new ProductCart(productCart, { idCardProduct, imgProduct, titleProduct, priceProduct });
 
          bodyCart.appendChild(product.createProduct());
-         console.log(sumPriceCart, numbersProducts);
        });
    });
 }

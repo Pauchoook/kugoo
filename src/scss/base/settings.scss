@@ -7,6 +7,10 @@ body {
    font-family: 'Jost', sans-serif;
    color: $black;
    background-color: $white;
+   &.hidden {
+      overflow: hidden;
+      touch-action: none;
+   }
 }
 ul,
 li {
@@ -23,11 +27,11 @@ h2, h3 {
 h2 {
    font-size: 35px;
    line-height: 51px;
-   @media (max-width: 992px) {
+   @media (max-width: 991px) {
       font-size: 30px;
       line-height: normal;
    }
-   @media (max-width: 768px) {
+   @media (max-width: 767px) {
       font-size: 25px;
    }
 }
@@ -35,7 +39,7 @@ h3 {
    font-size: 25px;
    line-height: 36px;
    line-height: 36px;
-   @media (max-width: 768px) {
+   @media (max-width: 767px) {
       font-size: 20px;
       line-height: normal;
    }
@@ -60,23 +64,15 @@ input {
    outline: none;
    background: none;
 }
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
+input[type='search'] {
+   &::-webkit-search-decoration {
+      display: none;
+   }
 }
-input[type='search']::-webkit-search-decoration,
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-results-button,
-input[type='search']::-webkit-search-results-decoration {
-   display: none;
+input[type="number"] {
+   appearance: none;
 }
-/* Firefox */
-input[type=number] {
-   -moz-appearance: textfield;
-}
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
    display: none;
 }
 textarea {
@@ -90,6 +86,7 @@ textarea,
 button {
    font-family: inherit;
    color: inherit;
+   outline: none;
 }
 span {
    display: block;
@@ -106,16 +103,16 @@ span {
          max-width: 1180px;
       }
    }
-   @media (max-width: 1200px) {
+   @media (max-width: 1119px) {
       max-width: 980px !important;
    }
-   @media (max-width: 992px) {
+   @media (max-width: 991px) {
       max-width: 740px !important;
    }
-   @media (max-width: 768px) {
+   @media (max-width: 767px) {
       max-width: 560px !important;
    }
-   @media (max-width: 768px) {
+   @media (max-width: 576px) {
       padding: 0 15px;
    }
 }

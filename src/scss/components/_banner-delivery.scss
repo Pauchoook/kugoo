@@ -17,7 +17,7 @@
             height: 328px;
          }
       }
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          &::before {
             width: 500px;
             height: 287px;
@@ -25,7 +25,7 @@
             right: -50px;
          }
       }
-      @media (max-width: 992px) {   
+      @media (max-width: 991px) {   
          &::before {
             width: 318px;
             height: 182px;
@@ -33,7 +33,7 @@
             bottom: -23px;
          }
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
          &::before {
             width: 255px;
             height: 146px;
@@ -59,10 +59,10 @@
    }
    &__title {
       max-width: 441px;
-      @media (max-width: 1200px) {
+      @media (max-width: 1119px) {
          max-width: 610px;
       }
-      @media (max-width: 992px) {
+      @media (max-width: 991px) {
          max-width: none;
       }
    }

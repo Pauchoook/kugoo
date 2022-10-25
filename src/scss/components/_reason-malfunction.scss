@@ -1,0 +1,194 @@
+.reason-malfunction {
+   &__body {
+      @include flex-between;
+      padding: 65px 115px;
+      background: radial-gradient(64.24% 330.33% at 21.88% 87.41%, #539DFF 0%, #2777FC 100%), radial-gradient(76.7% 707.77% at 23.3% 72.57%, #595959 0%, #3B3E46 100%);
+      border-radius: 10px;
+      @media (max-width: 1439px) {
+         padding: 40px 60px;
+      }
+      @media (max-width: 1119px) {
+         align-items: start;
+         flex-direction: column;
+      }
+      @media (max-width: 991px) {
+         padding: 25px 40px;
+      }
+      @media (max-width: 576px) {
+         padding: 15px 20px;
+      }
+   }
+   &__left {
+      position: relative;
+      width: 520px;
+      height: 265px; 
+      &::after {
+         position: absolute;
+         content: '';
+         width: 50px;
+         height: 50px;
+         background: url('../img/logos/icon-video.svg') 0 0 / 100% 100% no-repeat;
+         right: -5px;
+         top: -25px;
+         z-index: 10;
+      } 
+      @media (max-width: 1439px) {
+         width: 475px;
+         height: 210px;
+         &::after {
+            width: 40px;
+            height: 40px;
+            top: -20px;
+         }
+      }
+      @media (max-width: 1119px) {
+         width: 520px;
+         height: 265px; 
+         margin-bottom: 30px;
+      }
+      @media (max-width: 991px) {
+         width: 100%;
+         height: auto;
+      }
+      @media (max-width: 767px) {
+         &::after {
+            width: 30px;
+            height: 30px;
+            top: -10px;
+         }
+      }
+   }
+   &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+   }
+   &__right {
+      max-width: 540px;
+      color: $white;
+      @media (max-width: 1439px) {
+         max-width: 530px;
+      }
+      @media (max-width: 1119px) {
+         max-width: none;
+      }
+   }
+   &__type {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 4px 12px;
+      border-radius: 5px;
+      background-color: $green;
+      margin-bottom: 30px;
+      @media (max-width: 767px) {
+         margin-bottom: 15px;
+      }
+   }
+   &__title {
+      margin-bottom: 25px;
+      @media (max-width: 767px) {
+         margin-bottom: 20px;
+      }
+   }
+   &__btn {
+      border-color: $white;
+      background-color: $white;
+      font-size: 16px;
+      line-height: 23px;
+      color: $blue;
+      padding: 15px 25px;
+      &:hover {
+         color: $white;
+      }
+      @media (max-width: 767px) {
+         padding: 10px 15px;
+         font-size: 14px;
+         line-height: normal;
+      }
+      @media (max-width: 480px) {
+         width: 100%;
+      }
+   }
+   &__popup {
+      .popup__window {
+         max-width: 650px;
+      }
+   }
+   &__popup-title {
+      max-width: 430px;
+      margin-bottom: 10px;
+   }
+   &__content {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 350px;
+      margin-bottom: 30px;
+   }
+   &__form {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 30px;
+      row-gap: 20px;
+      @media (max-width: 576px) {
+         row-gap: 15px;
+      }
+   }
+   &__contacts {
+      flex: 0 1 265px;
+      @media (max-width: 767px) {
+         flex-basis: 180px;
+      }
+   }
+   &__contacts-content {
+      font-size: 12px;
+      line-height: 17px;
+      color: $gray;
+      margin-bottom: 7px;
+   }
+   &__contacts-body {
+      @include flex-between;
+   }
+   &__conctact-checkbox {
+      &:checked+label {
+         border-color: $main
+      }
+   }
+   &__conctact-label {
+      @include flex-center;
+      cursor: pointer;
+      width: 75px;
+      height: 55px;
+      border: 1px solid $gray2;
+      border-radius: 5px;
+      @media (max-width: 767px) {
+         width: 55px;
+         height: 42px;
+      }
+   }
+   &__conctact-icon {
+      width: 18px;
+      height: 18px;
+      &._viber {
+         fill: $main;
+      }
+      &._whatsapp {
+         fill: $green;
+      }
+      &._telegram {
+         fill: $black-blue;
+      }
+   }
+   &__input {
+      flex: 0 1 265px;
+      align-self: flex-end;
+   }
+   &__form-btn {
+      padding: 15px;
+      flex: 0 1 265px;
+      @media (max-width: 767px) {
+         flex-basis: 180px;
+         padding: 10px;
+      } 
+   }
+}
