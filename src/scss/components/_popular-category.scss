@@ -11,6 +11,12 @@
       }
       @media (max-width: 767px) {
          margin-bottom: 25px;
+         flex-wrap: wrap;
+      }
+   }
+   &__title {
+      @media (max-width: 767px) {
+         margin-bottom: 15px;
       }
    }
    &__manager {
@@ -18,7 +24,7 @@
       background-color: $bg;
       border-radius: 5px;
       @media (max-width: 767px) {
-         display: none;
+         // display: none;
       }
    }
    &__manager-body {
@@ -118,5 +124,14 @@
          font-size: 12px;
          line-height: normal;
       }
+   }
+   &__popup-title {
+      max-width: 400px;
+   }
+   &__popup-content {
+      max-width: 400px;
+   }
+   &__communication {
+      margin-bottom: 20px;
    }
 }

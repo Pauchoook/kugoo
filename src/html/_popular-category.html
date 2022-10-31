@@ -1,7 +1,7 @@
 <section class="popular-category">
    <div class="container">
       <div class="popular-category__header">
-         <h2 class="popular-category__title">
+         <h2 class="title-2 popular-category__title">
             Популярные категории
          </h2>
          <div class="popular-category__manager el-effect">
@@ -11,7 +11,7 @@
                   <p class="popular-category__manager-content">
                      Менеджер ответит на любой ваш вопрос о продуктах Kugoo
                   </p>
-                  <a href="#" class="popular-category__manager-btn">Задать вопрос</a>
+                  <button data-popup-btn="manager" class="popup-btn popular-category__manager-btn">Задать вопрос</button>
                </div>
             </div>
          </div>
@@ -99,5 +99,66 @@
          </a>
       </div>
       <a href="#" class="btn stroke btn-more">Смотреть всё</a>
+      <div data-popup="manager" class="order-cell popup">
+         <div close-popup class="popup__overlay">
+            <div class="order-cell__window popup__window popup-circle">
+               <div class="order-cell__popup-wrapper">
+                  <button close-popup class="popup__close">
+                     <div class="popup__close-line popup__close-line--top"></div>
+                     <div class="popup__close-line popup__close-line--bottom"></div>
+                  </button>
+                  <h3 class="title-3 popular-category__popup-title order-cell__title">
+                     Оставьте заявку и получите профессиональную консультацию от нашего менеджера
+                  </h3>
+                  <p class="popular-category__popup-content order-cell__content">
+                     Позвоним в течение 5 минут и ответим на все вопросы.
+                  </p>
+                  <form action="#" class="form order-cell__form">
+                     <div class="conveniet-communication popular-category__communication">
+                        <p class="conveniet-communication__content">
+                           Как с вами удобнее связаться?
+                        </p>
+                        <div class="conveniet-communication__body">
+                           <div class="conveniet-communication__contact">
+                              <input type="radio" id="waterproofing-setting-viber" name="waterproofing-setting-radio" class="conveniet-communication__conctact-checkbox">
+                              <label for="waterproofing-setting-viber" class="conveniet-communication__conctact-label">
+                                 <svg class="conveniet-communication__conctact-icon _viber">
+                                    <use xlink:href='img/icons/icons.svg#icon-viber'></use>
+                                 </svg>
+                              </label>
+                           </div>
+                           <div class="conveniet-communication__contact">
+                              <input type="radio" id="waterproofing-setting-whatsapp" name="waterproofing-setting-radio" class="conveniet-communication__conctact-checkbox">
+                              <label for="waterproofing-setting-whatsapp" class="conveniet-communication__conctact-label">
+                                 <svg class="conveniet-communication__conctact-icon _whatsapp">
+                                    <use xlink:href='img/icons/icons.svg#icon-whatsapp'></use>
+                                 </svg>
+                              </label>
+                           </div>
+                           <div class="conveniet-communication__contact">
+                              <input type="radio" id="waterproofing-setting-telegram" name="waterproofing-setting-radio" class="conveniet-communication__conctact-checkbox">
+                              <label for="waterproofing-setting-telegram" class="conveniet-communication__conctact-label">
+                                 <svg class="conveniet-communication__conctact-icon _telegram">
+                                    <use xlink:href='img/icons/icons.svg#icon-telegram'></use>
+                                 </svg>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <input type="tel" data-phone-pattern="+7 (___) ___ - __ - __" data-length="22" placeholder="+7 (___) ___ - __ - __" name="order-cell-tel" class="form__input order-cell__input">
+                     <button type="submit" class="btn order-cell__btn">
+                        Позвонить мне
+                     </button>
+                     <div class="form__processing-data">
+                        <input type="checkbox" name="order-cell__data-processing" class="form__checkbox form__processing-data-checkbox" id="data-processing">
+                        <label for="data-processing" class="form__processing-data-label">
+                           Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
+                        </label>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
 </section>

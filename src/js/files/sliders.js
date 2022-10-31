@@ -114,6 +114,21 @@ export function slider() {
          disableOnInteraction: false
       },
    });
+
+   const teamSlider = new Swiper('.team-service__slider', {
+      modules: [Navigation, Autoplay],
+      speed: 1000,
+      simulateTouch: true,
+      slidesPerView: 'auto',
+      navigation: {
+         nextEl: '.team-service__slider-btn--next',
+         prevEl: '.team-service__slider-btn--prev',
+      },
+      autoplay: {
+         delay: 3000,
+         disableOnInteraction: false
+      }
+   });
 }                                   
 
 export function productSlider() {
@@ -121,9 +136,10 @@ export function productSlider() {
    productsCardsSliders.forEach(slider => {
       const sliderProduct = new Swiper(slider, {
          modules: [Navigation],
-         speed: 500,
          simulateTouch: false,
+         speed: 500,
          loop: true,
+         loopPreventsSlide: true,
          navigation: {
             nextEl: '.product-card__slider-arrow--next',
             prevEl: '.product-card__slider-arrow--prev'

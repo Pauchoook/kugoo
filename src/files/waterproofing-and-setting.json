@@ -1,0 +1,316 @@
+[
+   {
+      "id": 1,
+      "type": "waterproofing",
+      "name": "Kogoo S3",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 2,
+      "type": "waterproofing",
+      "name": "Kogoo S3 Pro",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 3,
+      "type": "waterproofing",
+      "name": "Kogoo S1",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 4,
+      "type": "waterproofing",
+      "name": "Kogoo M2 Pro",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 5,
+      "type": "waterproofing",
+      "name": "Kogoo HX",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 6,
+      "type": "waterproofing",
+      "name": "Kogoo HX Pro",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 7,
+      "type": "waterproofing",
+      "name": "Kogoo ES3",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 8,
+      "type": "waterproofing",
+      "name": "Kogoo G-Max",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 9,
+      "type": "waterproofing",
+      "name": "Kogoo C1",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 10,
+      "type": "waterproofing",
+      "name": "Kogoo M2",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 11,
+      "type": "waterproofing",
+      "name": "Kogoo Max Speed",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 12,
+      "type": "waterproofing",
+      "name": "Kogoo M4",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 13,
+      "type": "waterproofing",
+      "name": "Kogoo M4 Pro 13/17/18 Ah",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 14,
+      "type": "waterproofing",
+      "name": "Kogoo M5",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 15,
+      "type": "waterproofing",
+      "name": "Kogoo G1",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 16,
+      "type": "waterproofing",
+      "name": "Kogoo G2 Pro",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 17,
+      "type": "waterproofing",
+      "name": "Kogoo G-Booster",
+      "price": "2 790 ₽"
+   },
+   {
+      "id": 18,
+      "type": "waterproofing",
+      "name": "Kogoo GX",
+      "price": "2 790 ₽"
+   },
+
+   {
+      "id": 19,
+      "type": "setting",
+      "name": "Kogoo S3",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 20,
+      "type": "setting",
+      "name": "Kogoo S3 Pro",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 21,
+      "type": "setting",
+      "name": "Kogoo S1",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 22,
+      "type": "setting",
+      "name": "Kogoo M2 Pro",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 23,
+      "type": "setting",
+      "name": "Kogoo HX",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 24,
+      "type": "setting",
+      "name": "Kogoo HX Pro",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 25,
+      "type": "setting",
+      "name": "Kogoo ES3",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 26,
+      "type": "setting",
+      "name": "Kogoo G-Max",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 27,
+      "type": "setting",
+      "name": "Kogoo C1",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 28,
+      "type": "setting",
+      "name": "Kogoo M2",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 29,
+      "type": "setting",
+      "name": "Kogoo Max Speed",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 90,
+      "type": "setting",
+      "name": "Kogoo M4",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 31,
+      "type": "setting",
+      "name": "Kogoo M4 Pro 13/17/18 Ah",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 32,
+      "type": "setting",
+      "name": "Kogoo M5",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 33,
+      "type": "setting",
+      "name": "Kogoo G1",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 34,
+      "type": "setting",
+      "name": "Kogoo G2 Pro",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 35,
+      "type": "setting",
+      "name": "Kogoo G-Booster",
+      "price": "3 790 ₽"
+   },
+
+   {
+      "id": 36,
+      "type": "waterproofing-setting",
+      "name": "Kogoo S3",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 37,
+      "type": "waterproofing-setting",
+      "name": "Kogoo S3 Pro",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 38,
+      "type": "waterproofing-setting",
+      "name": "Kogoo S1",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 39,
+      "type": "waterproofing-setting",
+      "name": "Kogoo M2 Pro",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 40,
+      "type": "waterproofing-setting",
+      "name": "Kogoo HX",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 41,
+      "type": "waterproofing-setting",
+      "name": "Kogoo HX Pro",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 42,
+      "type": "waterproofing-setting",
+      "name": "Kogoo ES3",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 43,
+      "type": "waterproofing-setting",
+      "name": "Kogoo G-Max",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 44,
+      "type": "waterproofing-setting",
+      "name": "Kogoo C1",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 45,
+      "type": "waterproofing-setting",
+      "name": "Kogoo M2",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 46,
+      "type": "waterproofing-setting",
+      "name": "Kogoo Max Speed",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 47,
+      "type": "waterproofing-setting",
+      "name": "Kogoo M4",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 48,
+      "type": "waterproofing-setting",
+      "name": "Kogoo M4 Pro 13/17/18 Ah",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 49,
+      "type": "waterproofing-setting",
+      "name": "Kogoo M5",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 50,
+      "type": "waterproofing-setting",
+      "name": "Kogoo G1",
+      "price": "4 790 ₽"
+   },
+   {
+      "id": 51,
+      "type": "setting",
+      "name": "Kogoo G2 Pro",
+      "price": "3 790 ₽"
+   },
+   {
+      "id": 52,
+      "type": "waterproofing-setting",
+      "name": "Kogoo G-Booster",
+      "price": "4 790 ₽"
+   }
+]

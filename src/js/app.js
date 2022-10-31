@@ -1,10 +1,11 @@
 import * as flsFunctions from "./files/functions.js";
 import * as flsSimple from './files/simple.js';
 import * as flsProducts from './files/products.js';
+import * as flsPrices from './files/prices.js';
 import {slider} from './files/sliders.js';
 
 flsSimple.isWebp();
-flsSimple.videoClick();
+flsSimple.citiesSelect();
 slider();
 
 flsFunctions.mediaAdaptive();
@@ -21,3 +22,5 @@ flsFunctions.spollers();
 
 flsProducts.products();
 flsProducts.shoppingCartDelete();
+
+flsPrices.waterproofingSetting();

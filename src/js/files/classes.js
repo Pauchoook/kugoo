@@ -5,7 +5,7 @@ export class Product {
    }
 
    createCard() {
-      this.cardProduct.setAttribute('data-id', this.options.id);
+      this.cardProduct.setAttribute('data-id', Date.now());
       this.cardProduct.insertAdjacentHTML('afterbegin', `
          <button class="product-card__compare">
                <svg class="product-card__compare-icon">
@@ -44,7 +44,7 @@ export class Product {
                </ul>
                <div class="product-card__nav">
                   <div class="product-card__nav-buttons">
-                     <button class="product-card__nav-btn">
+                     <button class="product-card__nav-btn product-cart-add">
                            <svg class="product-card__btn-icon">
                            <use xlink:href='img/icons/icons.svg#icon-shopping-cart-2'></use>
                            </svg>

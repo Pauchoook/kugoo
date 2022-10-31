@@ -39,9 +39,86 @@
           </p>
         </div>
       </div>
-      <button class="btn hero__btn hero-service__btn">
+      <button data-popup-btn="service" class="btn popup-btn hero__btn hero-service__btn">
         Записаться
       </button>
+    </div>
+    <div data-popup="service" class="popup">
+      <div close-popup class="popup__overlay">
+        <div class="popup__window hero-service__popup-window popup-circle">
+          <button close-popup class="popup__close">
+            <div class="popup__close-line popup__close-line--top"></div>
+            <div class="popup__close-line popup__close-line--bottom"></div>
+          </button>
+          <div class="hero-service__popup-wrapper">
+            <h3 class="title-3 hero-service__popup-title">Запишитесь в сервисный центр</h3>
+            <p class="hero-service__popup-content">и получите профессионалное обслуживание от специалистов Kugoo-Russia
+            </p>
+            <p class="hero-service__content-form">
+              Заполните форму, и менеджер свяжется с вами в течение 5 минут, чтобы уточнить детали
+            </p>
+            <form action="#" class="form hero-service__form">
+              <div class="select simple-select hero-service__select">
+                <input type="text" class="select__value">
+                <button type="button" class="select__btn simple-select__btn">
+                  <span class="select__title simple-select__title">
+                    Выберите свой город
+                  </span>
+                  <svg class="simple-select__icon">
+                    <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+                  </svg>
+                </button>
+                <ul data-cities class="select__item simple-select__item"></ul>
+              </div>
+              <div class="conveniet-communication hero-service__communication">
+                <p class="conveniet-communication__content">
+                  Как с вами удобнее связаться?
+                </p>
+                <div class="conveniet-communication__body">
+                  <div class="conveniet-communication__contact">
+                    <input type="radio" id="service-viber" name="waterproofing-setting-radio"
+                      class="conveniet-communication__conctact-checkbox">
+                    <label for="service-viber" class="conveniet-communication__conctact-label">
+                      <svg class="conveniet-communication__conctact-icon _viber">
+                        <use xlink:href='img/icons/icons.svg#icon-viber'></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="conveniet-communication__contact">
+                    <input type="radio" id="service-whatsapp" name="waterproofing-setting-radio"
+                      class="conveniet-communication__conctact-checkbox">
+                    <label for="service-whatsapp" class="conveniet-communication__conctact-label">
+                      <svg class="conveniet-communication__conctact-icon _whatsapp">
+                        <use xlink:href='img/icons/icons.svg#icon-whatsapp'></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="conveniet-communication__contact">
+                    <input type="radio" id="service-telegram" name="waterproofing-setting-radio"
+                      class="conveniet-communication__conctact-checkbox">
+                    <label for="service-telegram" class="conveniet-communication__conctact-label">
+                      <svg class="conveniet-communication__conctact-icon _telegram">
+                        <use xlink:href='img/icons/icons.svg#icon-telegram'></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input type="tel" data-phone-pattern="+7 (___) ___ - __ - __" data-length="22"
+                placeholder="+7 (___) ___ - __ - __" name="order-cell-tel" class="form__input hero-service__input">
+              <button type="submit" class="btn hero-service__form-btn">Записаться</button>
+              <div class="form__processing-data">
+                <input type="checkbox" name="order-cell__data-processing"
+                  class="form__checkbox form__processing-data-checkbox" id="service-center-data">
+                <label for="service-center-data" class="form__processing-data-label">
+                  Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#"
+                    class="form__privacy-policy">политикой конфиденциальности</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

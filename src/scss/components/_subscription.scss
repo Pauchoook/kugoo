@@ -52,19 +52,11 @@
       }
    }
    &__btn {
-      padding: 15px 25px;
       background-color: $white;
       color: $main;
-      font-size: 16px;
-      line-height: 23px;
       &:hover {
          border-color: $white;
          color: $white;
-      }
-      @media (max-width: 767px) {
-         padding: 10px 15px;
-         font-size: 14px;
-         line-height: normal;
       }
       @media (max-width: 480px) {
          width: 100%;

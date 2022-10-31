@@ -94,26 +94,16 @@
    &__btn {
       border-color: $white;
       background-color: $white;
-      font-size: 16px;
-      line-height: 23px;
       color: $blue;
-      padding: 15px 25px;
       &:hover {
          color: $white;
-      }
-      @media (max-width: 767px) {
-         padding: 10px 15px;
-         font-size: 14px;
-         line-height: normal;
       }
       @media (max-width: 480px) {
          width: 100%;
       }
    }
-   &__popup {
-      .popup__window {
-         max-width: 650px;
-      }
+   &__popup-window {
+      max-width: 650px;
    }
    &__popup-title {
       max-width: 430px;
@@ -130,65 +120,49 @@
       flex-wrap: wrap;
       column-gap: 30px;
       row-gap: 20px;
+      @media (max-width: 767px) {
+         column-gap: 20px;
+      }
       @media (max-width: 576px) {
-         row-gap: 15px;
+         display: block;
       }
    }
-   &__contacts {
+   &__communication {
       flex: 0 1 265px;
-      @media (max-width: 767px) {
-         flex-basis: 180px;
+      @media (max-width: 991px) {
+         flex-basis: calc(50% - 15px);
       }
-   }
-   &__contacts-content {
-      font-size: 12px;
-      line-height: 17px;
-      color: $gray;
-      margin-bottom: 7px;
-   }
-   &__contacts-body {
-      @include flex-between;
-   }
-   &__conctact-checkbox {
-      &:checked+label {
-         border-color: $main
-      }
-   }
-   &__conctact-label {
-      @include flex-center;
-      cursor: pointer;
-      width: 75px;
-      height: 55px;
-      border: 1px solid $gray2;
-      border-radius: 5px;
-      @media (max-width: 767px) {
-         width: 55px;
-         height: 42px;
-      }
-   }
-   &__conctact-icon {
-      width: 18px;
-      height: 18px;
-      &._viber {
-         fill: $main;
-      }
-      &._whatsapp {
-         fill: $green;
-      }
-      &._telegram {
-         fill: $black-blue;
+      @media (max-width: 576px) {
+         margin-bottom: 15px;
       }
    }
    &__input {
       flex: 0 1 265px;
       align-self: flex-end;
+      @media (max-width: 991px) {
+         flex-basis: calc(50% - 15px);
+      }
+      @media (max-width: 576px) {
+         width: 100%;
+         max-width: 265px;
+         margin-bottom: 15px;
+      }
+      @media (max-width: 480px) {
+         max-width: none;
+      }
    }
    &__form-btn {
-      padding: 15px;
       flex: 0 1 265px;
-      @media (max-width: 767px) {
-         flex-basis: 180px;
-         padding: 10px;
-      } 
+      @media (max-width: 991px) {
+         flex-basis: calc(50% - 15px);
+      }
+      @media (max-width: 576px) {
+         width: 100%;
+         max-width: 265px;
+         margin-bottom: 15px;
+      }
+      @media (max-width: 480px) {
+         max-width: none;
+      }
    }
 }

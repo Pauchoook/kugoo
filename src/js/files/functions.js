@@ -2,7 +2,7 @@ export function mediaAdaptive() {
     function DynamicAdapt(type) {
         this.type = type;
     }
-    
+
     DynamicAdapt.prototype.init = function () {
         const _this = this;
         // массив объектов
@@ -10,7 +10,7 @@ export function mediaAdaptive() {
         this.daClassname = "_dynamic_adapt_";
         // массив DOM-элементов
         this.nodes = document.querySelectorAll("[data-da]");
-    
+
         // наполнение оbjects объктами
         for (let i = 0; i < this.nodes.length; i++) {
             const node = this.nodes[i];
@@ -25,9 +25,9 @@ export function mediaAdaptive() {
             оbject.index = this.indexInParent(оbject.parent, оbject.element);
             this.оbjects.push(оbject);
         }
-    
+
         this.arraySort(this.оbjects);
-    
+
         // массив уникальных медиа-запросов
         this.mediaQueries = Array.prototype.map.call(this.оbjects, function (element) {
             return '(' + this.type + "-width: " + element.breakpoint + "px)," + element.breakpoint;
@@ -35,7 +35,7 @@ export function mediaAdaptive() {
         this.mediaQueries = Array.prototype.filter.call(this.mediaQueries, function (element, index, self) {
             return Array.prototype.indexOf.call(self, element) === index;
         });
-    
+
         // навешивание слушателя на медиа-запрос
         // и вызов обработчика при первом запуске
         for (let i = 0; i < this.mediaQueries.length; i++) {
@@ -43,7 +43,7 @@ export function mediaAdaptive() {
             const mediaSplit = String.prototype.split.call(media, ',');
             const matchMedia = window.matchMedia(mediaSplit[0]);
             const mediaBreakpoint = mediaSplit[1];
-    
+
             // массив объектов с подходящим брейкпоинтом
             const оbjectsFilter = Array.prototype.filter.call(this.оbjects, function (element) {
                 return element.breakpoint === mediaBreakpoint;
@@ -54,7 +54,7 @@ export function mediaAdaptive() {
             this.mediaHandler(matchMedia, оbjectsFilter);
         }
     };
-    
+
     DynamicAdapt.prototype.mediaHandler = function (matchMedia, оbjects) {
         if (matchMedia.matches) {
             for (let i = 0; i < оbjects.length; i++) {
@@ -71,7 +71,7 @@ export function mediaAdaptive() {
             }
         }
     };
-    
+
     // Функция перемещения
     DynamicAdapt.prototype.moveTo = function (place, element, destination) {
         element.classList.add(this.daClassname);
@@ -85,7 +85,7 @@ export function mediaAdaptive() {
         }
         destination.children[place].insertAdjacentElement('beforebegin', element);
     }
-    
+
     // Функция возврата
     DynamicAdapt.prototype.moveBack = function (parent, element, index) {
         element.classList.remove(this.daClassname);
@@ -95,13 +95,13 @@ export function mediaAdaptive() {
             parent.insertAdjacentElement('beforeend', element);
         }
     }
-    
+
     // Функция получения индекса внутри родителя
     DynamicAdapt.prototype.indexInParent = function (parent, element) {
         const array = Array.prototype.slice.call(parent.children);
         return Array.prototype.indexOf.call(array, element);
     };
-    
+
     // Функция сортировки массива по breakpoint и place 
     // по возрастанию для this.type = min
     // по убыванию для this.type = max
@@ -112,18 +112,18 @@ export function mediaAdaptive() {
                     if (a.place === b.place) {
                         return 0;
                     }
-    
+
                     if (a.place === "first" || b.place === "last") {
                         return -1;
                     }
-    
+
                     if (a.place === "last" || b.place === "first") {
                         return 1;
                     }
-    
+
                     return a.place - b.place;
                 }
-    
+
                 return a.breakpoint - b.breakpoint;
             });
         } else {
@@ -132,24 +132,24 @@ export function mediaAdaptive() {
                     if (a.place === b.place) {
                         return 0;
                     }
-    
+
                     if (a.place === "first" || b.place === "last") {
                         return 1;
                     }
-    
+
                     if (a.place === "last" || b.place === "first") {
                         return -1;
                     }
-    
+
                     return b.place - a.place;
                 }
-    
+
                 return b.breakpoint - a.breakpoint;
             });
             return;
         }
     };
-    
+
     const da = new DynamicAdapt("max");
     da.init();
 }
@@ -181,48 +181,49 @@ export function dropdown() {
 }
 
 export function tab() {
-   const tabs = document.querySelectorAll('.tab');
-   if(tabs.length > 0) {
-      const buttonsTabs = document.querySelectorAll('.tab-btn');
+    const tabs = document.querySelectorAll('.tab');
+    if (tabs.length > 0) {
+        const buttonsTabs = document.querySelectorAll('.tab-btn');
 
-      buttonsTabs.forEach(btn => {
-         btn.addEventListener('click', e => {
-            const idTab = e.currentTarget.dataset.tabBtn;
-            const currentTab = document.querySelector(`[data-tab=${idTab}]`);
-            const parentTab = btn.closest('.tab');
-            const childsButtonsTabs = parentTab && parentTab.querySelectorAll('.tab-btn');
+        buttonsTabs.forEach(btn => {
+            btn.addEventListener('click', e => {
+                const idTab = e.currentTarget.dataset.tabBtn;
+                const currentTab = document.querySelector(`[data-tab=${idTab}]`);
+                const parentTab = btn.closest('.tab');
+                const childsButtonsTabs = parentTab && parentTab.querySelectorAll('.tab-btn');
 
-            // если открываем таб в табе
-            if (parentTab) {
-                const childTabs = parentTab.querySelectorAll('.tab');
+                // если открываем таб в табе
+                if (parentTab) {
+                    const childTabs = parentTab.querySelectorAll('.tab');
 
-                // закрываем только внутренние табы
-                childTabs.forEach(tab => tab.classList.remove('open'));
-                // активная кнопка только внутренняя 
-                childsButtonsTabs.forEach(btn => {btn.classList.remove('active')});
-            } else {
-                tabs.forEach(tab => {
-                    // при закрытии родительского таба, дочерний таб остается открытым
-                    if (!tab.classList.contains('child')) tab.classList.remove('open');
-                });
-                buttonsTabs.forEach(btn => {
-                    // активные кнопки в дочерних табах остаются активными
-                    if (!btn.closest('.tab')) btn.classList.remove('active');
-                });
-            }
+                    // закрываем только внутренние табы
+                    childTabs.forEach(tab => tab.classList.remove('open'));
+                    // активная кнопка только внутренняя 
+                    childsButtonsTabs.forEach(btn => { btn.classList.remove('active') });
+                } else {
+                    tabs.forEach(tab => {
+                        // при закрытии родительского таба, дочерний таб остается открытым
+                        if (!tab.classList.contains('child')) tab.classList.remove('open');
+                    });
+                    buttonsTabs.forEach(btn => {
+                        // активные кнопки в дочерних табах остаются активными
+                        if (!btn.closest('.tab')) btn.classList.remove('active');
+                    });
+                }
 
-            currentTab.classList.add('open');
-            btn.classList.add('active');
-         });
-      });
-   }
+                currentTab.classList.add('open');
+                btn.classList.add('active');
+            });
+        });
+    }
 }
 
 export function select() {
     const buttonsSelect = document.querySelectorAll('.select__btn');
     if (buttonsSelect.length > 0) {
         const itemsSelect = document.querySelectorAll('.select__item');
-        const elementsSelect = document.querySelectorAll('.select__element');
+
+        let currentTitle = '';
 
         buttonsSelect.forEach(btn => {
             const parent = btn.closest('.select');
@@ -249,23 +250,25 @@ export function select() {
             });
         });
 
-        elementsSelect.forEach(element => {
-            let currentTitle;
-
-            element.addEventListener('click', () => {
-                const select = element.closest('.select');
+        itemsSelect.forEach(item => {
+            item.addEventListener('click', e => {
+                const select = e.target.closest('.select');
                 const titleSelect = select.querySelector('.select__title');
+                const selectValue = select.querySelector('.select__value');
+                const currentBtn = e.target;
 
                 setTimeout(() => {
-                    currentTitle = element.innerText;
-                    element.textContent = titleSelect.textContent;
+                    currentTitle = currentBtn.innerText;
+                    if (!titleSelect.textContent.toLowerCase().includes('выберите')) currentBtn.textContent = titleSelect.textContent;
+                    else currentBtn.remove();
+
                     titleSelect.textContent = currentTitle;
 
-                    select.setAttribute('data-value', currentTitle);
+                    if (selectValue) selectValue.value = currentTitle;
                 }, 0);
             });
         });
-   }
+    }
 }
 
 export function burger() {
@@ -280,7 +283,7 @@ export function burger() {
                 document.body.classList.add('hidden');
                 burgerBtn.classList.add('active');
                 burgerMenu.classList.add('open');
-                
+
                 burgerHeight();
             } else {
                 document.body.classList.remove('hidden');
@@ -309,21 +312,23 @@ export function popup() {
             const heightPopup = popupWindow.clientHeight;
 
             btn.addEventListener('click', () => {
+                resizePopup();
                 document.body.classList.add('hidden');
                 currentPopup.classList.add('open');
             });
-            
-            document.addEventListener('DOMContentLoaded', resizePopup);
-            window.addEventListener('resize', resizePopup);
+
+            for (let ev of ['load', 'resize']) {
+                window.addEventListener(ev, resizePopup);
+            }
 
             function resizePopup() {
                 if (heightPopup + 40 >= window.innerHeight) {
-                    const height = window.innerHeight - 60;
+                    const height = window.innerHeight - 40;
 
                     popupWindow.style.height = `${height}px`;
-                    popupWindow.classList.add('scroll');
+                    if (!popupWindow.classList.contains('scroll')) popupWindow.classList.add('scroll');
                 } else {
-                    popupWindow.style.height = 'auto';
+                    popupWindow.classList.remove('scroll');
                 }
             }
         });
@@ -380,21 +385,22 @@ export function validateForm() {
     if (forms.length > 0) {
         forms.forEach(form => {
             form.addEventListener('submit', e => {
+                e.preventDefault();
                 const inputsForm = form.querySelectorAll('input');
 
                 inputsForm.forEach(input => {
-                    // в data-length записываем точное кол-во символов, которые должны быть в инпуте
+                    const select = input.closest('.select');
                     const valueLength = input.getAttribute('data-length');
+
+                    // в data-length записываем точное кол-во символов, которые должны быть в инпуте
                     if (valueLength) {
                         if (input.value.length < valueLength || input.value.length > valueLength) {
-                            e.preventDefault();
                             input.classList.add('error');
                         } else {
                             input.classList.remove('error');
                         }
                     } else {
                         if (input.value === '') {
-                            e.preventDefault();
                             input.classList.add('error');
                         } else {
                             input.classList.remove('error');
@@ -405,10 +411,19 @@ export function validateForm() {
                     if (input.type === 'checkbox') {
                         const inputLabel = input.nextElementSibling;
                         if (!input.checked) {
-                            e.preventDefault();
                             inputLabel.classList.add('error');
                         } else {
                             inputLabel.classList.remove('error');
+                        }
+                    }
+
+                    // если селект
+                    if (input.classList.contains('select__value')) {
+                        if (input.value === '') {
+                            select.classList.add('error');
+                        } else {
+                            console.log(select)
+                            select.classList.remove('error');
                         }
                     }
                 });
@@ -441,6 +456,8 @@ export function fixedHeader() {
 export function video() {
     const buttonsVideo = document.querySelectorAll('.video-player__btn');
     if (buttonsVideo.length > 0) {
+        const videos = document.querySelectorAll('.video-player__video');
+
         buttonsVideo.forEach(btn => {
             btn.addEventListener('click', () => {
                 const videoParent = btn.closest('.video-player');
@@ -448,6 +465,21 @@ export function video() {
 
                 videoParent.classList.add('hide-poster');
                 video.play();
+            });
+        });
+
+        videos.forEach(video1 => {
+            // при клике на одно видео другие закрываются
+            video1.addEventListener('play', () => {
+                videos.forEach(video2 => {
+                    const videoPlayer = video2.closest('.video-player');
+
+                    if (video2 != video1) {
+                        video2.pause();
+                        video2.currentTime = 0;
+                        videoPlayer.classList.remove('hide-poster');
+                    }
+                });
             });
         });
     }
@@ -460,7 +492,7 @@ export function spollers() {
         spollerButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 const spoller = btn.closest('.spoller');
-                
+
                 if (spoller.classList.contains('_open')) {
                     btn.classList.remove('_active');
                     spoller.classList.remove('_open');

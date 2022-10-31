@@ -1,14 +1,57 @@
 .order-cell {
    &__window {
       width: 100%;
-      background: url('../img/pictures/woman.png') bottom right / auto 100% no-repeat;
       background-color: $white;
+      &.scroll {
+         overflow-y: hidden;
+         .order-cell__popup-wrapper {
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+               width: 0;
+            }
+         }
+      }
+      &::before {
+         position: absolute;
+         content: '';
+         background: url('../img/pictures/woman.png') bottom right / cover no-repeat;
+         width: 300px;
+         height: 430px;
+         right: 35px;
+         bottom: 0;
+         z-index: -1;
+      }
+      @media (max-width: 1439px) {
+         &::before {
+            right: 0;
+         }
+      }
+      @media (max-width: 991px) {
+         &::before {
+            width: 255px;
+            height: 360px;
+         }
+      }
       @media (max-width: 767px) {
-         background-size: 235px 245px;
+         &::before {
+            width: 173px;
+            height: 245px;
+         }
       }
       @media (max-width: 576px) {
-         background-image: none;
+         &::before {
+            width: 127px;
+            height: 180px;
+         }
       }
+      @media (max-width: 480px) {
+         &::before { 
+            display: none;
+         }
+      }
+   }
+   &__popup-wrapper {
+      height: 100%;
    }
    &__title {
       max-width: 355px;
@@ -38,7 +81,7 @@
    }
    &__form {
       max-width: 265px;
-      @media (max-width: 576px) {
+      @media (max-width: 480px) {
          max-width: 100%;
       }
    }

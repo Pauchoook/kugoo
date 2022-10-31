@@ -14,22 +14,25 @@ export function isWebp() {
 	});
 }
 
-export function videoClick() {
-	const videos = document.querySelectorAll('.video-player__video');
-	if (videos.length > 0) {
-		videos.forEach(video1 => {
+export function citiesSelect() {
+	// костыльная функция. Выводит города в селект
 
-			video1.addEventListener('play', () => {
-				videos.forEach(video2 => {
-					const videoPlayer = video2.closest('.video-player');
+	const citiesElements = document.querySelectorAll('[data-cities]');
 
-					if(video2 != video1) {
-						video2.pause();
-						video2.currentTime = 0;
-						videoPlayer.classList.remove('hide-poster');
-					}
+	if (citiesElements.length > 0) {
+		citiesElements.forEach(city => {
+			fetch('https://gist.githubusercontent.com/gorborukov/0722a93c35dfba96337b/raw/435b297ac6d90d13a68935e1ec7a69a225969e58/russia')
+			.then(res => res.json())
+			.then(data => data.slice(0, 10))
+			.then(cities => {
+				cities.forEach(obj => {
+					const li = document.createElement('li')
+					li.classList.add('select__element', 'simple-select__element');
+					li.textContent = obj.city;
+
+					city.appendChild(li);
 				});
-			});
-		});
+			})
+		})
 	}
 }

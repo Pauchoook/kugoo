@@ -2,6 +2,9 @@
    background-color: $main;
    border: 1px solid $main;
    border-radius: 5px;
+   padding: 15px 25px;
+   font-size: 16px;
+   line-height: 23px;
    color: $white;
    transition: background-color .2s ease, color .2s ease;
    &.bg-gray {
@@ -28,9 +31,22 @@
          background-color: $main;
          color: $white;
       }
+      &.active {
+         background-color: $main;
+         color: $white;
+      }
    }
    &:hover {
       color: $main;
       background-color: transparent;
+   }
+   &.active {
+      color: $main;
+      background-color: transparent; 
+   }
+   @media (max-width: 767px) {
+      padding: 10px 15px;
+      font-size: 14px;
+      line-height: normal;
    }
 }

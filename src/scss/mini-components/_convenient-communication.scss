@@ -1,0 +1,52 @@
+.conveniet-communication {
+   @media (max-width: 767px) {
+      flex-basis: 180px;
+   }
+   &__content {
+      font-size: 12px;
+      line-height: 17px;
+      color: $gray;
+      margin-bottom: 7px;
+   }
+   &__body {
+      @include flex-between;
+      @media (max-width: 767px) {
+         max-width: 230px;
+      }
+   }
+   &__conctact-checkbox {
+      &:checked+label {
+         border-color: $main
+      }
+   }
+   &__conctact-label {
+      @include flex-center;
+      cursor: pointer;
+      width: 75px;
+      height: 55px;
+      border: 1px solid $gray2;
+      border-radius: 5px;
+      transition: border-color .2s ease;
+      &:hover {
+         border-color: $main;
+      }
+      @media (max-width: 767px) {
+         width: 55px;
+         height: 42px;
+      }
+   }
+   &__conctact-icon {
+      width: 18px;
+      height: 18px;
+      &._viber {
+         fill: $main;
+      }
+      &._whatsapp {
+         fill: $green;
+      }
+      &._telegram {
+         fill: $black-blue;
+      }
+   }
+
+}

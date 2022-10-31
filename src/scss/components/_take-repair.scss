@@ -1,0 +1,106 @@
+.take-repair {
+   &__body {
+      border-radius: 10px;
+      padding: 80px 135px;
+      background: url('../img/pictures/drone.png') bottom -50px right -220px / 912px 522px no-repeat;
+      background-color: $bg;
+      @media (max-width: 1439px) {
+         padding: 60px 100px;
+         background-size: 760px 435px;
+      }
+      @media (max-width: 1119px) {
+         padding: 40px 60px;
+         background-size: 515px 295px;
+         background-position: bottom -50px right -100px;
+      }
+      @media (max-width: 991px) {
+         background-size: 480px 275px;
+      }
+      @media (max-width: 767px) {
+         background-size: 395px 225px;
+         padding: 25px 40px;
+      }
+      @media (max-width: 577px) {
+         padding: 15px 20px;
+         background-size: 275px 155px;
+         background-position: bottom -30px right -70px;
+      }
+      @media (max-width: 480px) {
+         background-image: none;
+      }
+   }
+   &__title {
+      max-width: 545px;
+      margin-bottom: 5px;
+   }
+   &__content {
+      font-size: 16px;
+      line-height: 23px;
+      margin-bottom: 35px;
+      @media (max-width: 767px) {
+         font-size: 14px;
+         line-height: normal;
+         margin-bottom: 25px;
+      }
+   }
+   &__title-list {
+      font-weight: 500;
+      margin-bottom: 15px;
+   }
+   &__list {
+      @include flex-between;
+      max-width: 445px;
+      margin-bottom: 35px;
+      @media (max-width: 991px) {
+         display: block;
+         margin-bottom: 20px;
+      }
+   }
+   &__item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 23px;
+      @media (max-width: 991px) {
+         &:not(:last-child) {
+            margin-bottom: 15px;
+         }
+      }
+      @media (max-width: 767px) {
+         font-size: 14px;
+         line-height: normal;
+      }
+   }
+   &__icon {
+      width: 20px;
+      height: 20px;
+      fill: $main;
+      margin-right: 10px;
+      @media (max-width: 767px) {
+         width: 15px;
+         height: 15px;
+         margin-right: 8px;
+      }
+   }
+   &__btn {
+      @media (max-width: 480px) {
+         width: 100%;
+      }
+   }
+   .take-repair__popup-window {
+   }
+   .take-repair__popup-title {
+   }
+   .take-repair__popup-content {
+   }
+   .take-repair__form {
+   }
+   .take-repair__select {
+   }
+   .take-repair__communication {
+   }
+   .take-repair__btn-form {
+   }
+   .take-repair__processing-data {
+   }
+}

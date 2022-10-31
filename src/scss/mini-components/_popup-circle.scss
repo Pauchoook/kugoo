@@ -1,0 +1,32 @@
+.popup-circle {
+   &::after {
+      position: absolute;
+      content: '';
+      width: 795px;
+      height: 795px;
+      border-radius: 50%;
+      background-color: $bg;
+      right: -435px;
+      bottom: -435px;
+      z-index: -2;
+   }
+   @media (max-width: 1439px) {
+      &::after {
+         width: 565px;
+         height: 565px;
+         right: -200px;
+         bottom: -200px;
+      }
+   }
+   @media (max-width: 991px) {
+      &::after {
+         right: -250px;
+         bottom: -250px;
+      }
+   }
+   @media (max-width: 767px) {
+      &::after {
+         display: none;
+      }
+   }
+}

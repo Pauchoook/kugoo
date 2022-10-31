@@ -25,15 +25,15 @@ h2, h3 {
    text-transform: uppercase;
 }
 h2 {
-   font-size: 35px;
-   line-height: 51px;
-   @media (max-width: 991px) {
-      font-size: 30px;
-      line-height: normal;
-   }
-   @media (max-width: 767px) {
-      font-size: 25px;
-   }
+   // font-size: 35px;
+   // line-height: 51px;
+   // @media (max-width: 991px) {
+   //    font-size: 30px;
+   //    line-height: normal;
+   // }
+   // @media (max-width: 767px) {
+   //    font-size: 25px;
+   // }
 }
 h3 {
    font-size: 25px;

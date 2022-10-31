@@ -52,7 +52,7 @@
          margin-left: -365px;
       }
       &:hover {
-         .video-reviews__slider-btn {
+         .slider-btn {
             opacity: 1;
          }
       }
@@ -180,59 +180,6 @@
       @media (max-width: 767px) {
          font-size: 16px;
          line-height: normal;
-      }
-   }
-   &__slider-btn {
-      position: absolute;
-      width: 66px;
-      height: 66px;
-      background-color: $main;
-      top: calc(50% - 33px);
-      opacity: 0;
-      &:hover {
-         background-color: $white;
-         border-color: $main;
-         svg {
-            fill: $main;
-         }
-      }
-      &.swiper-button-disabled {
-         display: none;
-      }
-      @media (max-width: 1119px) {
-         width: 60px;
-         height: 60px;
-         top: calc(50% - 30px);
-      }
-      @media (max-width: 767px) {
-         width: 50px;
-         height: 50px;
-         top: calc(50% - 25px);
-      }
-      @media (max-width: 576px) {
-         display: none;
-      }
-   }
-   &__slider-btn--prev {
-      transform: rotate(180deg);
-      left: 140px;
-      @media (max-width: 1119px) {
-         left: 20px;
-      }
-   }
-   &__slider-btn-icon {
-      fill: $white;
-      width: 10px;
-      height: 18px;
-      @media (max-width: 767px) {
-         width: 8px;
-         height: 14px;
-      }
-   }
-   &__slider-btn--next {
-      right: 140px;
-      @media (max-width: 1119px) {
-         right: 20px;
       }
    }
 }

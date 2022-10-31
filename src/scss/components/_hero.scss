@@ -16,15 +16,9 @@
       background-color: $white;
       border-color: $white;
       color: $main;
-      font-size: 16px;
-      line-height: 23px;
       &:hover {
          background-color: transparent;
          color: $white;
-      }
-      @media (max-width: 767px) {
-         font-size: 14px;
-         line-height: normal;
       }
    }
 }
