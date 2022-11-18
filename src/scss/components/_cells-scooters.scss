@@ -1,11 +1,12 @@
-.often-buy {
+.cells-scooters {
    padding-bottom: 80px;
    @media (max-width: 767px) {
       padding-bottom: 50px;
    }
    &__title {
       text-align: center;
-      margin-bottom: 60px;
+      margin: 0px auto 60px auto;
+      max-width: 640px;
       @media (max-width: 767px) {
          margin-bottom: 25px;
       }
@@ -14,14 +15,24 @@
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       gap: 30px;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          gap: 20px;
       }
       @media (max-width: 991px) {
          grid-template-columns: repeat(9, 1fr);
+         .product-card {
+            &:last-child {
+               display: none;
+            }
+         }
       }
       @media (max-width: 767px) {
          grid-template-columns: repeat(6, 1fr);
+         .product-card {
+            &:last-child {
+               display: block;
+            }
+         }
       }
       @media (max-width: 480px) {
          grid-template-columns: repeat(3, 1fr);

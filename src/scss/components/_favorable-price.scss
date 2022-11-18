@@ -25,7 +25,7 @@
       row-gap: 10px;
       margin-bottom: 60px;
       flex-wrap: wrap;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          margin-bottom: 40px;
       }
       @media (max-width: 767px) {
@@ -44,7 +44,7 @@
       &.open {
          display: grid !important;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          gap: 20px;
       }
       @media (max-width: 577px) {
@@ -125,7 +125,7 @@
       width: 200px;
       height: 185px;
       z-index: -1;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          width: 145px;
          height: 133px;
          bottom: -15px;

@@ -129,6 +129,22 @@ export function slider() {
          disableOnInteraction: false
       }
    });
+
+   const certificateSlider = new Swiper('.without-brokers__slider', {
+      modules: [Navigation, Autoplay],
+      speed: 1000,
+      simulateTouch: true,
+      slidesPerView: 'auto',
+      loop: true,
+      navigation: {
+         nextEl: '.without-brokers__btn-slider--next',
+         prevEl: '.without-brokers__btn-slider--prev',
+      },
+      autoplay: {
+         delay: 3000,
+         disableOnInteraction: false
+      }
+   });
 }                                   
 
 export function productSlider() {

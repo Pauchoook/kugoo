@@ -17,7 +17,7 @@
             height: 328px;
          }
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          &::before {
             width: 500px;
             height: 287px;
@@ -59,7 +59,7 @@
    }
    &__title {
       max-width: 441px;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          max-width: 610px;
       }
       @media (max-width: 991px) {

@@ -6,7 +6,7 @@
       padding: 65px 78px;
       border-radius: 10px;
       z-index: 1;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          padding: 50px 60px;
       }
       @media (max-width: 991px) {
@@ -19,7 +19,7 @@
    &__content {
       display: block;
       margin-left: auto;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          margin-left: 0;
       }
    }

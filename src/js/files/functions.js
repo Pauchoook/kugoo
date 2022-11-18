@@ -259,8 +259,11 @@ export function select() {
 
                 setTimeout(() => {
                     currentTitle = currentBtn.innerText;
-                    if (!titleSelect.textContent.toLowerCase().includes('выберите')) currentBtn.textContent = titleSelect.textContent;
-                    else currentBtn.remove();
+                    if (!titleSelect.textContent.toLowerCase().includes('выберите') && !titleSelect.textContent.toLowerCase().includes('откуда')) {
+                        currentBtn.textContent = titleSelect.textContent;
+                    } else {
+                        currentBtn.remove();
+                    }
 
                     titleSelect.textContent = currentTitle;
 

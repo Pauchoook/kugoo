@@ -36,23 +36,23 @@ h2 {
    // }
 }
 h3 {
-   font-size: 25px;
-   line-height: 36px;
-   line-height: 36px;
-   @media (max-width: 767px) {
-      font-size: 20px;
-      line-height: normal;
-   }
+   // font-size: 25px;
+   // line-height: 36px;
+   // line-height: 36px;
+   // @media (max-width: 767px) {
+   //    font-size: 20px;
+   //    line-height: normal;
+   // }
 }
 h4 {
-   font-weight: 600;
-   font-size: 18px;
-   line-height: 26px;
+   // font-weight: 600;
+   // font-size: 18px;
+   // line-height: 26px;
 }
 h5 {
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 20px;
+   // font-weight: 500;
+   // font-size: 14px;
+   // line-height: 20px;
 }
 button {
    cursor: pointer;
@@ -103,7 +103,7 @@ span {
          max-width: 1180px;
       }
    }
-   @media (max-width: 1119px) {
+   @media (max-width: 1199px) {
       max-width: 980px !important;
    }
    @media (max-width: 991px) {

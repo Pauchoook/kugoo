@@ -5,7 +5,7 @@
    } 
    &__body {
       @include flex-between;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          gap: 20px;
       }
       @media (max-width: 991px) {
@@ -31,7 +31,7 @@
          right: -285px;
          z-index: -2;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          padding: 30px;
       }
       @media (max-width: 991px) {
@@ -109,7 +109,7 @@
       bottom: 0;
       width: 235px;
       z-index: -1;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          right: -25px;
       }
       @media (max-width: 991px) {

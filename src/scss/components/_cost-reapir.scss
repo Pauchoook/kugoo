@@ -18,7 +18,7 @@
       @include flex-center;
       column-gap: 20px;
       margin-bottom: 85px;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          margin-bottom: 60px;
       }
       @media (max-width: 991px) {
@@ -50,7 +50,7 @@
       &.open {
          display: flex;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          column-gap: 30px;
       }
       @media (max-width: 767px) {
@@ -120,7 +120,7 @@
       height: 64px * 7;
       overflow: hidden;
       overflow-y: auto;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          height: 64px * 6 + 2;
       }
       @media (max-width: 991px) {

@@ -1,11 +1,10 @@
-export class Product {
+export default class Product {
    constructor(card, options) {
       this.cardProduct = card;
       this.options = options;
    }
 
    createCard() {
-      this.cardProduct.setAttribute('data-id', Date.now());
       this.cardProduct.insertAdjacentHTML('afterbegin', `
          <button class="product-card__compare">
                <svg class="product-card__compare-icon">
@@ -44,15 +43,15 @@ export class Product {
                </ul>
                <div class="product-card__nav">
                   <div class="product-card__nav-buttons">
-                     <button class="product-card__nav-btn product-cart-add">
-                           <svg class="product-card__btn-icon">
+                     <button add-cart class="product-card__nav-btn">
+                        <svg class="product-card__btn-icon">
                            <use xlink:href='img/icons/icons.svg#icon-shopping-cart-2'></use>
-                           </svg>
+                        </svg>
                      </button>
                      <button class="product-card__nav-btn">
-                           <svg class="product-card__btn-icon">
+                        <svg class="product-card__btn-icon">
                            <use xlink:href='img/icons/icons.svg#icon-heart'></use>
-                           </svg>
+                        </svg>
                      </button>
                   </div>
                </div>
@@ -148,40 +147,5 @@ export class Product {
 
       const cardProductNav = card.querySelector('.product-card .product-card__nav');
       cardProductNav.insertBefore(navPrice, cardProductNav.querySelector('.product-card__nav-buttons'));
-   }
-}
-
-export class ProductCart {
-   constructor(card, options) {
-      this.card = card;
-      this.options = options;
-
-      this.createProduct = this.createProduct.bind(this);
-   }
-
-   createProduct() {
-      this.card.setAttribute('data-id', this.options.idCardProduct)
-      this.card.setAttribute('href', '#');
-      this.card.classList.add('cart-drop__card-product');
-
-      this.card.insertAdjacentHTML('afterbegin', `
-          <div class="cart-drop__parent-card-img">
-              <img src="${this.options.imgProduct}" alt="Товар" class="cart-drop__card-img">
-          </div>
-          <div class="cart-drop__card-info">
-              <h5 class="cart-drop__card-title">
-                  ${this.options.titleProduct}
-              </h5>
-              <span class="cart-drop__card-content cart-drop__card-content--price">${this.options.priceProduct}</span>
-              <span class="cart-drop__card-content cart-drop__card-content--numbers">1 шт.</span>
-          </div>
-          <button type="button" class="cart-drop__delete-btn">
-              <svg class="cart-drop__delete-icon">
-            <use xlink:href='img/icons/icons.svg#icon-del'></use>
-              </svg>
-          </button>
-      `);
-
-      return this.card;
    }
 }

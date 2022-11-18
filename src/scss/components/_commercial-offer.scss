@@ -1,0 +1,67 @@
+.commercial-offer {
+   padding-bottom: 100px;
+   @media (max-width: 767px) {
+      padding-bottom: 60px;
+   }
+   &__body {
+      padding: 50px 135px;
+      display: flex;
+      align-items: center;
+      background-color: $bg;
+      border-radius: 10px;
+      @media (max-width: 1439px) {
+         padding-right: 100px;
+         padding-left: 100px;
+      }
+      @media (max-width: 1199px) {
+         flex-direction: column;
+         padding: 40px 60px;
+      }
+      @media (max-width: 767px) {
+         padding: 25px 40px;
+      }
+      @media (max-width: 576px) {
+         padding: 20px;
+      }
+   }
+   &__info {
+      max-width: 595px;
+      margin-right: 100px;
+      @media (max-width: 1439px) {
+         margin-right: 60px;
+         max-width: 525px;
+      }
+      @media (max-width: 1199px) {
+         max-width: none;
+         flex-direction: column;
+         margin: 0px 0px 30px 0px;
+      }
+      @media (max-width: 767px) {
+         margin-bottom: 20px;
+      }
+   }
+   &__title {
+      margin-bottom: 25px;
+   }
+   &__item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 20px;
+      span {
+         max-width: calc(100% - 30px);
+      }
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+   &__icon {
+      width: 17px;
+      height: 17px;
+      fill: $main;
+      margin-right: 10px;
+   }
+   &__form-title {
+      max-width: none;
+   }
+}

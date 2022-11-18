@@ -19,7 +19,7 @@
             padding-right: 0;
          }
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          &:not(:last-child) {
             margin-bottom: 60px;
          }
@@ -51,7 +51,7 @@
          width: 660px;
          height: 370px;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          width: 500px;
          height: 280px;
       }
@@ -80,7 +80,7 @@
    }
    &__info {
       max-width: 450px;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          max-width: 410px;
       }
       @media (max-width: 991px) {
@@ -155,7 +155,7 @@
       width: 540px;
       height: 500px;
       border-radius: 10px;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          width: 460px;
          height: 425px;
       }

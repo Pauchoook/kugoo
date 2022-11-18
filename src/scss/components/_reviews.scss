@@ -6,7 +6,8 @@
    }
    &__title {
       text-align: center;
-      margin-bottom: 15px;
+      margin: 0px auto 15px auto;
+      max-width: 780px;
    }
    &__btn {
       width: fit-content;

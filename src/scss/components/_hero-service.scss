@@ -8,7 +8,6 @@
       overflow: hidden;
       padding: 63px 135px;
       background: radial-gradient(74.38% 244.23% at 75.04% 76.25%, #FFC960 0%, #F3A712 100%);
-      border-radius: 10px;
       z-index: 1;
       &::after {
          position: absolute;
@@ -23,7 +22,7 @@
       @media (max-width: 1439px) {
          padding: 60px 100px;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          padding: 50px 70px;
          &::after {
             width: 666px;
@@ -61,7 +60,7 @@
    }
    &__title {
       max-width: 505px;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          margin-bottom: 10px;
       }
       @media (max-width: 576px) {
@@ -84,7 +83,7 @@
          flex-direction: column;
          align-items: start;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          flex-direction: row;
          align-items: center;
          flex-wrap: wrap;
@@ -105,7 +104,7 @@
             margin: 0px 0px 20px 0px;
          }
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          &:not(:last-child) {
             margin: 0px;
          }

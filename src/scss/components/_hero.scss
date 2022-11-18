@@ -1,5 +1,22 @@
 .hero {
    color: $white;
+   &__body {
+      border-radius: 10px;
+      &._linear {
+         position: relative;
+         overflow: hidden;
+         z-index: 1;
+         &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+         }
+      }
+   }
    &__content {
       font-size: 20px;
       line-height: 29px;

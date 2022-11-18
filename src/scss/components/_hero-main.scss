@@ -8,7 +8,6 @@
       overflow: hidden;
       padding: 35px 35px 35px 135px;
       background: radial-gradient(58.73% 541.94% at 75.14% 62.23%, #A6A9FF 0%, #6F73EE 100%);
-      border-radius: 10px;
       z-index: 1;
       &::after {
          position: absolute;
@@ -26,7 +25,7 @@
             height: 400px;
          }
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          padding-left: 50px;
          &::after {
             width: 653px;
@@ -57,7 +56,7 @@
       border-radius: 5px;
       border: 1px solid $white;
       margin-bottom: 35px;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          margin-bottom: 20px;
       }
       @media (max-width: 767px) {
@@ -102,9 +101,14 @@
       }
    }
    &__slider-btn {
+      position: static;
+      opacity: 1;
       width: 26px;
       height: 26px;
       border-color: rgba(255, 255, 255, 0.2);
+      &.swiper-button-disabled {
+         display: flex;
+      }
       &:hover {
          border-color: $white;
       }
@@ -172,7 +176,7 @@
       @media (max-width: 1439px) {
          width: 390px;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          width: 360px;
          right: 20px;
       }
@@ -198,7 +202,7 @@
       @media (max-width: 1439px) {
          height: 295px;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          height: 270px;
       }
       @media (max-width: 991px) {
@@ -235,7 +239,7 @@
          top: 175px;
          left: -188px;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          top: 167px;
          left: -195px;
       }
@@ -311,13 +315,16 @@
          width: 20px;
          height: 2px;
          background-color: $gray;
+         opacity: 0.3;
          margin: 0 !important;
+         border-radius: 0;
          &:not(:last-child) {
             margin-right: 6px !important;
          }
       }
       .swiper-pagination-bullet-active {
          background-color: $main;
+         opacity: 1;
       }
       @media (max-width: 767px) {
          display: flex;

@@ -56,7 +56,7 @@
             opacity: 1;
          }
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          .swiper-wrapper {
             margin-left: -302px;
          }
@@ -96,7 +96,7 @@
       &:not(:last-child) {
          margin-right: 30px;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          flex-basis: 330px;
          &.swiper-slide-active {
             flex-basis: 510px;

@@ -8,7 +8,7 @@
          padding: 60px 100px;
          background-size: 760px 435px;
       }
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          padding: 40px 60px;
          background-size: 515px 295px;
          background-position: bottom -50px right -100px;
@@ -87,20 +87,88 @@
          width: 100%;
       }
    }
-   .take-repair__popup-window {
+   &__popup-title {
+      max-width: 300px;
+      text-align: center;
+      margin: 0px auto 10px auto;
    }
-   .take-repair__popup-title {
+   &__popup-content {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 350px;
+      text-align: center;
+      margin: 0px auto 30px auto;
+      @media (max-width: 767px) {
+         font-size: 14px;
+         line-height: normal;
+         margin-bottom: 20px;
+      }
    }
-   .take-repair__popup-content {
+   &__form {
+      display: flex;
+      align-items: center;
+      max-width: 595px;
+      flex-wrap: wrap;
+      gap: 20px;
+      @media (max-width: 576px) {
+         display: block;
+      }
    }
-   .take-repair__form {
+   &__select {
+      flex: 0 1 300px;
+      align-self: flex-end;
+      @media (max-width: 767px) {
+         flex-basis: calc(50% - 10px);
+      }
+      @media (max-width: 576px) {
+         max-width: 265px;
+         margin-bottom: 15px;
+      }
+      @media (max-width: 480px) {
+         max-width: none;
+      }
    }
-   .take-repair__select {
+   &__communication {
+      align-self: flex-start;
+      flex: 0 1 265px;
+      @media (max-width: 767px) {
+         flex-basis: calc(50% - 10px);
+      }
+      @media (max-width: 576px) {
+         margin-bottom: 15px;
+      }
    }
-   .take-repair__communication {
+   &__input {
+      flex: 0 1 300px;
+      @media (max-width: 767px) {
+         flex-basis: calc(50% - 10px);
+      }
+      @media (max-width: 576px) {
+         width: 100%;
+         max-width: 265px;
+         margin-bottom: 15px;
+      }
+      @media (max-width: 480px) {
+         max-width: none;
+      }
    }
-   .take-repair__btn-form {
+   &__btn-form {
+      flex: 0 1 265px;
+      @media (max-width: 767px) {
+         flex-basis: calc(50% - 10px);
+      }
+      @media (max-width: 576px) {
+         width: 100%;
+         max-width: 265px;
+         margin-bottom: 15px;
+      }
+      @media (max-width: 480px) {
+         max-width: none;
+      }
    }
-   .take-repair__processing-data {
+   &__processing-data {
+      margin: 0 auto;
+      flex: 0 1 340px;
+      max-width: none;
    }
 }

@@ -1,0 +1,99 @@
+.plan-business {
+   padding-bottom: 110px;
+   @media (max-width: 767px) {
+      padding-bottom: 70px;
+   }
+   &__body {
+      padding: 50px 135px;
+      display: flex;
+      border-radius: 10px;
+      background-color: $main;
+      color: $white;
+      @media (max-width: 1439px) {
+         padding-right: 100px;
+         padding-left: 100px;
+      }
+      @media (max-width: 1199px) {
+         padding: 40px 60px;
+         flex-direction: column;
+      }
+      @media (max-width: 767px) {
+         padding: 25px 40px;
+      }
+      @media (max-width: 576px) {
+         padding: 20px;
+      }
+   }
+   &__info {
+      max-width: 570px;
+      margin-right: 100px;
+      @media (max-width: 1199px) {
+         margin: 0px 0px 30px 0px;
+         max-width: none;
+      }
+      @media (max-width: 576px) {
+         margin-bottom: 20px;
+      }
+   }
+   &__free {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 4px 7px;
+      font-size: 14px;
+      line-height: 20px;
+      background-color: $green;
+      margin-bottom: 15px;
+      @media (max-width: 767px) {
+         font-size: 12px;
+         line-height: normal;
+      }
+   }
+   &__title {
+      margin-bottom: 20px;
+      @media (max-width: 1199px) {
+         br {
+            display: none;
+         }
+      }
+   }
+   &__title-list {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 15px;
+   }
+   &__item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 23px;
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+      span {
+         max-width: calc(100% - 30px);
+      }
+      @media (max-width: 767px) {
+         font-size: 14px;
+         line-height: normal;
+      }
+      @media (max-width: 576px) {
+         align-items: start;
+      }
+   }
+   &__icon {
+      width: 18px;
+      height: 18px;
+      fill: $white;
+      margin-right: 10px;
+      @media (max-width: 576px) {
+         transform: translateY(2px);
+      }
+   }
+   &__form {
+      border: 1px solid $white;
+      @media (max-width: 1199px) {
+         margin: 0 auto; 
+      }
+   }
+}

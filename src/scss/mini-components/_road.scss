@@ -1,0 +1,32 @@
+.road {
+   display: flex;
+   align-items: center;
+   padding-bottom: 20px;
+   &__icon {
+      width: 15px;
+      height: 15px;
+      fill: $gray;
+      margin-right: 5px;
+   }
+   &__list {
+      display: flex;
+      align-items: center;
+   }
+   &__item {
+      &:not(:last-child) {
+         margin-right: 3px;
+      }
+   }
+   &__element {
+      font-size: 12px;
+      line-height: 17px;
+      color: $gray;
+      transition: color .2s ease;
+      &._current {
+         color: $black !important;
+      }
+      &:hover {
+         color: $main;
+      }
+   }
+}

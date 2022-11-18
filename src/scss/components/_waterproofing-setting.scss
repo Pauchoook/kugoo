@@ -47,6 +47,7 @@
    }
    &__container-price {
       position: relative;
+      min-height: 300px
    }
    &__list {
       @include flex-between;
@@ -63,7 +64,7 @@
       flex: 0 1 475px;
       padding-bottom: 20px;
       border-bottom: 1px solid $gray2;
-      @media (max-width: 1119px) {
+      @media (max-width: 1199px) {
          flex-basis: 440px;
       }
       @media (max-width: 991px) {

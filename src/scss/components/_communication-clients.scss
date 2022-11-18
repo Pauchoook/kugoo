@@ -1,0 +1,110 @@
+.communication-client {
+   padding-bottom: 100px;
+   @media (max-width: 767px) {
+      padding-bottom: 60px;
+   }
+   &__body {
+      @include flex-between;
+      @media (max-width: 1199px) {
+         column-gap: 30px;
+      }
+      @media (max-width: 991px) {
+         flex-direction: column;
+      }
+   }
+   &__left {
+      max-width: 685px;
+      @media (max-width: 991px) {
+         max-width: none;
+         margin-bottom: 30px;
+      }
+      @media (max-width: 767px) {
+         margin-bottom: 20px;
+      }
+   }
+   &__title {
+      margin-bottom: 15px;
+   }
+   &__content {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 26px;
+      @media (max-width: 767px) {
+         font-size: 14px;
+         line-height: normal;
+      }
+   }
+   &__btn {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $main;
+      &:hover {
+         span {
+            text-decoration: underline;
+         }
+      }
+   }
+   &__icon-arrow {
+      margin-left: 8px;
+      width: 11px;
+      height: 10px;
+      color: inherit;
+      fill: currentColor;
+   }
+   &__social-list {
+      background-color: $bg;
+      padding: 30px 33px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 355px;
+      @media (max-width: 767px) {
+         padding: 20px 25px;
+      }
+   }
+   &__social-item {
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+   &__social-el {
+      padding: 13px 20px 13px 15px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      width: 100%;
+      &._vk {
+         background-color: #4B729F;
+      }
+      &._inst {
+         background: linear-gradient(57.44deg, #FFC107 -3.72%, #F44336 47.77%, #9C27B0 96.83%), #4B729F;
+      }
+      &._yt {
+         background-color: #E53935;
+      }
+      &._tg {
+         background-color: #039BE5;
+      }
+   }
+   &__social-icon {
+      width: 20px;
+      height: 20px;
+      fill: $white;
+      margin-right: 20px;
+   }
+   &__social-name {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $white;
+   }
+   &__social-subscriptions {
+      margin-left: auto;
+      font-size: 14px;
+      line-height: 20px;
+      color: $white;
+      opacity: 0.7;
+   }
+}

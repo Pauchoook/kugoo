@@ -11,14 +11,17 @@
       display: block;
    }
    &__list {
-      display: flex;
-      align-items: center;
-      column-gap: 30px;
-      justify-content: center;
+      @include flex-center;
+      max-width: 320px;
+      margin: 0 auto;
+   }
+   &__item {
+      width: 20%;
    }
    &__el {
       @include flex-center;
       flex-direction: column;
+      padding: 0 5px;
       &:hover {
          svg {
             fill: $main;

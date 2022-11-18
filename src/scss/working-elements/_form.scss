@@ -44,7 +44,7 @@
          &.error {
             color: #FB3030;
             &::before {
-               border-color: #FB3030;
+               border-color: #FB3030 !important;
             }
          }
          &::before {

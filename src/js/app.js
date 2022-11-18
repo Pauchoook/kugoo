@@ -21,6 +21,5 @@ flsFunctions.video();
 flsFunctions.spollers();
 
 flsProducts.products();
-flsProducts.shoppingCartDelete();
 
 flsPrices.waterproofingSetting();
