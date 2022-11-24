@@ -157,8 +157,8 @@ export function mediaAdaptive() {
 export function dropdown() {
     const buttonsDrop = document.querySelectorAll('.drop-btn')
     if (buttonsDrop.length > 0) {
+        const drops = document.querySelectorAll('.drop');
         buttonsDrop.forEach(btn => {
-            const drops = document.querySelectorAll('.drop');
             const idDrop = btn.dataset.dropBtn;
             const currentDrop = document.querySelector(`[data-drop="${idDrop}"]`);
 
@@ -506,6 +506,96 @@ export function spollers() {
                     spoller.classList.add('_open');
                 }
             });
+        });
+    }
+}
+
+export function range() {
+    const ranges = document.querySelectorAll('.range');
+    if (ranges.length > 0) {
+        ranges.forEach(range => {
+            const minGap = 0;
+            const sliderTrack = range.querySelector('.range__track');
+            const leftSlider = range.querySelector('.range-slider-left');
+            const rightSlider = range.querySelector('.range-slider-right');
+            const maxValue = rightSlider.max;
+
+            leftSlider.addEventListener('input', () => {
+                if (+rightSlider.value - +leftSlider.value <= minGap) {
+                    leftSlider.value = +rightSlider.value - minGap;
+                }
+                fillColor();
+            });
+
+            rightSlider.addEventListener('input', () => {
+                if (+rightSlider.value - +leftSlider.value <= minGap) {
+                    rightSlider.value = +leftSlider.value + minGap;
+                }
+                fillColor();
+            });
+
+            const allSliders = range.querySelectorAll('.range__slider');
+            allSliders.forEach(slider => {
+                const currentId = slider.dataset.range;
+                const currentCount = document.querySelector(`[data-range-input="${currentId}"]`);
+
+                slider.addEventListener('input', () => {
+                    currentCount.value = slider.value;
+                    fillColor();
+                });
+
+                currentCount.addEventListener('input', () => {
+                    if (currentCount.value != maxValue) {
+                        slider.value = currentCount.value;
+                        fillColor();
+                    }
+                });
+            });
+            
+            function fillColor() {
+                const percent1 = (leftSlider.value / maxValue) * 100;
+                const percent2 = (rightSlider.value / maxValue) * 100;
+
+                sliderTrack.style.background = `linear-gradient(to right, #eaebed ${percent1}%, #6f73ee ${percent1}%, #6f73ee ${percent2}%, #eaebed ${percent2}%)`
+            }
+        }); 
+    }
+}
+
+export function show() {
+    const buttonsShow = document.querySelectorAll('.btn-show');
+    if (buttonsShow.length > 0) {
+        buttonsShow.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const parent = btn.closest('.show');
+                const itemsShow = parent.querySelectorAll('.show-item');
+
+                itemsShow.forEach(item => item.classList.add('open'));
+                btn.remove();
+            });
+        });
+    }
+}
+
+export function openFilter() {
+    const filterBar = document.querySelector('.filter__bar');
+    if (filterBar) {
+        const btnBar = document.querySelector('.filter__open-filter');
+        const closeBar = document.querySelector('.filter__close-bar')
+
+        btnBar.addEventListener('click', () => {
+            filterBar.classList.add('open');
+        });
+
+        closeBar.addEventListener('click', () => {
+            filterBar.classList.remove('open');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (e.target != filterBar && !e.target.closest('.filter__bar') && e.target != btnBar) {
+                filterBar.classList.remove('open');
+            }
         });
     }
 }

@@ -1,0 +1,38 @@
+.hero-catalog-product {
+   padding: 20px 0px 100px 0px;
+   @media (max-width: 767px) {
+      padding-bottom: 60px;
+   }
+   &__body {
+      padding: 75px 135px;
+      background: url('../img/pictures/scooter.jpg') bottom -40px right -125px / 1176px 1035px no-repeat;
+      &::before {
+         background: linear-gradient(88.23deg, #6F73EE 24.95%, rgba(111, 115, 238, 0) 59.45%);
+      }
+      @media (max-width: 1439px) {
+         padding: 50px 100px;
+         background-size: 1000px 880px;
+      }
+      @media (max-width: 1199px) {
+         background-size: 810px 715px;
+         background-position: bottom 0 right -80px;
+      }
+      @media (max-width: 991px) {
+         padding: 40px 70px;
+         background-size: 670px 590px;
+      }
+      @media (max-width: 767px) {
+         padding: 30px;
+         background-size: cover;
+         &::before {
+            background: linear-gradient(88.23deg, #6F73EE 24.95%, rgba(111, 115, 238, 0) 83.45%);
+         }
+      }
+      @media (max-width: 576px) {
+         background-position: bottom 0 right 0;
+      }
+   }
+   &__title {
+      color: $white;
+   }
+}

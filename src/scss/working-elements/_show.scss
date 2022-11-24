@@ -1,0 +1,6 @@
+.show-item {
+   display: none;
+   &.open {
+      display: block;
+   }
+}

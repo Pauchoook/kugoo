@@ -84,10 +84,10 @@
    &__slider-img {
       width: 100%;
       height: auto;
-      max-height: 230px;
-      @media (max-width: 480px) {
-         max-height: none;
-      }
+      // max-height: 230px;
+      // @media (max-width: 480px) {
+      //    max-height: none;
+      // }
    }
    &__slider-arrow {
       position: absolute;

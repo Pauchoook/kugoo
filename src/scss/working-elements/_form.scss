@@ -10,6 +10,10 @@
          line-height: 23px;
          color: $gray;
       }
+      &[type=number]::-webkit-inner-spin-button, 
+      &[type=number]::-webkit-outer-spin-button { 
+        appearance: none; 
+      }
       &.error {
          border-color: #FB3030 !important;
          &::placeholder {

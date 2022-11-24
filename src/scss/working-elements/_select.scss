@@ -16,6 +16,20 @@
    }
    &__btn {
       cursor: pointer;
+      &.active {
+         .select__arrow {
+            transform: rotate(-90deg);
+         }
+      }
+   }
+   &__title {
+      pointer-events: none;
+   }
+   &__arrow {
+      pointer-events: none;
+      margin-left: 10px;
+      transform: rotate(90deg);
+      transition: transform .2s ease, fill .2s ease;
    }
    &__item {
       position: absolute;
@@ -46,5 +60,6 @@
    }
    &__element {
       cursor: pointer;
+      transition: background-color .2s ease, color .2s ease;
    }
 }

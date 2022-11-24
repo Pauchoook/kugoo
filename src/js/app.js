@@ -19,6 +19,9 @@ flsFunctions.validateForm();
 flsFunctions.fixedHeader();
 flsFunctions.video();
 flsFunctions.spollers();
+flsFunctions.range();
+flsFunctions.show();
+flsFunctions.openFilter();
 
 flsProducts.products();
 

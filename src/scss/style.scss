@@ -18,6 +18,7 @@
 @import 'working-elements/_btn-more';
 @import 'working-elements/_spollers';
 @import 'working-elements/_scrollbar';
+@import 'working-elements/_show';
 
 // mini-components
 @import 'mini-components/_catalog-drop';
@@ -35,6 +36,7 @@
 @import 'mini-components/_popup-circle';
 @import 'mini-components/_mini-form';
 @import 'mini-components/_road';
+@import 'mini-components/_range';
 
 // components
 @import 'components/_header';
@@ -79,5 +81,7 @@
 @import 'components/_desired-model';
 @import 'components/_hero-catalog';
 @import 'components/_category-catalog';
+@import 'components/_hero-catalog-product';
+@import 'components/_filter';
 
 @import 'components/_footer';

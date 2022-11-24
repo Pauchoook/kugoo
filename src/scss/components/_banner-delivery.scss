@@ -1,4 +1,8 @@
 .banner-delivery {
+   padding-bottom: 90px;
+   @media (max-width: 767px) {
+      padding-bottom: 60px;
+   }
    &__body {
       background: radial-gradient(76.7% 707.77% at 23.3% 72.57%, #595959 0%, #3B3E46 100%);
       &::before {

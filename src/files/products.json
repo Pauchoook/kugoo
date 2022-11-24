@@ -17,7 +17,7 @@
          "img/products/electro-scooter.jpg",
          "img/products/electro-scooter.jpg"
       ],
-      "price": 39900,
+      "price": 32900,
       "whom": "Хиты продаж"
    },
    {
@@ -40,7 +40,7 @@
       ],
       "price": {
          "oldPrice": 39900,
-         "newPrice": 29900
+         "newPrice": 49900
       },
       "whom": "Хиты продаж"
    },
@@ -62,7 +62,7 @@
          "img/products/electro-scooter.jpg",
          "img/products/electro-scooter.jpg"
       ],
-      "price": 39900,
+      "price": 34900,
       "whom": "Хиты продаж"
    },
    {
@@ -107,7 +107,7 @@
          "img/products/electro-scooter.jpg",
          "img/products/electro-scooter.jpg"
       ],
-      "price": 39900,
+      "price": 15900,
       "whom": "Хиты продаж"
    },
    {
@@ -129,8 +129,8 @@
          "img/products/electro-scooter.jpg"
       ],
       "price": {
-         "oldPrice": 39900,
-         "newPrice": 29900
+         "oldPrice": 22900,
+         "newPrice": 17900
       },
       "whom": "Хиты продаж"
    },
@@ -152,7 +152,7 @@
          "img/products/electro-scooter.jpg",
          "img/products/electro-scooter.jpg"
       ],
-      "price": 39900,
+      "price": 12900,
       "whom": "Хиты продаж"
    },
    {
@@ -174,8 +174,8 @@
          "img/products/electro-scooter.jpg"
       ],
       "price": {
-         "oldPrice": 39900,
-         "newPrice": 29900
+         "oldPrice": 35000,
+         "newPrice": 28000
       },
       "whom": "Хиты продаж"
    },

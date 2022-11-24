@@ -1,0 +1,245 @@
+<section class="filter">
+   <div class="container">
+      <div class="filter__header">
+         <h3 class="title-3">Фильтры</h3>
+         <div class="filter__nav">
+            <span class="filter__nav-content">Сортировать:</span>
+            <div class="select filter__select">
+               <button class="btn stroke select__btn filter__select-btn">
+                  <span class="select__title">По ценам</span>
+                  <svg class="select__arrow filter__select-arrow">
+                     <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+                  </svg>
+               </button>
+               <ul class="select__item">
+                  <li class="select__element filter__select-element">По популярности</li>
+                  <li class="select__element filter__select-element">По рейтингу</li>
+               </ul>        
+            </div>
+            <div class="select filter__select">
+               <button class="btn stroke select__btn filter__select-btn">
+                  <span class="select__title">По дальности хода</span>
+                  <svg class="select__arrow filter__select-arrow">
+                     <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+                  </svg>
+               </button>
+               <ul class="select__item">
+                  <li class="select__element filter__select-element">По весу</li>
+                  <li class="select__element filter__select-element">По кол-ву заряда</li>
+               </ul>        
+            </div>
+         </div>
+      </div>
+      <button class="filter__open-filter">Открыть фильтры</button>
+      <div class="filter__body">
+         <div class="filter__bar show">
+            <div class="filter__close-bar">
+               <span class="filter__close-bar-line"></span>
+               <span class="filter__close-bar-line"></span>
+            </div>
+            <div class="filter__bar-body scrollbar">
+               <div class="filter__bar-item">
+                  <span class="filter__bar-title">
+                     Цена
+                  </span>
+                  <div class="range filter__range">
+                     <div class="range__track"></div>
+                     <input data-range="filter-min" type="range" min="0" max="100000" value="0" class="range__slider range-slider-left">
+                     <input data-range="filter-max" type="range" min="0" max="100000" value="100000" class="range__slider range-slider-right">
+                  </div>
+                  <div class="filter__inputs-prices">
+                     <input data-range-input="filter-min" type="number" value="0" min="0" max="100000" class="form__input filter__input-price">
+                     <span class="filter__line-price"></span>
+                     <input data-range-input="filter-max" type="number" value="100000" min="0" max="100000" class="form__input filter__input-price">
+                  </div>
+               </div>
+               <div class="filter__bar-item">
+                  <span class="filter__bar-title">
+                     Тип
+                  </span>
+                  <ul class="filter__list">
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="type-1">
+                        <label for="type-1" class="filter__label">Внедорожный</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="type-2">
+                        <label for="type-2" class="filter__label">Городской</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="type-3">
+                        <label for="type-3" class="filter__label">Зимний</label>
+                     </li>
+                  </ul>
+               </div>
+               <div class="filter__bar-item">
+                  <span class="filter__bar-title">
+                     Для кого
+                  </span>
+                  <ul class="filter__list">
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="whom-1">
+                        <label for="whom-1" class="filter__label">Для взрослого</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="whom-2">
+                        <label for="whom-2" class="filter__label">Для ребёнка</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="whom-3">
+                        <label for="whom-3" class="filter__label">Для пенсионера</label>
+                     </li>
+                  </ul>
+               </div>
+               <div class="filter__bar-item">
+                  <span class="filter__bar-title">
+                     Вес
+                  </span>
+                  <ul class="filter__list">
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="weight-1">
+                        <label for="weight-1" class="filter__label">Легкие (до 15 кг)</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="weight-2">
+                        <label for="weight-2" class="filter__label">Средние (15-30 кг)</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="weight-3">
+                        <label for="weight-3" class="filter__label">Тяжелые (свыше 30 кг)</label>
+                     </li>
+                  </ul>
+               </div>
+               <button class="btn-show filter__btn-show">
+                  <span>Показать весь фильтр</span>
+                  <svg class="filter__arrow-show">
+                     <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+                  </svg>
+               </button>
+               <div class="filter__bar-item show-item">
+                  <span class="filter__bar-title">
+                     Наличие сиденья
+                  </span>
+                  <ul class="filter__list">
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="seat-1">
+                        <label for="seat-1" class="filter__label">Да</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="seat-2">
+                        <label for="seat-2" class="filter__label">Нет</label>
+                     </li>
+                  </ul>
+               </div>
+               <div class="filter__bar-item show-item">
+                  <span class="filter__bar-title">
+                     Дальность хода
+                  </span>
+                  <ul class="filter__list">
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-1">
+                        <label for="motion-1" class="filter__label">До 20 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-2">
+                        <label for="motion-2" class="filter__label">До 25 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-3">
+                        <label for="motion-3" class="filter__label">До 30 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-4">
+                        <label for="motion-4" class="filter__label">До 35 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-5">
+                        <label for="motion-5" class="filter__label">До 40 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-6">
+                        <label for="motion-6" class="filter__label">До 45 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-7">
+                        <label for="motion-7" class="filter__label">До 50 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-8">
+                        <label for="motion-8" class="filter__label">До 55 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-9">
+                        <label for="motion-9" class="filter__label">До 60 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-10">
+                        <label for="motion-10" class="filter__label">До 65 км</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="motion-11">
+                        <label for="motion-11" class="filter__label">До 70 км</label>
+                     </li>
+                  </ul>
+               </div>
+               <div class="filter__bar-item show-item">
+                  <span class="filter__bar-title">
+                     Мощность <br> мотор-колеса
+                  </span>
+                  <ul class="filter__list">
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="power-1">
+                        <label for="power-1" class="filter__label">249 Вт</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="power-2">
+                        <label for="power-2" class="filter__label">350 Вт</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="power-3">
+                        <label for="power-3" class="filter__label">500 Вт</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="power-4">
+                        <label for="power-4" class="filter__label">600 Вт</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="power-5">
+                        <label for="power-5" class="filter__label">1000 Вт</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="power-6">
+                        <label for="power-6" class="filter__label">1600 Вт</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="power-7">
+                        <label for="power-7" class="filter__label">200 Вт</label>
+                     </li>
+                     <li class="filter__item">
+                        <input type="checkbox" class="form__checkbox filter__checkbox" id="power-8">
+                        <label for="power-8" class="filter__label">2400 Вт</label>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <a href="#" class="filter__product-month">
+               <div class="filter__product-month-header">
+                  <img src="@img/mini/fire.png" alt="fire" class="filter__product-month-icon">
+                  <h4 class="title-4">Товар месяца</h4>
+               </div>
+               <div class="filter__product-month-body">
+                  <img src="@img/products/electro-scooter.jpg" alt="scooter" class="filter__product-month-img">
+                  <div class="filter__product-month-info">
+                     <span class="filter__product-month-name">Kugoo Kirin M4</span>
+                     <span class="filter__product-month-price">29 900 ₽</span>
+                  </div>
+               </div>
+            </a>
+            <div data-popup-btn="order-cell" class="popup-btn filter__question-manager">
+               <span class="filter__question-manager-title">Задать вопрос менеджеру</span>
+            </div>
+         </div>
+         <div data-length-products="9" class="container-products filter__products"></div>
+      </div>
+   </div>
+</section>
