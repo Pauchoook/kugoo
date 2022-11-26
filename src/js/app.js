@@ -24,5 +24,6 @@ flsFunctions.show();
 flsFunctions.openFilter();
 
 flsProducts.products();
+flsProducts.sortingProducts();
 
 flsPrices.waterproofingSetting();

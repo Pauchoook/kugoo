@@ -1,0 +1,86 @@
+.product-main {
+   padding: 20px 0px 140px 0px;
+   @media (max-width: 1199px) {
+      padding-bottom: 100px;
+   }
+   @media (max-width: 767px) {
+      padding-bottom: 60px;
+   }
+   &__body {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__images {
+      max-width: 570px;
+   }
+   &__slider {
+      margin-bottom: 10px;
+      &:hover {
+         .slider-btn {
+            opacity: 1;
+         }
+      }
+   }
+   &__type-product {
+      position: absolute;
+      padding: 4px 6px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 17px;
+      border-radius: 5px;
+      background-color: $green;
+      color: $white;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+   }
+   &__slide {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      &:not(:last-child) {
+         margin-right: 15px;
+      }
+   }
+   &__slide-img {
+      width: 100%;
+      height: auto;
+   }
+   &__slider-btn {
+      &--prev {
+         left: 30px;
+      }
+      &--next {
+         right: 30px;
+      }
+   }
+   &__slider-pag {
+      width: 100%;
+      gap: 10px;
+      .swiper-wrapper {
+         width: 100%;
+         flex-wrap: wrap;
+         gap: 9px;
+      }
+   }
+   &__slide-pag {
+      cursor: pointer;
+      width: 73px;
+      height: 73px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      overflow: hidden;
+      transition: border-color .2s ease;
+      &:hover {
+         border-color: $main;
+      }
+      &.swiper-slide-thumb-active {
+         border-color: $main;
+      }
+   }
+   &__pag-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}

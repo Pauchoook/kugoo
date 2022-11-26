@@ -241,13 +241,13 @@ export function select() {
                     btn.classList.remove('active');
                 }
             });
+        });
 
-            document.addEventListener('click', e => {
-                if (e.target !== btn) {
-                    currentItem.classList.remove('open');
-                    btn.classList.remove('active');
-                }
-            });
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('select__btn')) {
+                itemsSelect.forEach(item => item.classList.remove('open'));
+                buttonsSelect.forEach(btn => btn.classList.remove('active'));
+            }
         });
 
         itemsSelect.forEach(item => {
@@ -579,7 +579,7 @@ export function show() {
 }
 
 export function openFilter() {
-    const filterBar = document.querySelector('.filter__bar');
+    const filterBar = document.querySelector('.filter__bar-body');
     if (filterBar) {
         const btnBar = document.querySelector('.filter__open-filter');
         const closeBar = document.querySelector('.filter__close-bar')

@@ -1,4 +1,4 @@
-import Swiper, {Navigation, Pagination, EffectFade, Autoplay, FreeMode} from 'swiper';
+import Swiper, {Navigation, Pagination, EffectFade, Autoplay, FreeMode, Thumbs} from 'swiper';
 
 export function slider() {
    const lengthHeroSlider = document.querySelector('#hero-slider__length');
@@ -144,6 +144,26 @@ export function slider() {
          delay: 3000,
          disableOnInteraction: false
       }
+   });
+
+   const productSliderPag = new Swiper('.product-main__slider-pag', {
+      speed: 1000,
+      allowTouchMove: false,
+      slidesPerView: 'auto'
+   });
+
+   const productSlider = new Swiper('.product-main__slider', {
+      modules: [Navigation, Thumbs],
+      speed: 1000,
+      simulateTouch: false,
+      slidesPerView: 'auto',
+      thumbs: {
+         swiper: productSliderPag
+      },
+      navigation: {
+         nextEl: '.product-main__slider-btn--next',
+         prevEl: '.product-main__slider-btn--prev',
+      },
    });
 }                                   
 

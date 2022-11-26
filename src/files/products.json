@@ -179,6 +179,30 @@
       },
       "whom": "Хиты продаж"
    },
+   {
+      "id": 2323,
+      "name": "Kugoo Kirin M4",
+      "type": "new",
+      "weight": 22,
+      "power": 500,
+      "horsepower": 1.2,
+      "battery": 10000,
+      "maxSpeed": 40,
+      "maxMileage": 30,
+      "timeCharging": 6,
+      "maxWeight": 140,
+      "sizeWheel": 10,
+      "images": [
+         "img/products/electro-scooter.jpg",
+         "img/products/electro-scooter.jpg",
+         "img/products/electro-scooter.jpg"
+      ],
+      "price": {
+         "oldPrice": 35000,
+         "newPrice": 28000
+      },
+      "whom": "Хиты продаж"
+   },
 
    {
       "id": 9,

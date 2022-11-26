@@ -84,10 +84,6 @@
    &__slider-img {
       width: 100%;
       height: auto;
-      // max-height: 230px;
-      // @media (max-width: 480px) {
-      //    max-height: none;
-      // }
    }
    &__slider-arrow {
       position: absolute;
@@ -124,6 +120,7 @@
       transition: fill .2s ease;
    }
    &__title {
+      display: block;
       margin-bottom: 20px;
    }
    &__characteristic-list {

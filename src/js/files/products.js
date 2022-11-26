@@ -50,6 +50,29 @@ export function products() {
    });
 }
 
+export function sortingProducts() {
+   const buttonsSorting = document.querySelectorAll('.btn-sorting');
+   if (buttonsSorting.length > 0) {
+      buttonsSorting.forEach(btn => {
+         btn.addEventListener('click', () => {
+            const containerSorting = document.querySelector(`${btn.dataset.sortingContainer}`);
+            let dataSorting = '';
+
+            // сейчас будут костыли
+            if (btn.textContent.toLowerCase() === 'по популярности') {
+               dataSorting = 'data-popular';
+            } else if (btn.textContent.toLowerCase() === 'по ценам') {
+               dataSorting = 'data-price';
+            } else if (btn.textContent.toLowerCase() === 'по рейтингу') {
+               dataSorting = 'data-id';
+            }
+
+            sort(containerSorting, dataSorting);
+         });
+      });
+   }
+}
+
 function createCardProduct(arr, whom, maxLength, container) {
    container.innerHTML = '';
    container.style.minHeight = 'auto';
@@ -63,6 +86,8 @@ function createCardProduct(arr, whom, maxLength, container) {
          const cardProduct = document.createElement('div');
          cardProduct.classList.add('product-card');
          cardProduct.setAttribute('data-id', item.id);
+         cardProduct.setAttribute('data-popular', Math.round(1 - 0.5 + Math.random() * (10 - 1 + 1))); // нужно для сортировки по популярности
+         cardProduct.setAttribute('data-price', item.price.newPrice || item.price); // нужно для сортировки по цене
 
          const product = new Product(cardProduct, item);
          container.appendChild(product.createCard());
@@ -87,4 +112,19 @@ function shoppingCartAdd(e) {
 
       cart.addProduct(idCardProduct, imgProduct, titleProduct, Number(priceProduct.replace(/[^0-9]/g, '')));
    }
+}
+
+function sort(container, data) {
+   for (let i = 0; i < container.children.length; i++) {
+      for (let j = i; j < container.children.length; j++) {
+         if (+container.children[i].getAttribute(data) > +container.children[j].getAttribute(data)) {
+            const replaceNode = container.replaceChild(container.children[j], container.children[i]);
+            insertAfter(container, replaceNode, container.children[i]);
+         }
+      }
+   }
+}
+
+function insertAfter(container, elem, refElem) {
+   return container.insertBefore(elem, refElem.nextSibling);
 }

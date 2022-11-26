@@ -12,9 +12,9 @@ export default class Product {
                </svg>
          </button>
          <div class="product-card__body">
-               <h4 class="product-card__title">
+               <a href="product.html" class="title-4 product-card__title">
                   ${this.options.name}
-               </h4>
+               </a>
                <ul class="product-card__characteristic-list">
                   <li class="product-card__characteristic-item">
                      <svg class="product-card__characteristic-icon">

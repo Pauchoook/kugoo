@@ -6,14 +6,14 @@
             <span class="filter__nav-content">Сортировать:</span>
             <div class="select filter__select">
                <button class="btn stroke select__btn filter__select-btn">
-                  <span class="select__title">По ценам</span>
+                  <span class="select__title">По рейтингу</span>
                   <svg class="select__arrow filter__select-arrow">
                      <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
                   </svg>
                </button>
                <ul class="select__item">
-                  <li class="select__element filter__select-element">По популярности</li>
-                  <li class="select__element filter__select-element">По рейтингу</li>
+                  <li data-sorting-container=".filter__products" class="btn-sorting select__element filter__select-element">По популярности</li>
+                  <li data-sorting-container=".filter__products" class="btn-sorting select__element filter__select-element">По ценам</li>
                </ul>        
             </div>
             <div class="select filter__select">
@@ -33,11 +33,11 @@
       <button class="filter__open-filter">Открыть фильтры</button>
       <div class="filter__body">
          <div class="filter__bar show">
-            <div class="filter__close-bar">
-               <span class="filter__close-bar-line"></span>
-               <span class="filter__close-bar-line"></span>
-            </div>
             <div class="filter__bar-body scrollbar">
+               <div class="filter__close-bar">
+                  <span class="filter__close-bar-line"></span>
+                  <span class="filter__close-bar-line"></span>
+               </div>
                <div class="filter__bar-item">
                   <span class="filter__bar-title">
                      Цена
