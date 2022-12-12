@@ -1,0 +1,42 @@
+.tooltip {
+   position: relative;
+   cursor: pointer;
+   &:hover {
+      .tooltip__item {
+         opacity: 1;
+         transform: translateY(0);
+         z-index: 10;
+      }
+   }
+   &__item {
+      position: absolute;
+      width: fit-content;
+      opacity: 0;
+      transform: translateY(-15px);
+      z-index: -1;
+      left: -30px;
+      bottom: 30px;
+      transition: opacity .3s ease, transform .3s ease, z-index .3s ease;
+   }
+   &__item-body {
+      position: relative;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: $white;
+      filter: drop-shadow(0px 10px 30px rgba(111, 115, 238, 0.1));
+      &::before {
+         position: absolute;
+         content: ''; 
+         width: 38px;
+         height: 18px;
+         left: 20px;
+         bottom: -10px;
+         background: url('../img/mini/tooltip-triangle.svg') 0 0 / 100% 100% no-repeat;
+      }
+   }
+   &__content {
+      white-space: nowrap;
+      font-size: 14px;
+      line-height: 20px;
+   }
+}

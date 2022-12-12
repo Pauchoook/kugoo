@@ -1,16 +1,18 @@
 .road {
    display: flex;
-   align-items: center;
    padding-bottom: 20px;
    &__icon {
       width: 15px;
       height: 15px;
       fill: $gray;
       margin-right: 5px;
+      transform: translateY(4px);
    }
    &__list {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      max-width: calc(100% - 20px);
    }
    &__item {
       &:not(:last-child) {

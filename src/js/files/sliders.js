@@ -151,21 +151,36 @@ export function slider() {
       allowTouchMove: false,
       slidesPerView: 'auto'
    });
-
    const productSlider = new Swiper('.product-main__slider', {
       modules: [Navigation, Thumbs],
       speed: 1000,
       simulateTouch: false,
       slidesPerView: 'auto',
-      thumbs: {
-         swiper: productSliderPag
-      },
+      loop: true,
       navigation: {
          nextEl: '.product-main__slider-btn--next',
          prevEl: '.product-main__slider-btn--prev',
       },
+      thumbs: {
+         swiper: productSliderPag
+      }
    });
-}                                   
+
+   const recSliders = document.querySelectorAll('.rec-slider');
+   recSliders.forEach(slider => {
+      const recSlider = new Swiper(slider, {
+         modules: [Navigation],
+         // simulateTouch: false,
+         slidesPerView: 'auto',
+         // loop: true,
+         // loopPreventsSlide: true,
+         navigation: {
+            nextEl: '.rec-slider__slider-btn--next',
+            prevEl: '.rec-slider__slider-btn--prev'
+         }
+      });
+   });
+}                        
 
 export function productSlider() {
    const productsCardsSliders = document.querySelectorAll('.product-card__slider');

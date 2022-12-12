@@ -295,6 +295,8 @@ export function burger() {
             }
         });
 
+        window.addEventListener('resize', burgerHeight);
+
         function burgerHeight() {
             const headerHeight = headerCenter.classList.contains('fixed') ? headerCenter.clientHeight : header.clientHeight; // отступ для меню бургера сверху
             const burgerHeight = window.innerHeight - headerHeight; // высота меню бургера(иначе оно не перекрывает нижнее меню)

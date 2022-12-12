@@ -12,9 +12,9 @@ export default class Product {
                </svg>
          </button>
          <div class="product-card__body">
-               <a href="product.html" class="title-4 product-card__title">
+               <h4 class="title-4 product-card__title">
                   ${this.options.name}
-               </a>
+               </h4>
                <ul class="product-card__characteristic-list">
                   <li class="product-card__characteristic-item">
                      <svg class="product-card__characteristic-icon">
@@ -91,7 +91,8 @@ export default class Product {
 
       // добавление айтемов в слайдер
       images.forEach(img => {
-         const sliderItem = document.createElement('div');
+         const sliderItem = document.createElement('a');
+         sliderItem.href = 'product.html';
          sliderItem.classList.add('swiper-slide', 'product-card__slider-item');
 
          const sliderImg = document.createElement('img');

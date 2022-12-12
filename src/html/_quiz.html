@@ -1,0 +1,87 @@
+<section class="quiz">
+   <div class="container">
+      <h2 class="title-2 quiz__title">
+         Пройдите тест из 5 вопросов и получите подборку ТОП-3 электросамоката по вашим параметрам
+      </h2>
+      <div class="quiz__header">
+         <h5 class="quiz__header-title">Бонусом вы получите</h5>
+         <div class="quiz__header-wrapper">
+            <div class="quiz__bonus quiz__bonus--top">
+               <img src="@img/mini/cheque.png" alt="Чек" class="quiz__bonus-img">
+               <p class="quiz__bonus-content">Чек-лист «ТОП-5 городских электросамокатов  2021 г.»</p>
+            </div>
+            <div class="quiz__bonus quiz__bonus--manual">
+               <img src="@img/mini/book.png" alt="Чек" class="quiz__bonus-img">
+               <p class="quiz__bonus-content">Инструкция «Как правильно подготовить самокат к первой поездке. 7 советов эксперта»</p>
+            </div>
+         </div>
+      </div>
+      <div class="quiz__body">
+         <div class="quiz__questions">
+            <div class="quiz__questions-header">
+               <svg class="quiz__questions-header-icon">
+                  <use xlink:href='img/icons/icons.svg#icon-scooter'></use>
+               </svg>
+               <p class="quiz__questions-header-content">
+                  Пройдите тест и получите подборку 3 моделей электросамокатов, которые вам подходят
+               </p>
+            </div>
+            <div class="quiz__questions-body">
+               <h3 class="title-3 quiz__questions-title" id="quiz-title">
+               </h3>
+               <form action="#" class="form quiz__form">
+                  <div class="quiz__form-body" id="quiz-body"></div>
+                  <div class="quiz__end" id="quiz-end">
+                     <input type="tel" data-phone-pattern="+7 (___) ___ - __ - __" data-length="22" placeholder="+7 (___) ___ - __ - __" class="form__input quiz__form-input">
+                     <button class="btn quiz__form-btn">Получить подборку и бонусы</button>
+                     <div class="form__processing-data quiz__processing-data">
+                        <input type="checkbox" name="bonus" class="form__checkbox form__processing-data-checkbox" id="bonus">
+                        <label for="bonus" class="form__processing-data-label">
+                           Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
+                        </label>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="quiz__questions-footer">
+               <div class="quiz__questions-progress">
+                  <span class="quiz__questions-progress-content" id="quiz-progress-content">Готово 0%</span>
+                  <div class="quiz__questions-progress-parent">
+                     <div class="quiz__questions-progressbar" id="quiz-progress"></div>
+                  </div>
+               </div>
+               <div class="quiz__questions-nav" id="quiz-nav">
+                  <button class="quiz__questions-prev" id="quiz-prev">
+                     <svg class="quiz__questions-prev-icon">
+                        <use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+                     </svg>
+                  </button>
+                  <button class="btn quiz__questions-next" id="quiz-next">
+                     <span>Далее</span>
+                     <svg class="quiz__questions-next-icon">
+                        <use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="quiz__profile">
+            <div class="quiz__profile-header">
+               <img src="" alt="Аватарка" class="quiz__profile-avatar">
+               <div class="quiz__profile-info">
+                  <h5 class="quiz__profile-name">Пётр Алексеев</h5>
+                  <span class="quiz__profile-status">Менеджер</span>
+               </div>
+            </div>
+            <div class="quiz__profile-banner">
+               <img src="" alt="Скутер" class="quiz__profile-icon">
+               <p class="quiz__profile-content"></p>
+            </div>
+            <div class="quiz__profile-banner">
+               <img src="" alt="Человек" class="quiz__profile-icon">
+               <p class="quiz__profile-content"></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

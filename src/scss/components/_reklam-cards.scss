@@ -5,6 +5,7 @@
    } 
    &__body {
       @include flex-between;
+      align-items: stretch;
       @media (max-width: 1199px) {
          gap: 20px;
       }
@@ -108,7 +109,11 @@
       top: 0;
       bottom: 0;
       width: 235px;
+      height: auto;
       z-index: -1;
+      &--bottom {
+         top: auto;
+      }
       @media (max-width: 1199px) {
          right: -25px;
       }
@@ -117,6 +122,9 @@
       }
       @media (max-width: 576px) {
          right: -60px;
+         &--botto {
+            right: -20px;
+         }
       }
       @media (max-width: 480px) {
          width: 165px;

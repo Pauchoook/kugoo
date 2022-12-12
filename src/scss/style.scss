@@ -19,6 +19,8 @@
 @import 'working-elements/_spollers';
 @import 'working-elements/_scrollbar';
 @import 'working-elements/_show';
+@import 'working-elements/_input-check';
+@import 'working-elements/_tooltip';
 
 // mini-components
 @import 'mini-components/_catalog-drop';
@@ -84,5 +86,9 @@
 @import 'components/_hero-catalog-product';
 @import 'components/_filter';
 @import 'components/_product-main';
+@import 'components/_about-product';
+@import 'components/_record-test';
+@import 'components/_equipment';
+@import 'components/_quiz';
 
 @import 'components/_footer';

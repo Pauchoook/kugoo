@@ -1,0 +1,27 @@
+.equipment {
+   padding-bottom: 100px;
+   overflow: hidden;
+   @media (max-width: 767px) {
+      padding-bottom: 60px;
+   }
+   &__title {
+      margin-bottom: 50px;
+   }
+   &__slider {
+      overflow: visible;
+      &:hover {
+         .rec-slider__slider-btn {
+            opacity: 1;
+         }
+      }
+      .product-card {
+         width: 255px;
+         &:not(:last-child) {
+            margin-right: 30px;
+         }
+         &__title {
+            margin-bottom: 10px;
+         }
+      }
+   }
+}
