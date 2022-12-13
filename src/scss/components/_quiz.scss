@@ -11,6 +11,9 @@
    &__header {
       margin: 0 auto;
       margin-bottom: 50px;
+      @media (max-width: 767px) {
+         margin-bottom: 20px;
+      }
    }
    &__header-title {
       font-weight: 500;
@@ -24,6 +27,10 @@
       align-items: center;
       justify-content: center;
       gap: 30px;
+      @media (max-width: 991px) {
+         gap: 20px;
+         flex-direction: column;
+      } 
    }
    &__bonus {
       display: flex;
@@ -37,45 +44,83 @@
       &--manual {
          flex: 0 1 460px;
       }
+      @media (max-width: 991px) {
+         flex: auto !important;
+         max-width: 550px;
+      }
+      @media (max-width: 480px) {
+         flex-direction: column;
+      }
    }
    &__bonus-img {
       width: 48px;
       height: 48px;
       margin-right: 20px;
+      @media (max-width: 480px) {
+         margin: 0px 0px 10px 0px;
+      }
    }
    &__bonus-content {
       font-size: 16px;
       line-height: 23px;
+      @media (max-width: 480px) {
+         font-size: 14px;
+         line-height: normal;
+         text-align: center;
+      }
    }
    &__body {
+      display: flex;
       margin: 0 auto;
       background-color: $bg;
       border-radius: 10px;
       max-width: 895px;
+      @media (max-width: 991px) {
+         flex-direction: column;
+      }
    }
    &__questions {
       padding: 35px;
       max-width: 600px;
+      @media (max-width: 991px) {
+         order: 2;
+         max-width: none;
+      }
+      @media (max-width: 767px) {
+         padding: 20px;
+      }
    }
    &__questions-header {
       display: flex;
       align-items: center;
       margin-bottom: 30px;
+      @media (max-width: 480px) {
+         flex-direction: column;
+      }
    }
    &__questions-header-icon {
       width: 25px;
       height: 25px;
       fill: $gray;
       margin-right: 15px;
+      @media (max-width: 480px) {
+         margin: 0px 0px 10px 0px;
+      }
    }
    &__questions-header-content {
       max-width: 300px;
       font-size: 14px;
       line-height: 16px;
       color: $gray;
+      @media (max-width: 480px) {
+         text-align: center;
+      }
    }
    &__questions-body {
       margin-bottom: 70px;
+      @media (max-width: 767px) {
+         margin-bottom: 30px;
+      }
    }
    &__questions-title {
       margin-bottom: 20px;
@@ -86,6 +131,12 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 20px;
+      @media (max-width: 576px) {
+         gap: 15px;
+      }
+      @media (max-width: 480px) {
+         flex-direction: column;
+      }
    }
    &__checkbox {
       position: relative;
@@ -115,6 +166,9 @@
       &:hover {
          border-color: $main;
       }
+      @media (max-width: 480px) {
+         flex-basis: 100%;
+      }
    }
    &__item-circle {
       position: relative;
@@ -140,9 +194,15 @@
    }
    &__questions-footer {
       @include flex-between;
+      @media (max-width: 576px) {
+         flex-direction: column;
+      }
    }
    &__questions-progress {
-
+      @media (max-width: 576px) {
+         order: 2;
+         width: 100%;
+      }
    }
    &__questions-progress-content {
       font-size: 12px;
@@ -156,6 +216,9 @@
       height: 8px;
       border-radius: 15px;
       background-color: $white;
+      @media (max-width: 576px) {
+         width: 100%;
+      }
    }
    &__questions-progressbar {
       position: absolute;
@@ -171,6 +234,10 @@
    &__questions-nav {
       display: flex;
       align-items: center;
+      @media (max-width: 576px) {
+         order: 1;
+         margin-bottom: 10px;
+      }
    }
    &__questions-prev {
       @include flex-center;
@@ -231,22 +298,68 @@
    }
    &__profile {
       padding: 30px;
-      border-left: 1px solid $gray;
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid $gray2;
+      @media (max-width: 991px) {
+         align-items: center;
+         order: 1;
+         border-left: none;
+         border-bottom: 1px solid $gray2;
+      }
+      @media (max-width: 767px) {
+         padding: 20px;
+      }
    }
    &__profile-header {
+      flex: 1;
+      @media (max-width: 991px) {
+         flex: auto;
+         margin-bottom: 20px;
+      }
+   }
+   &__profile-header-body {
+      display: flex;
+      align-items: center;
    }
    &__profile-avatar {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 15px;
    }
    &__profile-info {
    }
    &__profile-name {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
    }
    &__profile-status {
+      font-size: 14px;
+      line-height: 20px;
+      color: $gray;
    }
    &__profile-banner {
+      display: flex;
+      align-items: center;
+      padding: 15px 15px 15px 20px;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);
+      background: radial-gradient(102.16% 238.93% at -2.16% 100%, #FFCF71 0%, #F3A712 100%);
+      border-radius: 10px;
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
    }
    &__profile-icon {
+      width: 35px;
+      height: 35px;
+      margin-right: 15px;
    }
    &__profile-content {
+      font-size: 14px;
+      line-height: 16px;
+      color: $white;
    }
 }
