@@ -130,15 +130,15 @@ export function slider() {
       }
    });
 
-   const certificateSlider = new Swiper('.without-brokers__slider', {
+   const certificateSlider = new Swiper('.certificate-slider', {
       modules: [Navigation, Autoplay],
       speed: 1000,
       simulateTouch: true,
       slidesPerView: 'auto',
       loop: true,
       navigation: {
-         nextEl: '.without-brokers__btn-slider--next',
-         prevEl: '.without-brokers__btn-slider--prev',
+         nextEl: '.certificate-slider--next',
+         prevEl: '.certificate-slider--prev',
       },
       autoplay: {
          delay: 3000,
@@ -170,10 +170,8 @@ export function slider() {
    recSliders.forEach(slider => {
       const recSlider = new Swiper(slider, {
          modules: [Navigation],
-         // simulateTouch: false,
+         simulateTouch: false,
          slidesPerView: 'auto',
-         // loop: true,
-         // loopPreventsSlide: true,
          navigation: {
             nextEl: '.rec-slider__slider-btn--next',
             prevEl: '.rec-slider__slider-btn--prev'

@@ -1,0 +1,79 @@
+.hero-about {
+   padding: 20px 0px 80px 0px;
+   &__body {
+      padding: 135px 95px;
+      background: url('../img/pictures/kugo-russia.jpg') right -445px top -20px / 1825px 1215px no-repeat;
+      &::before {
+         background: linear-gradient(73.21deg, #6F73EE 17.37%, rgba(111, 115, 238, 0) 67.02%);
+      }
+      @media (max-width: 1439px) {
+         padding: 50px 100px;
+         background-size: 1380px 920px;
+         background-position: right -350px top -20px;
+      }
+      @media (max-width: 1199px) {
+         background-size: 1200px 800px;
+         &::before {
+            background: linear-gradient(73.21deg, #6F73EE 20.37%, rgba(111, 115, 238, 0) 67.02%)
+         }
+      }
+      @media (max-width: 991px) {
+         padding: 40px 70px;
+      }
+      @media (max-width: 767px) {
+         padding: 30px;
+         background-position: right -400px top -20px;
+         &::before {
+            background: linear-gradient(73.21deg, #6F73EE 30.37%, rgba(111, 115, 238, 0) 67.02%)
+         }
+      }
+      @media (max-width: 576px) {
+         background-position: right -900px top -20px;
+         &::before {
+            background: linear-gradient(80.21deg, #6F73EE 35.37%, rgba(111, 115, 238, 0) 92.02%)
+         }
+      }
+   }
+   &__title {
+      max-width: 475px;
+      margin-bottom: 35px;
+      @media (max-width: 767px) {
+         max-width: 370px;
+         margin-bottom: 20px;
+      }
+   }
+   &__list {
+      display: flex;
+      @media (max-width: 480px) {
+         flex-wrap: wrap;
+         gap: 30px;
+      } 
+   }
+   &__item {
+      &:not(:last-child) {
+         margin-right: 45px;
+      }
+      @media (max-width: 991px) {
+         &:not(:last-child) {
+            margin-right: 30px;
+         }
+      }
+      @media (max-width: 480px) {
+         &:not(:last-child) {
+            margin-right: 0;
+         }
+      }
+   }
+   &__item-content {
+      max-width: 125px;
+      font-size: 14px;
+      line-height: 16px;
+      min-height: 32px;
+   }
+   &__item-num {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 36px;
+      text-transform: uppercase;
+   }
+}

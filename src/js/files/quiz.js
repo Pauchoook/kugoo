@@ -18,6 +18,7 @@ export default function quiz() {
             count++;
             init();
          } else {
+            quizTitle.textContent = 'Заполните форму, чтобы получить бонусы и подборку ТОП-3 самоката, которые вам идеально подходят.';
             quizBody.innerHTML = '';
             quizEnd.style.display = 'block';
             quizNav.style.display = 'none';

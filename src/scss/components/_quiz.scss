@@ -82,6 +82,7 @@
    &__questions {
       padding: 35px;
       max-width: 600px;
+      width: 100%;
       @media (max-width: 991px) {
          order: 2;
          max-width: none;

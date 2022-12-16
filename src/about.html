@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {})
+<body>
+    @@include('html/header.html', {})
+
+    <main>
+        @@include('html/_hero-about.html', {})
+        @@include('html/_electric-transport.html', {})
+        @@include('html/_favorable-price.html', {})
+        @@include('html/_video.html', {})
+        @@include('html/_reviews.html', {"title": "Отзывы и фото реальных покупателей"})
+        @@include('html/_video-reviews.html', {})
+        @@include('html/_new-article.html', {})
+        @@include('html/_questions-buyers.html', {"title": "Отвечаем на вопросы покупателей"})
+        @@include('html/_cells-scooters.html', {"title": "Часто покупают"})
+        @@include('html/_subscription.html', {})
+        @@include('html/_fix-menu.html', {})
+    </main>
+
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>
