@@ -1,0 +1,57 @@
+.hero-delivery {
+  padding: 20px 0px 100px 0px;
+  @media (max-width: 768px) {
+    padding-bottom: 100px;
+  }
+  &__body {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 135px;
+    background: radial-gradient(58.73% 541.94% at 75.14% 62.23%, #A6A9FF 0%, #6F73EE 100%), #F4F7FB;
+    z-index: 1;
+    @media (max-width: 1439px) {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+    @media (max-width: 991px) {
+      padding: 40px 70px;
+    }
+    @media (max-width: 767px) {
+      padding: 30px;
+    } 
+  }
+  &__title {
+    max-width: 570px;
+    @media (max-width: 767px) {
+      max-width: 310px;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    top: -75px;
+    right: -5px;
+    width: 714px;
+    object-fit: cover;
+    z-index: -1;
+    @media (max-width: 1439px) {
+      top: -25px;
+      right: -85px;
+      width: 450px;
+    }
+    @media (max-width: 991px) {
+      width: 340px;
+      right: -120px;
+    }
+    @media (max-width: 576px) {
+      width: 275px;
+      right: -105px;
+    }
+    @media (max-width: 480px) {
+      top: auto;
+      bottom: -100px;
+      right: -140px;
+    }
+  }
+}

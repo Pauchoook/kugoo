@@ -1,0 +1,381 @@
+<section class="day-order">
+  <div class="container">
+    <h2 class="title-2 day-order__title">Отправляем по России в день заказа</h2>
+    <div class="day-order__header">
+      <h5 class="day-order__header-title">Выберите свой регион</h5>
+      <div class="day-order__buttons scrollbar">
+        <button data-tab-btn="moscow" class="btn tab-btn bg-gray day-order__btn active">Москва и МО</button>
+        <button data-tab-btn="piter" class="btn tab-btn bg-gray day-order__btn">Санкт-Петербург и Ленобласть</button>
+        <button data-tab-btn="krasnodar" class="btn tab-btn bg-gray day-order__btn">Краснодар</button>
+        <button data-tab-btn="russia" class="btn tab-btn bg-gray day-order__btn">Регионы России</button>
+        <button data-tab-btn="countries" class="btn tab-btn bg-gray day-order__btn">
+          Казахстан, РБ, Армения, Киргизия
+        </button>
+      </div>
+    </div>
+    <div data-tab="moscow" class="tab open day-order__tab">
+      <div class="day-order__tab-table scrollbar">
+        <div class="day-order__table-header">
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Способ доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Время доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Стоимость</h5>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Курьером</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">В течение дня при заказе до 11:00</p>
+          </div>
+          <div class="day-order__tab-item day-order__tab-item--row">
+            <p class="day-order__content">Бесплатная доставка</p>
+            <div class="day-order__tab-discount">
+              <img src="@img/mini/fire.png" class="day-order__tab-discount-icon" />
+              <span class="day-order__tab-discount-content">Акция до 15.09</span>
+            </div>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Срочная доставка</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">
+              За 2-4 часа в день заказа. Заказы на срочную доставку принимаются до 17:00, в пятницу — до 13:00.
+            </p>
+            <p class="day-order__content">
+              При заказе дополнительных услуг (гидроизоляция, настройка) время может быть увеличено.
+            </p>
+          </div>
+          <div class="day-order__tab-item day-order__tab-item--flex-end">
+            <p class="day-order__content">
+              Стоимость срочной доставки <br />
+              <button data-popup-btn="order-cell" class="popup-btn">уточняйте у менеджера</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="day-order__address">
+        <p class="day-order__content day-order__address-content">
+          Самовывоз из магазина <span>ул. Ткацкая, 5 стр. 16. (Пн - Вс 10:00 - 20:00)</span>
+        </p>
+        <p class="day-order__content day-order__address-content">
+          Перед посещением магазина уточняйте наличие рассматриваемой вами модели по телефону
+          <a href="tel:+74994061579">+7 (499) 406-15-79</a>
+        </p>
+      </div>
+      <div class="day-order__tab-table day-order__tab-footer scrollbar">
+        <h5 class="day-order__tab-title day-order__title-pay">Выбирайте подходящий способ оплаты</h5>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item day-order__tab-item--full">
+            <p class="day-order__content">Наличными в магазине или курьеру</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Картой в магазине</p>
+            <div class="day-order__shops-pay">
+              <img src="@img/mini/google-pay.png" alt="google-pay" class="day-order__shops-img" />
+              <img src="@img/mini/apple-pay.png" alt="apple-pay" class="day-order__shops-img" />
+              <img src="@img/mini/visa.png" alt="visa" class="day-order__shops-img" />
+              <img src="@img/mini/mastercard.png" alt="mastercard" class="day-order__shops-img" />
+              <img src="@img/mini/maestro.png" alt="maestro" class="day-order__shops-img" />
+              <img src="@img/mini/webmoney.png" alt="webmoney" class="day-order__shops-img" />
+              <img src="@img/mini/qiwi.png" alt="qiwi" class="day-order__shops-img" />
+            </div>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Онлайн на сайте через корзину</p>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item day-order__tab-item--full">
+            <p class="day-order__content">Через интернет-банкинг по счету, который вам выставит менеджер</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">
+              В рассрочку от Сбербанка, Тинькофф банка или по карте "Халва" от Совкомбанка
+            </p>
+          </div>
+          <div class="day-order__tab-item day-order__tab-item--flex-end">
+            <p class="day-order__content">
+              В рассрочку — только для электрсоамокатов версии MAX <br />
+              <a href="#">Узнать подробнее</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-tab="piter" class="tab day-order__tab">
+      <div class="day-order__tab-table scrollbar">
+        <div class="day-order__table-header">
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Способ доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Время доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Стоимость</h5>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Курьером</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">В течение дня при заказе до 11:00</p>
+            <p class="day-order__content">
+              При заказе дополнительных услуг (гидроизоляция, настройка) время может быть увеличено.
+            </p>
+          </div>
+          <div class="day-order__tab-item day-order__tab-item--row">
+            <p class="day-order__content">Бесплатная доставка</p>
+            <div class="day-order__tab-discount">
+              <img src="@img/mini/fire.png" class="day-order__tab-discount-icon" />
+              <span class="day-order__tab-discount-content">Акция до 15.09</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="day-order__address">
+        <p class="day-order__content day-order__address-content">
+          Самовывоз из магазина <span>ул. Ткацкая, 5 стр. 16. (Пн - Вс 10:00 - 20:00)</span>
+        </p>
+        <p class="day-order__content day-order__address-content">
+          Перед посещением магазина уточняйте наличие рассматриваемой вами модели по телефону
+          <a href="tel:+74994061579">+7 (499) 406-15-79</a>
+        </p>
+      </div>
+      <div class="day-order__tab-table day-order__tab-footer scrollbar">
+        <h5 class="day-order__tab-title day-order__title-pay">Выбирайте подходящий способ оплаты</h5>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item day-order__tab-item--full">
+            <p class="day-order__content">Наличными в магазине или курьеру</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Картой в магазине</p>
+            <div class="day-order__shops-pay">
+              <img src="@img/mini/google-pay.png" alt="google-pay" class="day-order__shops-img" />
+              <img src="@img/mini/apple-pay.png" alt="apple-pay" class="day-order__shops-img" />
+              <img src="@img/mini/visa.png" alt="visa" class="day-order__shops-img" />
+              <img src="@img/mini/mastercard.png" alt="mastercard" class="day-order__shops-img" />
+              <img src="@img/mini/maestro.png" alt="maestro" class="day-order__shops-img" />
+              <img src="@img/mini/webmoney.png" alt="webmoney" class="day-order__shops-img" />
+              <img src="@img/mini/qiwi.png" alt="qiwi" class="day-order__shops-img" />
+            </div>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Онлайн на сайте через корзину</p>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item day-order__tab-item--full">
+            <p class="day-order__content">Через интернет-банкинг по счету, который вам выставит менеджер</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">
+              В рассрочку от Сбербанка, Тинькофф банка или по карте "Халва" от Совкомбанка
+            </p>
+          </div>
+          <div class="day-order__tab-item day-order__tab-item--flex-end">
+            <p class="day-order__content">
+              В рассрочку — только для электрсоамокатов версии MAX <br />
+              <a href="#">Узнать подробнее</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-tab="krasnodar" class="tab day-order__tab">
+      <div class="day-order__tab-table scrollbar">
+        <div class="day-order__table-header">
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Способ доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Время доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Стоимость</h5>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Курьером</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">В течение дня при заказе до 11:00</p>
+            <p class="day-order__content">
+              При заказе дополнительных услуг (гидроизоляция, настройка) время может быть увеличено.
+            </p>
+          </div>
+          <div class="day-order__tab-item day-order__tab-item--row">
+            <p class="day-order__content">Бесплатная доставка</p>
+            <div class="day-order__tab-discount">
+              <img src="@img/mini/fire.png" class="day-order__tab-discount-icon" />
+              <span class="day-order__tab-discount-content">Акция до 15.09</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="day-order__address">
+        <p class="day-order__content day-order__address-content">
+          Самовывоз из магазина <span>ул. Ткацкая, 5 стр. 16. (Пн - Вс 10:00 - 20:00)</span>
+        </p>
+        <p class="day-order__content day-order__address-content">
+          Перед посещением магазина уточняйте наличие рассматриваемой вами модели по телефону
+          <a href="tel:+74994061579">+7 (499) 406-15-79</a>
+        </p>
+      </div>
+      <div class="day-order__tab-table day-order__tab-footer scrollbar">
+        <h5 class="day-order__tab-title day-order__title-pay">Выбирайте подходящий способ оплаты</h5>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item day-order__tab-item--full">
+            <p class="day-order__content">Наличными в магазине или курьеру</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Картой в магазине</p>
+            <div class="day-order__shops-pay">
+              <img src="@img/mini/google-pay.png" alt="google-pay" class="day-order__shops-img" />
+              <img src="@img/mini/apple-pay.png" alt="apple-pay" class="day-order__shops-img" />
+              <img src="@img/mini/visa.png" alt="visa" class="day-order__shops-img" />
+              <img src="@img/mini/mastercard.png" alt="mastercard" class="day-order__shops-img" />
+              <img src="@img/mini/maestro.png" alt="maestro" class="day-order__shops-img" />
+              <img src="@img/mini/webmoney.png" alt="webmoney" class="day-order__shops-img" />
+              <img src="@img/mini/qiwi.png" alt="qiwi" class="day-order__shops-img" />
+            </div>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Онлайн на сайте через корзину</p>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item day-order__tab-item--full">
+            <p class="day-order__content">Через интернет-банкинг по счету, который вам выставит менеджер</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">
+              В рассрочку от Сбербанка, Тинькофф банка или по карте "Халва" от Совкомбанка
+            </p>
+          </div>
+          <div class="day-order__tab-item day-order__tab-item--flex-end">
+            <p class="day-order__content">
+              В рассрочку — только для электрсоамокатов версии MAX <br />
+              <a href="#">Узнать подробнее</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-tab="russia" class="tab day-order__tab">
+      <div class="day-order__tab-table scrollbar">
+        <div class="day-order__table-header">
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Способ доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Время доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Стоимость</h5>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Службой доставки товаров CDEK</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">
+              Время доставки транспортной компанией CDEK <button data-popup-btn="order-cell" class="popup-btn">уточняйте у менеджера</a>
+            </p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Доставка со скидкой до 1 000 руб.</p>
+          </div>
+        </div>
+      </div>
+      <div class="day-order__address">
+        <p class="day-order__content day-order__address-content">
+          Самовывоз из магазина <span>ул. Ткацкая, 5 стр. 16. (Пн - Вс 10:00 - 20:00)</span>
+        </p>
+        <p class="day-order__content day-order__address-content">
+          Перед посещением магазина уточняйте наличие рассматриваемой вами модели по телефону
+          <a href="tel:+78003339476">+7 (800) 333-94-76</a>
+        </p>
+      </div>
+      <div class="day-order__tab-table day-order__tab-footer scrollbar">
+        <h5 class="day-order__tab-title day-order__title-pay">Выбирайте подходящий способ оплаты</h5>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item day-order__tab-item--full">
+            <p class="day-order__content">
+              <span>Наложенным платежом</span> при получении в отделениях CDEK с предоплатой за доставку: наличными или
+              картой
+            </p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content"><span>При 100% предоплате:</span> онлайн на сайте; через интернет-банк по счету; в кредит от «Сбербанка» (с условиями можно ознакомиться на <a href="#">сайте банка</a>).</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content"><span>В рассрочку</span> от Сбербанка, Тинькофф банка  или по карте "Халва" от Совкомбанка</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-tab="countries" class="tab day-order__tab">
+      <div class="day-order__tab-table scrollbar">
+        <div class="day-order__table-header">
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Способ доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Время доставки</h5>
+          </div>
+          <div class="day-order__tab-item">
+            <h5 class="day-order__tab-title">Стоимость</h5>
+          </div>
+        </div>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Службой доставки товаров CDEK</p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">
+              Стоимость и сроки доставки транспортной компанией CDEK <button data-popup-btn="order-cell" class="popup-btn">уточняйте у менеджера</button>
+            </p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content">Стоимость доставки зависит от веса, габаритов и дальности отправки.</p>
+          </div>
+        </div>
+      </div>
+      <div class="day-order__address">
+        <p class="day-order__content day-order__address-content">
+          Самовывоз из магазина <span>ул. Ткацкая, 5 стр. 16. (Пн - Вс 10:00 - 20:00)</span>
+        </p>
+        <p class="day-order__content day-order__address-content">
+          Перед посещением магазина уточняйте наличие рассматриваемой вами модели по телефону
+          <a href="tel:+78003339476">+7 (800) 333-94-76</a>
+        </p>
+      </div>
+      <div class="day-order__tab-table day-order__tab-footer scrollbar">
+        <h5 class="day-order__tab-title day-order__title-pay">Выбирайте подходящий способ оплаты</h5>
+        <div class="day-order__table-row">
+          <div class="day-order__tab-item day-order__tab-item--full">
+            <p class="day-order__content">
+              <span>Наложенным платежом</span> при получении в отделениях CDEK с предоплатой за доставку: наличными или
+              картой
+            </p>
+          </div>
+          <div class="day-order__tab-item">
+            <p class="day-order__content"><span>При 100% предоплате:</span> онлайн на сайте, или через интернет-банк по счету.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

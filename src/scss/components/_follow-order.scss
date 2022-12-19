@@ -1,0 +1,110 @@
+.follow-order {
+  padding-bottom: 30px;
+  @media (max-width: 991px) {
+    padding-bottom: 100px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+  &__body {
+    position: relative;
+    overflow: hidden;
+    color: $white;
+    background: radial-gradient(64.2% 266.22% at 23.3% 72.57%, #ff9f73 0%, #dc7749 100%);
+    padding: 80px 135px;
+    border-radius: 10px;
+    @media (max-width: 1199px) {
+      padding: 50px 100px;
+    }
+    @media (max-width: 991px) {
+      padding: 35px 70px;
+    }
+    @media (max-width: 767px) {
+      padding: 25px 30px;
+    }
+  }
+  &__title {
+    max-width: 570px;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    margin-bottom: 35px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+      max-width: 450px;
+    }
+  }
+  &__item {
+    display: flex;
+    font-size: 16px;
+    line-height: 23px;
+    span {
+      max-width: calc(100% - 35px);
+    }
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+  &__icon {
+    width: 22px;
+    height: 22px;
+    fill: $white;
+    margin-right: 10px;
+  }
+  &__app {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 480px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__app-btn {
+    display: block;
+  }
+  &__app-img {
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 45px;
+  }
+  &__img {
+    position: absolute;
+    width: 350px;
+    height: 720px;
+    top: 70px;
+    right: 205px;
+    @media (max-width: 1199px) {
+      width: 290px;
+      height: 600px;
+      top: 170px;
+      right: 30px;
+    }
+    @media (max-width: 991px) {
+      width: 230px;
+      height: 475px;
+      top: 265px;
+    }
+    @media (max-width: 768px) {
+      width: 195px;
+      height: 405px;
+      top: 220px;
+      right: 8px;
+    }
+    @media (max-width: 576px) {
+      width: 130px;
+      height: 270px;
+      right: -15px;
+    }
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}

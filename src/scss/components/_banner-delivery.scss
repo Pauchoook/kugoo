@@ -8,17 +8,19 @@
       &::before {
          position: absolute;
          content: '';
-         width: 856px;
-         height: 421px;
+         width: 700px;
+         height: 415px;
          background: url('../img/pictures/drone.png') 0 0 / 100% 100% no-repeat;
-         left: 0;
-         bottom: 0;
+         left: 30px;
+         bottom: -60px;
          z-index: -1;
       }
       @media (max-width: 1439px) {  
          &::before {
-            width: 572px;
-            height: 328px;
+            width: 595px;
+            height: 355px;
+            left: 10px;
+            bottom: -30px;
          }
       }
       @media (max-width: 1199px) {
@@ -34,7 +36,7 @@
             width: 318px;
             height: 182px;
             right: 0;
-            bottom: -23px;
+            bottom: -40px;
          }
       }
       @media (max-width: 767px) {

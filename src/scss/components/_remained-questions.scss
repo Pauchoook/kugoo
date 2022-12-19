@@ -1,0 +1,107 @@
+.remained-questions {
+  padding-bottom: 100px;
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+  &__parent {
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+    @media (max-width: 991px) {
+      padding-top: 0;
+    }
+  }
+  &__body {
+    padding: 75px 135px;
+    background-color: $bg;
+    border-radius: 10px;
+    @media (max-width: 1439px) {
+      padding: 50px 60px;
+   }
+   @media (max-width: 991px) {
+      padding: 35px 45px;
+   }
+   @media (max-width: 767px) {
+      padding: 25px;   
+   }
+  }
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 505px;
+    margin-bottom: 40px;    
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 505px;
+    @media (max-width: 767px) {
+      max-width: 270px;
+      gap: 15px;
+    } 
+    @media (max-width: 480px) {
+      max-width: none;
+      width: 100%;
+    }
+  }
+  &__input {
+    flex: 0 1 265px;
+    background-color: $white;
+    @media (max-width: 767px) {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__btn {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &__processing-data {
+    max-width: 335px;
+  }
+  &__img {
+    position: absolute;
+    width: 385px;
+    height: 570px;
+    top: 0;
+    right: 250px;
+    @media (max-width: 1439px) {
+      right: 170px;
+    }
+    @media (max-width: 1199px) {
+      width: 320px;
+      height: 475px;
+      right: 85px;
+    }
+    @media (max-width: 991px) {
+      width: 240px;
+      height: 355px;
+      right: -65px;
+    }
+    @media (max-width: 767px) {
+      width: 190px;
+      height: 280px;
+      top: auto;
+      bottom: -20px;
+      right: 15px;
+    }
+    @media (max-width: 576px) {
+      width: 150px;
+      height: 225px;
+      right: 0;
+    }
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}
