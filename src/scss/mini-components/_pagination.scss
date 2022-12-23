@@ -1,0 +1,55 @@
+.pagination {
+  @include flex-center;
+  gap: 8px;
+  &__item {
+    @include flex-center;
+    cursor: pointer;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid $gray2;
+    font-size: 14px;
+    line-height: 22px;
+    transition: color .2s ease, border-color .2s ease, background-color .2s ease;
+    &.points {
+      pointer-events: none;
+      border: none;
+    }
+    &.active {
+      color: $main;
+      border-color: $main;
+      background-color: transparent;
+      svg {
+        fill: $main;
+      }
+    }
+    &:hover {
+      color: $main;
+      border-color: $main;
+      background-color: transparent !important;
+      svg {
+        fill: $main;
+      }
+    }
+  }
+  &__nav-btn {
+    &.disabled {
+      background-color: $bg;
+    }
+    &--prev {
+      transform: rotate(180deg);
+    }
+  }
+  &__icon {
+    width: 6px;
+    height: 10px;
+    fill: $black;
+    transition: fill .2s ease;
+  }
+  &__points {
+    width: 15px;
+    height: 2px;
+    fill: $gray;
+  }
+}

@@ -1,0 +1,59 @@
+.hero-discounts {
+  padding: 20px 0px 110px 0px;
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+  &__body {
+    padding: 35px 135px;
+    background: url('../img/pictures/brench-scooter.jpg') bottom -55px right -525px / 1630px 1035px no-repeat;
+    &::before {
+      background: linear-gradient(88.23deg, #6f73ee 24.95%, rgba(111, 115, 238, 0) 59.45%);
+    }
+    @media (max-width: 1439px) {
+      padding-right: 100px;
+      padding-left: 100px;
+      background-size: 1200px 760px;
+      background-position: bottom -55px right -315px;
+    }
+    @media (max-width: 991px) {
+      padding-right: 70px;
+      padding-left: 70px;
+      background-size: 905px 575px;
+      &::before {
+        background: linear-gradient(88.23deg, #6f73ee 24.95%, rgba(111, 115, 238, 0) 92.45%);
+      }
+    }
+    @media (max-width: 767px) {
+      padding: 30px;
+      background-size: cover;
+      background-position: bottom;
+    }
+    @media (max-width: 480px) {
+      background-position: top 0 right -150px;
+      &::before {
+        background: linear-gradient(88.23deg, #6f73ee 47.95%, rgba(111, 115, 238, 0) 92.45%);
+      }
+    }
+  }
+  &__tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  &__tag {
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 5px;
+    &._red {
+      background-color: $red;
+    }
+    &._green {
+      background-color: $green;
+    }
+  }
+  &__title {
+    max-width: 600px;
+  }
+}

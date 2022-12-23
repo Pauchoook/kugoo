@@ -6,6 +6,9 @@
    }
    &__title {
       margin-bottom: 50px;
+      @media (max-width: 767px) {
+         margin-bottom: 25px;
+      }
    }
    &__slider {
       overflow: visible;

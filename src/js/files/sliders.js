@@ -112,7 +112,7 @@ export function slider() {
       autoplay: {
          delay: 4000,
          disableOnInteraction: false
-      },
+      }
    });
 
    const teamSlider = new Swiper('.team-service__slider', {
@@ -151,6 +151,7 @@ export function slider() {
       allowTouchMove: false,
       slidesPerView: 'auto'
    });
+
    const productSlider = new Swiper('.product-main__slider', {
       modules: [Navigation, Thumbs],
       speed: 1000,
@@ -165,6 +166,21 @@ export function slider() {
          swiper: productSliderPag
       }
    });
+
+   const descrArticleSlider = new Swiper('.descr-article__slider', {
+      modules: [Navigation, Autoplay],
+      spaceBetween: 20,
+      speed: 1000,
+      simulateTouch: false,
+      navigation: {
+         nextEl: '.descr-article__slider-btn--next',
+         prevEl: '.descr-article__slider-btn--prev',
+      },
+      autoplay: {
+         delay: 4000,
+         disableOnInteraction: false
+      }
+   })
 
    const recSliders = document.querySelectorAll('.rec-slider');
    recSliders.forEach(slider => {

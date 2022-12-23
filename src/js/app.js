@@ -4,12 +4,14 @@ import * as flsProducts from './files/products.js';
 import * as flsPrices from './files/prices.js';
 import {slider, productSlider} from './files/sliders.js';
 import quiz from './files/quiz.js';
+import articles from "./files/articles.js";
 
 flsSimple.isWebp();
 flsSimple.citiesSelect();
 slider();
 productSlider();
 quiz();
+articles();
 
 flsFunctions.mediaAdaptive();
 flsFunctions.dropdown();
