@@ -1,0 +1,19 @@
+.hero-contacts {
+  padding: 20px 0px 50px 0px;
+  &__body {
+    padding: 75px 135px;
+    background: url('../img/pictures/map.jpg') right -275px bottom -280px / 1440px 900px no-repeat;
+    &::before {
+      background: linear-gradient(88.23deg, #6F73EE 24.95%, rgba(111, 115, 238, 0) 59.45%);
+    }
+    @media (max-width: 1439px) {
+      padding: 50px 100px;
+    }
+    @media (max-width: 991px) {
+      padding: 40px 70px;
+    }
+    @media (max-width: 767px) {
+      padding: 30px;
+    }
+  }
+}
