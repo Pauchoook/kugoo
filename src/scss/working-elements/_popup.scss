@@ -28,8 +28,11 @@
       z-index: -10;
    }
    &__overlay {
-      @include flex-center;
+      // @include flex-center;
       position: fixed;
+      display: flex;
+      justify-content: center;
+      overflow-y: auto;
       top: 0;
       right: 0;
       bottom: 0;
@@ -45,6 +48,7 @@
       background-color: $white;
       padding: 40px;
       transform: translateY(-1000px);
+      height: fit-content;
       transition: transform .5s ease, opacity .5s ease;
       &.scroll {
          overflow: hidden;

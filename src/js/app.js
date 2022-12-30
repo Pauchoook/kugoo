@@ -29,6 +29,7 @@ flsFunctions.spollers();
 flsFunctions.range();
 flsFunctions.show();
 flsFunctions.openFilter();
+flsFunctions.filesInputs();
 
 flsProducts.products();
 flsProducts.sortingProducts();

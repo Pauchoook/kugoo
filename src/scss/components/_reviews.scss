@@ -55,7 +55,7 @@
       flex: 0 0 213px;
       height: 284px;
       margin-right: 20px;
-      transition: flex .3s ease;
+      transition: flex .3s ease .3s;
       &:nth-child(3n) {
          flex-basis: 378px;
       }
@@ -127,7 +127,7 @@
       bottom: 300px;
       color: $white !important;
       z-index: 2;
-      transition: bottom .3s ease;
+      transition: bottom .3s ease .3s;
       @media (max-width: 767px) {
          left: 15px;
          right: 15px;

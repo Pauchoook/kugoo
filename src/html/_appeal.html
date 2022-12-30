@@ -1,36 +1,296 @@
 <section class="appeal">
   <div class="container _big">
     <div class="appeal__body">
-      <div class="appeal__item">
-        <h4 class="appeal__item-title"></h4>
-        <ul class="appeal__list">
-          <li class="appeal__list-item">
-            <svg class="appeal__list-icon">
-              <use xlink:href='img/icons/icons.svg#icon'></use>
-            </svg>
-            <a href="mailto:" class="appea__list-link"></a>
-          </li>
-          <li class="appeal__list-item">
-            <svg class="appeal__list-icon">
-              <use xlink:href='img/icons/icons.svg#icon'></use>
-            </svg>
-            <div class="appeal__list-info">
-              <a href="mailto:" class="appeal__list-link"></a>
-              <span class="appeal__list-datetime"></span>
+      <div class="appeal__wrapper">
+        <div class="appeal__item">
+          <h4 class="appeal__item-title">
+            Отдел рекламаций <br />
+            и претензий
+          </h4>
+          <ul class="appeal__list">
+            <li class="appeal__list-item">
+              <svg class="appeal__list-icon">
+                <use xlink:href="img/icons/icons.svg#icon-dog"></use>
+              </svg>
+              <a href="mailto:claim@kugoo-russia.ru" class="appeal__list-link">claim@kugoo-russia.ru</a>
+            </li>
+            <li class="appeal__list-item">
+              <svg class="appeal__list-icon">
+                <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+              </svg>
+              <div class="appeal__list-info">
+                <a href="tel:+74993507692" class="appeal__list-link">+7 (499) 350-76-92</a>
+                <span class="appeal__list-datetime">Ср-Вс 10:00 - 19:00</span>
+              </div>
+            </li>
+            <li class="appeal__list-item">
+              <svg class="appeal__list-icon">
+                <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+              </svg>
+              <div class="appeal__list-info">
+                <a href="#" class="appeal__list-link">+7 (911) 284-53-19</a>
+                <span class="appeal__list-datetime">Ср-Вс 10:00 - 19:00</span>
+                <a href="./files/products.json" download class="appeal__download-btn">Скачать шаблон обращения</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="appeal__item">
+          <h4 class="appeal__item-title">Оптовый отдел</h4>
+          <ul class="appeal__list">
+            <li class="appeal__list-item">
+              <svg class="appeal__list-icon">
+                <use xlink:href="img/icons/icons.svg#icon-dog"></use>
+              </svg>
+              <a href="mailto:opt@kugoo-russia.ru" class="appeal__list-link">opt@kugoo-russia.ru</a>
+            </li>
+            <li class="appeal__list-item">
+              <svg class="appeal__list-icon">
+                <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+              </svg>
+              <div class="appeal__list-info">
+                <a href="tel:+74992816452" class="appeal__list-link">+7 (499) 281-64-52</a>
+                <span class="appeal__list-datetime">Ср-Вс 10:00 - 19:00</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="appeal__item">
+          <h4 class="appeal__item-title">
+            Отдел маркетинга <br />
+            и рекламы
+          </h4>
+          <ul class="appeal__list">
+            <li class="appeal__list-item">
+              <svg class="appeal__list-icon">
+                <use xlink:href="img/icons/icons.svg#icon-dog"></use>
+              </svg>
+              <a href="mailto:marketing@kugoo-russia.ru" class="appeal__list-link">marketing@kugoo-russia.ru</a>
+            </li>
+          </ul>
+        </div>
+        <div class="appeal__item">
+          <h4 class="appeal__item-title">Написать директору</h4>
+          <p class="appeal__item-content">
+            Если у вас возникли предложения или пожелания, которые помогут улучшить работу нашей компании, вы можете
+            написать через <a data-popup-btn="appeal-director" class="popup-btn">специальную форму</a> напрямую руководителю
+            компании.
+          </p>
+        </div>
+      </div>
+      <button data-popup-btn="appeal" class="btn popup-btn appeal__send-btn">Отправить сообщение</button>
+    </div>
+  </div>
+  <div data-popup="appeal" class="popup">
+    <div close-popup class="popup__overlay">
+      <div class="popup__window appeal__popup-window">
+        <div class="appeal__popup-info">
+          <button close-popup class="popup__close">
+            <div class="popup__close-line popup__close-line--top"></div>
+            <div class="popup__close-line popup__close-line--bottom"></div>
+          </button>
+          <div class="appeal__popup-header">
+            <h3 class="title-3 appeal__popup-title">Отправьте заполненное обращение в отдел рекламаций</h3>
+            <p class="appeal__popup-content">
+              в отдел рекламаций и претензий через форму ниже или по почте
+              <a href="mailto:claim@kugoo-russia.ru">claim@kugoo-russia.ru</a>
+            </p>
+            <p class="appeal__popup-content">Срок рассмотрения обращения — 10 рабочих дней.</p>
+          </div>
+          <form action="#" class="form appeal__form">
+            <div class="conveniet-communication appeal__communication">
+              <p class="conveniet-communication__content">Как с вами удобнее связаться?</p>
+              <div class="conveniet-communication__body">
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-viber"
+                    name="appeal-director-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-viber" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _viber">
+                      <use xlink:href="img/icons/icons.svg#icon-viber"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-whatsapp"
+                    name="appeal-director-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-whatsapp" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _whatsapp">
+                      <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-telegram"
+                    name="appeal-director-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-telegram" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _telegram">
+                      <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
             </div>
-          </li>
-          <li class="appeal__list-item">
-            <svg class="appeal__list-icon">
-              <use xlink:href='img/icons/icons.svg#icon'></use>
-            </svg>
-            <div class="appeal__list-info">
-              <a href="mailto:" class="appeal__list-link"></a>
-              <span class="appeal__list-datetime"></span>
-              <a href="#" download class="appeal__download-btn">Скачать шаблон обращения</a>
+            <input
+              type="tel"
+              data-phone-pattern="+7 (___) ___ - __ - __"
+              data-length="22"
+              placeholder="+7 (___) ___ - __ - __"
+              name="appeal-tel"
+              class="form__input appeal__input appeal__input--tel"
+            />
+            <textarea
+              name="appeal-descr"
+              placeholder="Опишите проблему"
+              class="form__input appeal__input appeal__input--descr scrollbar"
+            ></textarea>
+            <div class="appeal__file">
+              <input data-file="image-appeal" type="file" id="appeal-file" class="file-input appeal__input-file" />
+              <label for="appeal-file" class="appeal__file-label">
+                <svg class="appeal__file-icon">
+                  <use xlink:href="img/icons/icons.svg#icon-file"></use>
+                </svg>
+                <span class="file-input-name"> Выберите изображение </span>
+              </label>
+              <button type="button" data-file-input="image-appeal" class="file-input-delete appeal__file-btn">
+                <svg class="appeal__file-icon">
+                  <use xlink:href="img/icons/icons.svg#icon-del"></use>
+                </svg>
+              </button>
             </div>
-          </li>
-        </ul>
-        <button class="btn appeal__send-btn">Отправить сообщение</button>
+            <button type="submit" class="btn appeal__popup-send">Отправить</button>
+            <div class="form__processing-data appeal__processing-data">
+              <input
+                type="checkbox"
+                name="appeal__data-processing"
+                class="form__checkbox form__processing-data-checkbox"
+                id="data-processing-appeal"
+              />
+              <label for="data-processing-appeal" class="form__processing-data-label">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+                <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="appeal__popup-right">
+          <img src="@img/pictures/email-monitor.svg" alt="Монитор" class="appeal__popup-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-popup="appeal-director" class="popup">
+    <div close-popup class="popup__overlay">
+      <div class="popup__window appeal__popup-window">
+        <div class="appeal__popup-info">
+          <button close-popup class="popup__close">
+            <div class="popup__close-line popup__close-line--top"></div>
+            <div class="popup__close-line popup__close-line--bottom"></div>
+          </button>
+          <div class="appeal__popup-header">
+            <h3 class="title-3 appeal__popup-title">Напишите руководителю <br> Kugoo-Russia</h3>
+          </div>
+          <form action="#" class="form appeal__form">
+            <div class="conveniet-communication appeal__communication">
+              <p class="conveniet-communication__content">Как с вами удобнее связаться?</p>
+              <div class="conveniet-communication__body">
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-viber"
+                    name="appeal-director-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-viber" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _viber">
+                      <use xlink:href="img/icons/icons.svg#icon-viber"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-whatsapp"
+                    name="appeal-director-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-whatsapp" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _whatsapp">
+                      <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-telegram"
+                    name="appeal-director-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-telegram" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _telegram">
+                      <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <input
+              type="tel"
+              data-phone-pattern="+7 (___) ___ - __ - __"
+              data-length="22"
+              placeholder="+7 (___) ___ - __ - __"
+              name="appeal-tel"
+              class="form__input appeal__input appeal__input--tel"
+            />
+            <textarea
+              name="appeal-descr"
+              placeholder="Опишите проблему"
+              class="form__input appeal__input appeal__input--descr scrollbar"
+            ></textarea>
+            <div class="appeal__file">
+              <input data-file="image-appeal-director" type="file" id="appeal-director-file" class="file-input appeal__input-file" />
+              <label for="appeal-director-file" class="appeal__file-label">
+                <svg class="appeal__file-icon">
+                  <use xlink:href="img/icons/icons.svg#icon-file"></use>
+                </svg>
+                <span class="file-input-name">Выберите изображение </span>
+              </label>
+              <button type="button" data-file-input="image-appeal-director" class="file-input-delete appeal__file-btn">
+                <svg class="appeal__file-icon">
+                  <use xlink:href="img/icons/icons.svg#icon-del"></use>
+                </svg>
+              </button>
+            </div>
+            <button type="submit" class="btn appeal__popup-send">Отправить</button>
+            <div class="form__processing-data appeal__processing-data">
+              <input
+                type="checkbox"
+                name="appeal__data-processing"
+                class="form__checkbox form__processing-data-checkbox"
+                id="data-processing-appeal-director"
+              />
+              <label for="data-processing-appeal-director" class="form__processing-data-label">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+                <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="appeal__popup-right">
+          <img src="@img/pictures/email-monitor.svg" alt="Монитор" class="appeal__popup-img" />
+        </div>
       </div>
     </div>
   </div>
