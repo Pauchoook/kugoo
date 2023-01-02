@@ -259,25 +259,40 @@ export function select() {
     itemsSelect.forEach((item) => {
       item.addEventListener('click', (e) => {
         const select = e.target.closest('.select');
-        const titleSelect = select.querySelector('.select__title');
         const selectValue = select.querySelector('.select__value');
         const currentBtn = e.target;
 
-        setTimeout(() => {
-          currentTitle = currentBtn.innerText;
-          if (
-            !titleSelect.textContent.toLowerCase().includes('выберите') &&
-            !titleSelect.textContent.toLowerCase().includes('откуда')
-          ) {
-            currentBtn.textContent = titleSelect.textContent;
-          } else {
-            currentBtn.remove();
-          }
+        if (item.classList.contains('color')) {
+          const colorSelect = select.querySelector('.select__color');
 
-          titleSelect.textContent = currentTitle;
+          const currentColor = colorSelect.className.split(' ').pop();
+          const btnColor = currentBtn.className.split(' ').pop();
 
-          if (selectValue) selectValue.value = currentTitle;
-        }, 0);
+          // добавляем цвет в заголовок и удаляем старый
+          colorSelect.classList.remove(currentColor);
+          colorSelect.classList.add(btnColor);
+
+          // добавляем цвет к кнопке и удаляем старый
+          currentBtn.classList.remove(btnColor);
+          currentBtn.classList.add(currentColor);
+        } else {
+          setTimeout(() => {
+            const titleSelect = select.querySelector('.select__title');
+            currentTitle = currentBtn.innerText;
+            if (
+              !titleSelect.textContent.toLowerCase().includes('выберите') &&
+              !titleSelect.textContent.toLowerCase().includes('откуда')
+            ) {
+              currentBtn.textContent = titleSelect.textContent;
+            } else {
+              currentBtn.remove();
+            }
+
+            titleSelect.textContent = currentTitle;
+
+            if (selectValue) selectValue.value = currentTitle;
+          }, 0);
+        }
       });
     });
   }
@@ -396,6 +411,7 @@ export function validateForm() {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         const inputsForm = form.querySelectorAll('.form__input');
+        let valid = false;
 
         inputsForm.forEach((input) => {
           const select = input.closest('.select');
@@ -405,14 +421,18 @@ export function validateForm() {
           if (valueLength) {
             if (input.value.length < valueLength || input.value.length > valueLength) {
               input.classList.add('error');
+              valid = false;
             } else {
               input.classList.remove('error');
+              valid = true;
             }
           } else {
             if (input.value === '') {
               input.classList.add('error');
+              valid = false;
             } else {
               input.classList.remove('error');
+              valid = true;
             }
           }
 
@@ -421,8 +441,10 @@ export function validateForm() {
             const inputLabel = input.nextElementSibling;
             if (!input.checked) {
               inputLabel.classList.add('error');
+              valid = false;
             } else {
               inputLabel.classList.remove('error');
+              valid = true;
             }
           }
 
@@ -430,10 +452,15 @@ export function validateForm() {
           if (input.classList.contains('select__value')) {
             if (input.value === '') {
               select.classList.add('error');
+              valid = false;
             } else {
-              console.log(select);
               select.classList.remove('error');
+              valid = true;
             }
+          }
+
+          if (valid) {
+            form.setAttribute('valid', 'true');
           }
         });
       });

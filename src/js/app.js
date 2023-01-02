@@ -6,6 +6,7 @@ import {slider, productSlider} from './files/sliders.js';
 import quiz from './files/quiz.js';
 import articles from "./files/articles.js";
 import map from "./files/map.js";
+import basketPage from './files/basket-page.js';
 
 flsSimple.isWebp();
 flsSimple.citiesSelect();
@@ -14,6 +15,7 @@ productSlider();
 quiz();
 articles();
 map();
+basketPage();
 
 flsFunctions.mediaAdaptive();
 flsFunctions.dropdown();

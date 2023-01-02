@@ -25,6 +25,42 @@
    &__title {
       pointer-events: none;
    }
+   &__color {
+      position: relative;
+      pointer-events: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+      }
+      &._pink {
+        &::before {
+          background-color: $pink;
+        }
+      }
+      &._blue {
+        &::before {
+          background-color: $blue;
+        }
+      }
+      &._green {
+        &::before {
+          background-color: $green;
+        }
+      }
+      &._red {
+         &::before {
+           background-color: $red;
+         }
+       }
+   }
    &__arrow {
       pointer-events: none;
       margin-left: 10px;
