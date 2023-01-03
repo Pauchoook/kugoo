@@ -16,265 +16,412 @@
         </li>
       </ul>
     </div>
-    <div class="basket__body">
-      <h2 class="title-2 basket__title">Моя корзина</h2>
-      <span class="basket__count">2 товара</span>
-      <div class="basket__wrapper">
-        <div class="basket__table">
-          <div class="basket__table-header">
-            <div class="basket__table-item _one">
-              <span class="basket__table-title">Товар</span>
+    <button class="basket__prev">
+      <svg class="basket__prev-icon">
+        <use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+      </svg>
+      <span>Вернуться назад</span>
+    </button>
+    <h2 class="title-2 basket__title">Моя корзина</h2>
+    <span class="basket__count">2 товара</span>
+    <form action="#" class="form basket__wrapper">
+      <div class="basket__table">
+        <div class="basket__table-header">
+          <div class="basket__table-item _one">
+            <span class="basket__table-title">Товар</span>
+          </div>
+          <div class="basket__table-item">
+            <span class="basket__table-title">Количество</span>
+          </div>
+          <div class="basket__table-item">
+            <span class="basket__table-title">Сумма</span>
+          </div>
+          <div class="basket__table-item">
+            <button class="basket__products-delete clear-basket">Удалить все</button>
+          </div>
+        </div>
+        <div class="basket__product-card">
+          <div class="basket__product-header">
+            <div class="basket__product-info basket__table-item _one">
+              <img src="@img/products/electro-scooter.jpg" alt="Продукт" class="basket__product-img" />
+              <div class="basket__product-info-right">
+                <h4 class="basket__product-title">Kugoo Kirin M4</h4>
+                <div class="basket__product-descr">
+                  <span class="basket__product-status">В наличии</span>
+                  <span class="basket__product-addition">+ 2 подарка</span>
+                </div>
+              </div>
             </div>
             <div class="basket__table-item">
-              <span class="basket__table-title">Количество</span>
+              <div class="basket__product-count">
+                <button type="button" class="basket__product-count-btn decrement">-</button>
+                <span class="basket__product-count-num">1</span>
+                <button type="button" class="basket__product-count-btn increment">+</button>
+              </div>
             </div>
             <div class="basket__table-item">
-              <span class="basket__table-title">Сумма</span>
+              <span class="basket__product-price">29 900 ₽</span>
             </div>
             <div class="basket__table-item">
-              <button class="basket__products-delete clear-basket">Удалить все</button>
+              <button class="basket__product-del">
+                <svg class="basket__product-del-icon">
+                  <use xlink:href="img/icons/icons.svg#icon-del"></use>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="basket__product-card">
-            <div class="basket__product-header">
-              <div class="basket__product-info basket__table-item _one">
-                <img src="@img/products/electro-scooter.jpg" alt="Продукт" class="basket__product-img" />
-                <div class="basket__product-info-right">
-                  <h4 class="basket__product-title">Kugoo Kirin M4</h4>
-                  <div class="basket__product-descr">
-                    <span class="basket__product-status">В наличии</span>
-                    <span class="basket__product-addition">+ 2 подарка</span>
-                  </div>
-                </div>
-              </div>
-              <div class="basket__table-item">
-                <div class="basket__product-count">
-                  <button class="basket__product-count-btn decrement">-</button>
-                  <span class="basket__product-count-num">1</span>
-                  <button class="basket__product-count-btn increment">+</button>
-                </div>
-              </div>
-              <div class="basket__table-item">
-                <span class="basket__product-price">29 900 ₽</span>
-              </div>
-              <div class="basket__table-item">
-                <button class="basket__product-del">
-                  <svg class="basket__product-del-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-del"></use>
-                  </svg>
-                </button>
-              </div>
+          <div class="basket__product-tags">
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Комплектация:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__title">стандартная</span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item">
+                <li class="select__element basket__product-tag-element">Базовая</li>
+                <li class="select__element basket__product-tag-element">VIP</li>
+              </ul>
             </div>
-            <div class="basket__product-tags">
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Комплектация:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__title">стандартная</span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item">
-                  <li class="select__element basket__product-tag-element">Базовая</li>
-                  <li class="select__element basket__product-tag-element">VIP</li>
-                </ul>
-              </div>
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Подарочная упаковка:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__color _pink"></span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item color">
-                  <li class="select__element basket__product-tag-element basket__product-tag-element--color _blue"></li>
-                  <li
-                    class="select__element basket__product-tag-element basket__product-tag-element--color _green"
-                  ></li>
-                </ul>
-              </div>
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Гарантия:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__title">1 год</span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item">
-                  <li class="select__element basket__product-tag-element">2 года</li>
-                  <li class="select__element basket__product-tag-element">3 года</li>
-                </ul>
-              </div>
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Тип покрышки:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__title">шоссейная</span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item">
-                  <li class="select__element basket__product-tag-element">грунтовая</li>
-                  <li class="select__element basket__product-tag-element">всесезонная</li>
-                </ul>
-              </div>
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Доп.услуги:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__title">гидроизоляция</span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item">
-                  <li class="select__element basket__product-tag-element">настройка</li>
-                  <li class="select__element basket__product-tag-element">гидроизоляция и настройка</li>
-                </ul>
-              </div>
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Подарочная упаковка:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__color _pink"></span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item color">
+                <li class="select__element basket__product-tag-element basket__product-tag-element--color _blue"></li>
+                <li class="select__element basket__product-tag-element basket__product-tag-element--color _green"></li>
+              </ul>
             </div>
-          </div>
-          <div class="basket__product-card">
-            <div class="basket__product-header">
-              <div class="basket__product-info basket__table-item _one">
-                <img src="@img/products/electro-scooter.jpg" alt="Продукт" class="basket__product-img" />
-                <div class="basket__product-info-right">
-                  <h4 class="basket__product-title">Kugoo Kirin M4</h4>
-                  <div class="basket__product-descr">
-                    <span class="basket__product-status">В наличии</span>
-                    <span class="basket__product-addition">+ 2 подарка</span>
-                  </div>
-                </div>
-              </div>
-              <div class="basket__table-item">
-                <div class="basket__product-count">
-                  <button class="basket__product-count-btn decrement">-</button>
-                  <span class="basket__product-count-num">1</span>
-                  <button class="basket__product-count-btn increment">+</button>
-                </div>
-              </div>
-              <div class="basket__table-item">
-                <span class="basket__product-price">29 900 ₽</span>
-              </div>
-              <div class="basket__table-item">
-                <button class="basket__product-del">
-                  <svg class="basket__product-del-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-del"></use>
-                  </svg>
-                </button>
-              </div>
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Гарантия:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__title">1 год</span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item">
+                <li class="select__element basket__product-tag-element">2 года</li>
+                <li class="select__element basket__product-tag-element">3 года</li>
+              </ul>
             </div>
-            <div class="basket__product-tags">
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Комплектация:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__title">стандартная</span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item">
-                  <li class="select__element basket__product-tag-element">Базовая</li>
-                  <li class="select__element basket__product-tag-element">VIP</li>
-                </ul>
-              </div>
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Подарочная упаковка:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__color _pink"></span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item color">
-                  <li class="select__element basket__product-tag-element basket__product-tag-element--color _blue"></li>
-                  <li
-                    class="select__element basket__product-tag-element basket__product-tag-element--color _green"
-                  ></li>
-                </ul>
-              </div>
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Гарантия:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__title">1 год</span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item">
-                  <li class="select__element basket__product-tag-element">2 года</li>
-                  <li class="select__element basket__product-tag-element">3 года</li>
-                </ul>
-              </div>
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Тип покрышки:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__title">шоссейная</span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item">
-                  <li class="select__element basket__product-tag-element">грунтовая</li>
-                  <li class="select__element basket__product-tag-element">всесезонная</li>
-                </ul>
-              </div>
-              <div class="select basket__product-tag">
-                <span class="basket__product-tag-title">Доп.услуги:</span>
-                <button class="select__btn basket__product-tag-btn">
-                  <span class="select__title">гидроизоляция</span>
-                  <svg class="basket__product-tag-arrow">
-                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <ul class="select__item basket__product-tag-item">
-                  <li class="select__element basket__product-tag-element">настройка</li>
-                  <li class="select__element basket__product-tag-element">гидроизоляция и настройка</li>
-                </ul>
-              </div>
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Тип покрышки:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__title">шоссейная</span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item">
+                <li class="select__element basket__product-tag-element">грунтовая</li>
+                <li class="select__element basket__product-tag-element">всесезонная</li>
+              </ul>
+            </div>
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Доп.услуги:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__title">гидроизоляция</span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item">
+                <li class="select__element basket__product-tag-element">настройка</li>
+                <li class="select__element basket__product-tag-element">гидроизоляция и настройка</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="basket__arrange">
-          Оформление
-        </div>
-        <div class="basket__sidebar">
-          <div class="basket__sidebar-header">
-            <span class="basket__sidebar-title">Итого</span>
-            <span class="basket__sidebar-price">58 800 ₽</span>
-          </div>
-          <ul class="basket__sidebar-list">
-            <li class="basket__sidebar-item">
-              <span class="basket__sidebar-item-title">Стоимость товаров</span>
-              <span class="basket__sidebar-item-price">58 800 ₽</span>
-            </li>
-            <li class="basket__sidebar-item">
-              <span class="basket__sidebar-item-title">Сумма скидки</span>
-              <span class="basket__sidebar-item-price">8 000 ₽</span>
-            </li>
-            <li class="basket__sidebar-item">
-              <span class="basket__sidebar-item-title">Итого без учета доставки</span>
-              <span class="basket__sidebar-item-price">50 800 ₽</span>
-            </li>
-          </ul>
-          <form action="#" class="form">
-            <button type="button" class="btn basket__sidebar-btn">Оформить заказ</button>
-            <div class="basket__processing-data form__processing-data">
-              <input
-                type="checkbox"
-                name="basket-data-processing"
-                class="form__input form__checkbox form__processing-data-checkbox"
-                id="basket-data-processing"
-              />
-              <label for="basket-data-processing" class="form__processing-data-label">
-                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
-                <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
-              </label>
+        <div class="basket__product-card">
+          <div class="basket__product-header">
+            <div class="basket__product-info basket__table-item _one">
+              <img src="@img/products/electro-scooter.jpg" alt="Продукт" class="basket__product-img" />
+              <div class="basket__product-info-right">
+                <h4 class="basket__product-title">Kugoo Kirin M4</h4>
+                <div class="basket__product-descr">
+                  <span class="basket__product-status">В наличии</span>
+                  <span class="basket__product-addition">+ 2 подарка</span>
+                </div>
+              </div>
             </div>
-          </form>
+            <div class="basket__table-item">
+              <div class="basket__product-count">
+                <button type="button" class="basket__product-count-btn decrement">-</button>
+                <span class="basket__product-count-num">1</span>
+                <button type="button" class="basket__product-count-btn increment">+</button>
+              </div>
+            </div>
+            <div class="basket__table-item">
+              <span class="basket__product-price">29 900 ₽</span>
+            </div>
+            <div class="basket__table-item">
+              <button class="basket__product-del">
+                <svg class="basket__product-del-icon">
+                  <use xlink:href="img/icons/icons.svg#icon-del"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="basket__product-tags">
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Комплектация:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__title">стандартная</span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item">
+                <li class="select__element basket__product-tag-element">Базовая</li>
+                <li class="select__element basket__product-tag-element">VIP</li>
+              </ul>
+            </div>
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Подарочная упаковка:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__color _pink"></span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item color">
+                <li class="select__element basket__product-tag-element basket__product-tag-element--color _blue"></li>
+                <li class="select__element basket__product-tag-element basket__product-tag-element--color _green"></li>
+              </ul>
+            </div>
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Гарантия:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__title">1 год</span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item">
+                <li class="select__element basket__product-tag-element">2 года</li>
+                <li class="select__element basket__product-tag-element">3 года</li>
+              </ul>
+            </div>
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Тип покрышки:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__title">шоссейная</span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item">
+                <li class="select__element basket__product-tag-element">грунтовая</li>
+                <li class="select__element basket__product-tag-element">всесезонная</li>
+              </ul>
+            </div>
+            <div class="select basket__product-tag">
+              <span class="basket__product-tag-title">Доп.услуги:</span>
+              <button class="select__btn basket__product-tag-btn">
+                <span class="select__title">гидроизоляция</span>
+                <svg class="basket__product-tag-arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="select__item basket__product-tag-item">
+                <li class="select__element basket__product-tag-element">настройка</li>
+                <li class="select__element basket__product-tag-element">гидроизоляция и настройка</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="basket__arrange">
+        <div class="basket__step">
+          <h4 class="basket__step-title"><span>Шаг 1.</span> Выберите способ доставки</h4>
+          <div class="basket__step-wrapper">
+            <input type="radio" checked name="step-1" class="input-check basket__step-check" id="pickup" />
+            <label for="pickup" class="basket__step-label">
+              <span class="basket__step-label-title"> Самовывоз из магазина </span>
+              <div class="select basket__step-select">
+                <button class="select__btn basket__step-select-btn">
+                  <input type="text" class="select__value" />
+                  <span class="select__title">в Москве</span>
+                  <svg class="basket__step-select-arrow">
+                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <ul class="select__item">
+                  <li class="select__element basket__step-select-element">в Санкт-Петербурге</li>
+                  <li class="select__element basket__step-select-element">в Минске</li>
+                  <li class="select__element basket__step-select-element">в Туле</li>
+                </ul>
+              </div>
+              <div class="basket__step-address">
+                <svg class="basket__step-address-icon">
+                  <use xlink:href="img/icons/icons.svg#icon-map"></use>
+                </svg>
+                <p class="basket__step-address-content">ул. Ткацкая, 5 стр. 16. Пн - Вс 10:00 - 20:00.</p>
+              </div>
+            </label>
+            <input type="radio" name="step-1" class="input-check basket__step-check" id="delivery" />
+            <label for="delivery" class="basket__step-label">
+              <span class="basket__step-label-title">Доставка курьером</span>
+              <ul class="basket__delivery-list">
+                <li class="basket__delivery-item">Москва</li>
+                <li class="basket__delivery-item">Санкт-Петербург</li>
+                <li class="basket__delivery-item">Краснодар</li>
+              </ul>
+              <span class="basket__free">Бесплатно</span>
+            </label>
+            <input type="radio" name="step-1" class="input-check basket__step-check" id="urgently-delivery" />
+            <label for="urgently-delivery" class="basket__step-label">
+              <span class="basket__step-label-title">Срочная доставка курьером</span>
+              <p class="basket__step-label-region">Только по Москве</p>
+              <p class="basket__step-content-manager">
+                Стоимость уточняйте у менеджера <a href="tel:+78005055461">+ 7 (800) 505 54 61</a>
+              </p>
+            </label>
+            <input type="radio" name="step-1" class="input-check basket__step-check" id="cdek" />
+            <label for="cdek" class="basket__step-label">
+              <span class="basket__step-label-title">Служба доставки CDEK</span>
+              <p class="basket__step-label-region">Регионы России</p>
+              <p class="basket__step-content-manager">
+                Стоимость уточняйте у менеджера <a href="tel:+78005055461">+ 7 (800) 505 54 61</a>
+              </p>
+            </label>
+          </div>
+        </div>
+        <div class="basket__step">
+          <h4 class="basket__step-title"><span>Шаг 2.</span> Укажите данные получателя</h4>
+          <div class="basket__step-wrapper _form">
+            <div class="basket__form-item">
+              <label for="surname" class="basket__form-label">Ваша фамилия</label>
+              <input type="text" id="surname" placeholder="Введите фамилию" class="form__input basket__form-input" />
+            </div>
+            <div class="basket__form-item">
+              <label for="name" class="basket__form-label">Ваше имя</label>
+              <input type="text" id="name" placeholder="Введите имя" class="form__input basket__form-input" />
+            </div>
+            <div class="basket__form-item">
+              <label for="you-tel" class="basket__form-label">Ваш телефон</label>
+              <input
+                type="tel"
+                data-phone-pattern="+7 (___) ___ - __ - __"
+                data-length="22"
+                placeholder="+7 (___) ___ - __ - __"
+                name="you-tel"
+                id="you-tel"
+                class="form__input basket__form-input"
+              />
+            </div>
+            <div class="basket__form-item">
+              <label for="email" class="basket__form-label">Ваш email</label>
+              <input type="email" id="email" placeholder="Введите email" class="form__input basket__form-input" />
+              <input type="checkbox" id="discount" class="form__checkbox form__processing-data-checkbox" />
+              <label for="discount" class="basket__form-discount">Сообщать об акциях и скидках</label>
+            </div>
+            <div class="basket__form-item _comment">
+              <label for="comment" class="basket__form-label">Комментрий</label>
+              <textarea
+                no-valid="true"
+                id="comment"
+                placeholder="Оставьте пожелание или комментарий к заказу"
+                class="form__input basket__form-input _comment scrollbar"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="basket__step">
+          <h4 class="basket__step-title"><span>Шаг 3.</span> Выберите способ оплаты</h4>
+          <div class="basket__step-wrapper">
+            <input type="radio" checked name="step-3" class="input-check basket__step-check" id="bank-card" />
+            <label for="bank-card" class="basket__step-label">
+              <span class="basket__step-label-title">Картой</span>
+              <ul class="basket__payment-list">
+                <li class="basket__payment-item">
+                  <img src="@img/logos/g-pay.svg" alt="иконка" class="basket__payment-img" />
+                </li>
+                <li class="basket__payment-item">
+                  <img src="@img/logos/a-pay.svg" alt="иконка" class="basket__payment-img" />
+                </li>
+                <li class="basket__payment-item">
+                  <img src="@img/logos/visa.svg" alt="иконка" class="basket__payment-img" />
+                </li>
+                <li class="basket__payment-item">
+                  <img src="@img/logos/master.svg" alt="иконка" class="basket__payment-img" />
+                </li>
+                <li class="basket__payment-item">
+                  <img src="@img/logos/maestro.svg" alt="иконка" class="basket__payment-img" />
+                </li>
+              </ul>
+            </label>
+            <input type="radio" name="step-3" class="input-check basket__step-check" id="cash" />
+            <label for="cash" class="basket__step-label">
+              <span class="basket__step-label-title">Картой</span>
+              <p class="basket__step-payment-content">Курьеру, в магазине или при доставке CDEK</p>
+            </label>
+            <input type="radio" name="step-3" class="input-check basket__step-check" id="internet-bank" />
+            <label for="internet-bank" class="basket__step-label">
+              <span class="basket__step-label-title">Через интернет-банкинг по счету</span>
+              <p class="basket__step-payment-content">Менеджер свяжется с вами, чтобы выставить счет</p>
+            </label>
+            <input type="radio" name="step-3" class="input-check basket__step-check" id="website" />
+            <label for="website" class="basket__step-label">
+              <span class="basket__step-label-title">Онлайн на сайте </span>
+              <p class="basket__step-payment-content">
+                После оформления заказа вы будете перенаправлены на страницу оплаты
+              </p>
+            </label>
+            <input type="radio" name="step-3" class="input-check basket__step-check" id="installment" />
+            <label for="installment" class="basket__step-label">
+              <span class="basket__step-label-title">В рассрочку </span>
+              <p class="basket__step-payment-content">После оформления заказа c вами свяжется менеджер.</p>
+            </label>
+            <input type="radio" name="step-3" class="input-check basket__step-check" id="credit" />
+            <label for="credit" class="basket__step-label">
+              <span class="basket__step-label-title">В кредит от «Сбербанка» </span>
+              <p class="basket__step-payment-content">С условиями можно ознакомиться <a href="#">на сайте банка</a></p>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="basket__sidebar">
+        <div class="basket__sidebar-header">
+          <span class="basket__sidebar-title">Итого</span>
+          <span class="basket__sidebar-price">58 800 ₽</span>
+        </div>
+        <ul class="basket__sidebar-list">
+          <li class="basket__sidebar-item">
+            <span class="basket__sidebar-item-title">Стоимость товаров</span>
+            <span class="basket__sidebar-item-price">58 800 ₽</span>
+          </li>
+          <li class="basket__sidebar-item">
+            <span class="basket__sidebar-item-title">Сумма скидки</span>
+            <span class="basket__sidebar-item-price" id="sum-discount">8 000 ₽</span>
+          </li>
+          <li class="basket__sidebar-item">
+            <span class="basket__sidebar-item-title">Итого без учета доставки</span>
+            <span class="basket__sidebar-item-price" id="result-basket">50 800 ₽</span>
+          </li>
+        </ul>
+        <div class="basket__sidebar-footer">
+          <button type="button" class="btn basket__sidebar-btn">Оформить заказ</button>
+          <div class="basket__processing-data form__processing-data">
+            <input
+              type="checkbox"
+              name="basket-data-processing"
+              class="form__input form__checkbox form__processing-data-checkbox"
+              id="basket-data-processing"
+            />
+            <label for="basket-data-processing" class="form__processing-data-label">
+              Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+              <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
 </section>

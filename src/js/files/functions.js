@@ -411,28 +411,25 @@ export function validateForm() {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         const inputsForm = form.querySelectorAll('.form__input');
-        let valid = false;
 
         inputsForm.forEach((input) => {
           const select = input.closest('.select');
           const valueLength = input.getAttribute('data-length');
 
+          if (input.getAttribute('no-valid')) return;
+
           // в data-length записываем точное кол-во символов, которые должны быть в инпуте
           if (valueLength) {
             if (input.value.length < valueLength || input.value.length > valueLength) {
               input.classList.add('error');
-              valid = false;
             } else {
               input.classList.remove('error');
-              valid = true;
             }
           } else {
             if (input.value === '') {
               input.classList.add('error');
-              valid = false;
             } else {
               input.classList.remove('error');
-              valid = true;
             }
           }
 
@@ -441,10 +438,8 @@ export function validateForm() {
             const inputLabel = input.nextElementSibling;
             if (!input.checked) {
               inputLabel.classList.add('error');
-              valid = false;
             } else {
               inputLabel.classList.remove('error');
-              valid = true;
             }
           }
 
@@ -452,15 +447,9 @@ export function validateForm() {
           if (input.classList.contains('select__value')) {
             if (input.value === '') {
               select.classList.add('error');
-              valid = false;
             } else {
               select.classList.remove('error');
-              valid = true;
             }
-          }
-
-          if (valid) {
-            form.setAttribute('valid', 'true');
           }
         });
       });
