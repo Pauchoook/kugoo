@@ -434,7 +434,7 @@ export function validateForm() {
           }
 
           // если чекбокс
-          if (input.type === 'checkbox') {
+          if (input.type === 'checkbox' || input.type === 'radio') {
             const inputLabel = input.nextElementSibling;
             if (!input.checked) {
               inputLabel.classList.add('error');

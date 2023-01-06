@@ -1,0 +1,146 @@
+.comparison {
+  padding: 20px 0px 110px 0px;
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+  &__prev {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 17px;
+    color: $gray;
+    transition: color 0.2s ease;
+    margin-bottom: 50px;
+    &:hover {
+      color: $main;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__prev-icon {
+    width: 12px;
+    height: 10px;
+    transform: rotate(180deg);
+    color: inherit;
+    fill: currentColor;
+    margin-right: 8px;
+    transition: fill 0.2s ease, color 0.2s ease;
+  }
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 465px;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 85px;
+    @media (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 767px) {
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 480px) {
+      justify-content: center;
+    }
+  }
+  &__parent {
+    @media (max-width: 991px) {
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 5px;
+    }
+  }
+  &__table {
+    @media (max-width: 991px) {
+      width: 840px;
+    }
+    @media (max-width: 767px) {
+
+    }
+  }
+  &__row {
+    padding: 20px 0px;
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray2;
+    }
+    @media (max-width: 767px) {
+      padding: 15px 0;
+    }
+  }
+  &__item {
+    flex: 0 1 285px;
+    &:last-child {
+      flex-basis: 250px;
+    }
+    @media (max-width: 991px) {
+      flex-shrink: 0;
+      flex-basis: 25%;
+    }
+  }
+  &__item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+  &__product-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    @media (max-width: 767px) {
+      width: 110px;
+      height: 100px;
+    }
+  }
+  &__product-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: normal;
+    }
+  }
+  &__item-content {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 240px;
+  }
+  &__product-price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: normal;
+    }
+  }
+}

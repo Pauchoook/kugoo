@@ -69,7 +69,7 @@ export function slider() {
             freeMode: true,
             loop: true,
             speed,
-            touchRatio: 0.6,
+            touchRatio: 0.3,
             grabCursor: true,
             autoplay: {
                delay: 0,

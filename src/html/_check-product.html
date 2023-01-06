@@ -1,0 +1,103 @@
+<section class="check-product">
+  <div class="container _big">
+    <div class="check-product__body">
+      <div class="check-product__info">
+        <h2 class="title-2 check-product__title">Хотите проверить товар перед покупкой?</h2>
+        <p class="check-product__content">
+          В наших магазинах и на складах представлены все товары, которые мы с удовольствием вам покажем и расскажем про
+          них.
+        </p>
+        <ul class="check-product__list">
+          <li class="check-product__item">
+            <svg class="check-product__icon">
+              <use xlink:href="img/icons/icons.svg#icon-check"></use>
+            </svg>
+            <span>Проведем видеопоказ в удобном мессендежере </span>
+          </li>
+          <li class="check-product__item">
+            <svg class="check-product__icon">
+              <use xlink:href="img/icons/icons.svg#icon-check"></use>
+            </svg>
+            <span>Ответим на вопросы </span>
+          </li>
+          <li class="check-product__item">
+            <svg class="check-product__icon">
+              <use xlink:href="img/icons/icons.svg#icon-check"></use>
+            </svg>
+            <span>Поможем подобрать нужную модель по вашим критериям</span>
+          </li>
+        </ul>
+      </div>
+      <form action="#" class="form mini-form check-product__form">
+        <h3 class="mini-form__title check-product__form-title">Оставьте номер и выберите удобный мессенджер</h3>
+        <p class="mini-form__content">Консультант свяжется с вами, чтобы провести видеопоказ</p>
+        <div class="conveniet-communication check-product__communication">
+          <div class="conveniet-communication__body">
+            <input
+              type="radio"
+              id="check-setting-viber"
+              name="appeal-director-radio"
+              class="conveniet-communication__conctact-checkbox"
+            />
+            <label
+              for="check-setting-viber"
+              class="conveniet-communication__conctact-label check-product__conctact-label _white"
+            >
+              <svg class="conveniet-communication__conctact-icon">
+                <use xlink:href="img/icons/icons.svg#icon-viber-2"></use>
+              </svg>
+            </label>
+            <input
+              type="radio"
+              id="check-setting-whatsapp"
+              name="appeal-director-radio"
+              class="conveniet-communication__conctact-checkbox"
+            />
+            <label
+              for="check-setting-whatsapp"
+              class="conveniet-communication__conctact-label check-product__conctact-label _white"
+            >
+              <svg class="conveniet-communication__conctact-icon">
+                <use xlink:href="img/icons/icons.svg#icon-whatsapp-2"></use>
+              </svg>
+            </label>
+            <input
+              type="radio"
+              id="check-setting-telegram"
+              name="appeal-director-radio"
+              class="conveniet-communication__conctact-checkbox"
+            />
+            <label
+              for="check-setting-telegram"
+              class="conveniet-communication__conctact-label check-product__conctact-label _white"
+            >
+              <svg class="conveniet-communication__conctact-icon">
+                <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+              </svg>
+            </label>
+          </div>
+        </div>
+        <input
+          data-phone-pattern="+7 (___) ___ - __ - __"
+          data-length="22"
+          placeholder="+7 (___) ___ - __ - __"
+          name="tel"
+          class="form__input _no-bg mini-form__input"
+        />
+        <button class="btn main-color mini-form__btn">Оставить заявку на видеопоказ</button>
+        <div class="mini-form__processing-data form__processing-data">
+          <input
+            type="checkbox"
+            name="check-product__data-processing"
+            class="form__input form__checkbox form__processing-data-checkbox"
+            id="data-processing-check-product"
+          />
+          <label for="data-processing-check-product" class="form__processing-data-label">
+            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+            <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
