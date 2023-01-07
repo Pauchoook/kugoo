@@ -5,7 +5,7 @@ export function onload() {
   window.onload = () => {
     preload.remove();
     body.classList.remove('hidden');
-  }
+  };
 }
 
 export function mediaAdaptive() {
@@ -363,6 +363,20 @@ export function popup() {
       if (e.target.hasAttribute('close-popup')) {
         closePopup(e.target.closest('.popup'));
       }
+    });
+
+    // загрузка стартового попапа
+    window.addEventListener('load', () => {
+      const startPopup = document.querySelector('.start-popup');
+      const popupWindow = startPopup.querySelector('.popup__window');
+
+      setTimeout(() => {
+        topPopup(popupWindow);
+        window.addEventListener('resize', resize);
+
+        document.body.classList.add('hidden');
+        startPopup.classList.add('open');
+      }, 5000);
     });
 
     function resize() {
