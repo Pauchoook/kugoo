@@ -41,6 +41,7 @@
 @import 'mini-components/_pagination';
 @import 'mini-components/_card-article';
 @import 'mini-components/_map';
+@import 'mini-components/_preload';
 
 // components
 @import 'components/_header';
@@ -111,5 +112,7 @@
 @import 'components/_basket';
 @import 'components/_comparison';
 @import 'components/_check-product';
+@import 'components/_favourites';
+@import 'components/_error';
 
 @import 'components/_footer';

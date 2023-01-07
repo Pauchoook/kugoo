@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {})
-<body>
+<body class="hidden">
+    @@include('html/_preload.html', {})
     @@include('html/header.html', {})
 
     <main>
+      <h1 class="title">КАК ПРАВИЛЬНО ЗАРЯЖАТЬ САМОКАТ</h1>
       @@include('html/_hero-article.html', {})
       @@include('html/_descr-article.html', {})
       @@include('html/_new-discounts.html', {})

@@ -17,6 +17,7 @@ articles();
 map();
 basketPage();
 
+flsFunctions.onload();
 flsFunctions.mediaAdaptive();
 flsFunctions.dropdown();
 flsFunctions.tab();

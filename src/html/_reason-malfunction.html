@@ -1,67 +1,100 @@
 <section class="reason-malfunction">
-   <div class="container _big">
-      <div class="reason-malfunction__body">
-         <div class="reason-malfunction__left">
-            <img src="@img/pictures/original-sound.jpg" alt="Original Sound" class="reason-malfunction__img">
-         </div>
-         <div class="reason-malfunction__right">
-            <span class="reason-malfunction__type">Услуга</span>
-            <h2 class="title-2 reason-malfunction__title">Определим причину неисправности удаленно или на диагностике!</h2>
-            <button data-popup-btn="reason-malfunction" class="btn popup-btn reason-malfunction__btn">Записаться на диагностику</button>
-         </div>
+  <div class="container _big">
+    <div class="reason-malfunction__body">
+      <div class="reason-malfunction__left">
+        <img src="@img/pictures/original-sound.jpg" alt="Original Sound" class="reason-malfunction__img" />
       </div>
-   </div>
-   <div data-popup="reason-malfunction" class="popup">
-      <div close-popup class="popup__overlay">
-         <div class="popup__window reason-malfunction__popup-window">
-            <button close-popup class="popup__close">
-               <div class="popup__close-line popup__close-line--top"></div>
-               <div class="popup__close-line popup__close-line--bottom"></div>
-            </button>
-            <h3 class="title-3 reason-malfunction__popup-title">Запишитесь на диагностику и получите оценку стоимости и сроков ремонта</h3>
-            <p class="reason-malfunction__content">Оставьте свой номер, менеджер свяжется с вами в течение 5 минут, чтобы уточнить проблему.</p>
-            <form action="#" class="form reason-malfunction__form">
-               <div class="conveniet-communication reason-malfunction__communication">
-                  <p class="conveniet-communication__content">
-                     Как с вами удобнее связаться?
-                  </p>
-                  <div class="conveniet-communication__body">
-                     <div class="conveniet-communication__contact">
-                        <input type="radio" id="reason-malfunction-viber" name="reason-malfunction-radio" class="conveniet-communication__conctact-checkbox">
-                        <label for="reason-malfunction-viber" class="conveniet-communication__conctact-label">
-                           <svg class="conveniet-communication__conctact-icon _viber">
-                              <use xlink:href='img/icons/icons.svg#icon-viber'></use>
-                           </svg>
-                        </label>
-                     </div>
-                     <div class="conveniet-communication__contact">
-                        <input type="radio" id="reason-malfunction-whatsapp" name="reason-malfunction-radio" class="conveniet-communication__conctact-checkbox">
-                        <label for="reason-malfunction-whatsapp" class="conveniet-communication__conctact-label">
-                           <svg class="conveniet-communication__conctact-icon _whatsapp">
-                              <use xlink:href='img/icons/icons.svg#icon-whatsapp'></use>
-                           </svg>
-                        </label>
-                     </div>
-                     <div class="conveniet-communication__contact">
-                        <input type="radio" id="reason-malfunction-telegram" name="reason-malfunction-radio" class="conveniet-communication__conctact-checkbox">
-                        <label for="reason-malfunction-telegram" class="conveniet-communication__conctact-label">
-                           <svg class="conveniet-communication__conctact-icon _telegram">
-                              <use xlink:href='img/icons/icons.svg#icon-telegram'></use>
-                           </svg>
-                        </label>
-                     </div>
-                  </div>
-               </div>
-               <input type="tel" data-phone-pattern="+7 (___) ___ - __ - __" data-length="22" placeholder="+7 (___) ___ - __ - __" name="reason-malfunction-tel" class="form__input reason-malfunction__input" class="form__input reason-malfunction__input">
-               <button type="submit" class="btn reason-malfunction__form-btn">Записаться</button>
-               <div class="reason-malfunction__processing-data form__processing-data">
-                  <input type="checkbox" name="reason-malfunction__data-processing" class="form__checkbox form__processing-data-checkbox" id="reason-malfunction">
-                  <label for="reason-malfunction" class="form__processing-data-label">
-                     Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
-                  </label>
-               </div>
-            </form>
-         </div>
+      <div class="reason-malfunction__right">
+        <span class="reason-malfunction__type">Услуга</span>
+        <h2 class="title-2 reason-malfunction__title">Определим причину неисправности удаленно или на диагностике!</h2>
+        <button data-popup-btn="reason-malfunction" class="btn popup-btn reason-malfunction__btn">
+          Записаться на диагностику
+        </button>
       </div>
-   </div>
+    </div>
+  </div>
+  <div data-popup="reason-malfunction" class="popup">
+    <div close-popup class="popup__overlay">
+      <div class="popup__window reason-malfunction__popup-window">
+        <button close-popup class="popup__close">
+          <div class="popup__close-line popup__close-line--top"></div>
+          <div class="popup__close-line popup__close-line--bottom"></div>
+        </button>
+        <h3 class="title-3 reason-malfunction__popup-title">
+          Запишитесь на диагностику и получите оценку стоимости и сроков ремонта
+        </h3>
+        <p class="reason-malfunction__content">
+          Оставьте свой номер, менеджер свяжется с вами в течение 5 минут, чтобы уточнить проблему.
+        </p>
+        <form action="#" class="form reason-malfunction__form">
+          <div class="conveniet-communication reason-malfunction__communication">
+            <p class="conveniet-communication__content">Как с вами удобнее связаться?</p>
+            <div class="conveniet-communication__body">
+              <div class="conveniet-communication__contact">
+                <input
+                  type="radio"
+                  id="reason-malfunction-viber"
+                  name="reason-malfunction-radio"
+                  class="conveniet-communication__conctact-checkbox"
+                />
+                <label for="reason-malfunction-viber" class="conveniet-communication__conctact-label">
+                  <svg class="conveniet-communication__conctact-icon _viber">
+                    <use xlink:href="img/icons/icons.svg#icon-viber"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="conveniet-communication__contact">
+                <input
+                  type="radio"
+                  id="reason-malfunction-whatsapp"
+                  name="reason-malfunction-radio"
+                  class="conveniet-communication__conctact-checkbox"
+                />
+                <label for="reason-malfunction-whatsapp" class="conveniet-communication__conctact-label">
+                  <svg class="conveniet-communication__conctact-icon _whatsapp">
+                    <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="conveniet-communication__contact">
+                <input
+                  type="radio"
+                  id="reason-malfunction-telegram"
+                  name="reason-malfunction-radio"
+                  class="conveniet-communication__conctact-checkbox"
+                />
+                <label for="reason-malfunction-telegram" class="conveniet-communication__conctact-label">
+                  <svg class="conveniet-communication__conctact-icon _telegram">
+                    <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </div>
+          <input
+            type="tel"
+            data-phone-pattern="+7 (___) ___ - __ - __"
+            data-length="22"
+            placeholder="+7 (___) ___ - __ - __"
+            name="reason-malfunction-tel"
+            class="form__input reason-malfunction__input"
+            class="form__input reason-malfunction__input"
+          />
+          <button type="submit" class="btn reason-malfunction__form-btn">Записаться</button>
+          <div class="reason-malfunction__processing-data form__processing-data">
+            <input
+              type="checkbox"
+              name="reason-malfunction__data-processing"
+              class="form__checkbox form__processing-data-checkbox"
+              id="reason-malfunction"
+            />
+            <label for="reason-malfunction" class="form__processing-data-label">
+              Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+              <a href="error.html" class="form__privacy-policy">политикой конфиденциальности</a>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>

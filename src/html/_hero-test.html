@@ -1,123 +1,141 @@
 <section class="hero hero-test _linear">
-   <div class="container">
-      <div class="road">
-         <svg class="road__icon">
-            <use xlink:href='img/icons/icons.svg#icon-home'></use>
-         </svg>
-         <ul class="road__list">
-            <li class="road__item">
-               <a href="index.html" class="road__element">Главная /</a>
-            </li>
-            <li class="road__item">
-               <a class="road__element _current">Тест-драйв</a>
-            </li>
-         </ul>
+  <div class="container">
+    <div class="road">
+      <svg class="road__icon">
+        <use xlink:href="img/icons/icons.svg#icon-home"></use>
+      </svg>
+      <ul class="road__list">
+        <li class="road__item">
+          <a href="index.html" class="road__element">Главная /</a>
+        </li>
+        <li class="road__item">
+          <a class="road__element _current">Тест-драйв</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container _big">
+    <div class="hero__body hero-test__body _linear">
+      <div class="hero-test__location">
+        <svg class="hero-test__location-icon">
+          <use xlink:href="img/icons/icons.svg#icon-map"></use>
+        </svg>
+        <span class="hero-test__location-address">Восточно-Кругликовская улица, 86</span>
+        <span class="hero-test__location-time">Вт - Сб 10:00 - 20:00</span>
       </div>
-   </div>
-   <div class="container _big">
-      <div class="hero__body hero-test__body _linear">
-         <div class="hero-test__location">
-            <svg class="hero-test__location-icon">
-               <use xlink:href='img/icons/icons.svg#icon-map'></use>
+      <h1 class="title-2 hero-test__title">Запишитесь на бесплатный тест-драйв электросамокатов</h1>
+      <p class="hero__content hero-test__content">в Москве без ограничения по времени</p>
+      <ul class="hero-test__list">
+        <li class="hero-test__item">
+          <div class="hero-test__rectangle">
+            <svg class="hero-test__icon">
+              <use xlink:href="img/icons/icons.svg#icon-scooter"></use>
             </svg>
-            <span class="hero-test__location-address">Восточно-Кругликовская улица, 86</span>
-            <span class="hero-test__location-time">Вт - Сб 10:00 - 20:00</span>
-         </div>
-         <h2 class="title-2 hero-test__title">
-            Запишитесь на бесплатный тест-драйв электросамокатов
-         </h2>
-         <p class="hero__content hero-test__content">в Москве без ограничения по времени</p>
-         <ul class="hero-test__list">
-            <li class="hero-test__item">
-               <div class="hero-test__rectangle">
-                  <svg class="hero-test__icon">
-                     <use xlink:href='img/icons/icons.svg#icon-scooter'></use>
-                  </svg>
-               </div>
-               <span>Поймете, какая модель вам подходит</span>
-            </li>
-            <li class="hero-test__item">
-               <div class="hero-test__rectangle">
-                  <svg class="hero-test__icon">
-                     <use xlink:href='img/icons/icons.svg#icon-lightning'></use>
-                  </svg>
-               </div>
-               <span>Проверите лучшие самокаты в деле</span>
-            </li>
-         </ul>
-         <button data-popup-btn="test-drive" class="btn popup-btn main-color hero-test__btn">Записаться</button>
-      </div>
-   </div>
-   <div data-popup="test-drive" class="popup hero-test__popup">
-      <div close-popup class="popup__overlay">
-         <div class="hero-test__popup-window popup__window">
-            <button close-popup class="popup__close">
-               <div class="popup__close-line popup__close-line--top"></div>
-               <div class="popup__close-line popup__close-line--bottom"></div>
-            </button>
-            <div class="hero-test__popup-info">
-               <h3 class="title-3 hero-test__popup-title">
-                  Запишитесь на тест-драйв электросамоката
-               </h3>
-               <p class="order-cell__content hero-test__popup-content">
-                  и подберите модель для себя
-               </p>
-               <p class="hero-test__popup-content-manager">
-                  Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
-               </p>
-               <form action="#" class="form hero-test__form">
-                  <div class="conveniet-communication hero-test__communication">
-                     <p class="conveniet-communication__content">
-                        Как с вами удобнее связаться?
-                     </p>
-                     <div class="conveniet-communication__body">
-                        <div class="conveniet-communication__contact">
-                           <input type="radio" id="test-drive-viber" name="test-drive-radio" class="conveniet-communication__conctact-checkbox">
-                           <label for="test-drive-viber" class="conveniet-communication__conctact-label">
-                              <svg class="conveniet-communication__conctact-icon _viber">
-                                 <use xlink:href='img/icons/icons.svg#icon-viber'></use>
-                              </svg>
-                           </label>
-                        </div>
-                        <div class="conveniet-communication__contact">
-                           <input type="radio" id="test-drive-whatsapp" name="test-drive-radio" class="conveniet-communication__conctact-checkbox">
-                           <label for="test-drive-whatsapp" class="conveniet-communication__conctact-label">
-                              <svg class="conveniet-communication__conctact-icon _whatsapp">
-                                 <use xlink:href='img/icons/icons.svg#icon-whatsapp'></use>
-                              </svg>
-                           </label>
-                        </div>
-                        <div class="conveniet-communication__contact">
-                           <input type="radio" id="test-drive-telegram" name="test-drive-radio" class="conveniet-communication__conctact-checkbox">
-                           <label for="test-drive-telegram" class="conveniet-communication__conctact-label">
-                              <svg class="conveniet-communication__conctact-icon _telegram">
-                                 <use xlink:href='img/icons/icons.svg#icon-telegram'></use>
-                              </svg>
-                           </label>
-                        </div>
-                     </div>
-                  </div>
-                  <input type="tel" data-phone-pattern="+7 (___) ___ - __ - __" data-length="22" placeholder="+7 (___) ___ - __ - __" name="test-drive-tel" class="form__input order-cell__input">
-                  <button type="submit" class="btn order-cell__btn">
-                     Оформить предзаказ
-                  </button>
-                  <div class="form__processing-data">
-                     <input type="checkbox" name="test-drive__data-processing" class="form__checkbox form__processing-data-checkbox" id="data-processing-test">
-                     <label for="data-processing-test" class="form__processing-data-label">
-                        Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
-                     </label>
-                  </div>
-               </form>
+          </div>
+          <span>Поймете, какая модель вам подходит</span>
+        </li>
+        <li class="hero-test__item">
+          <div class="hero-test__rectangle">
+            <svg class="hero-test__icon">
+              <use xlink:href="img/icons/icons.svg#icon-lightning"></use>
+            </svg>
+          </div>
+          <span>Проверите лучшие самокаты в деле</span>
+        </li>
+      </ul>
+      <button data-popup-btn="test-drive" class="btn popup-btn main-color hero-test__btn">Записаться</button>
+    </div>
+  </div>
+  <div data-popup="test-drive" class="popup hero-test__popup">
+    <div close-popup class="popup__overlay">
+      <div class="hero-test__popup-window popup__window">
+        <button close-popup class="popup__close">
+          <div class="popup__close-line popup__close-line--top"></div>
+          <div class="popup__close-line popup__close-line--bottom"></div>
+        </button>
+        <div class="hero-test__popup-info">
+          <h3 class="title-3 hero-test__popup-title">Запишитесь на тест-драйв электросамоката</h3>
+          <p class="order-cell__content hero-test__popup-content">и подберите модель для себя</p>
+          <p class="hero-test__popup-content-manager">
+            Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
+          </p>
+          <form action="#" class="form hero-test__form">
+            <div class="conveniet-communication hero-test__communication">
+              <p class="conveniet-communication__content">Как с вами удобнее связаться?</p>
+              <div class="conveniet-communication__body">
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="test-drive-viber"
+                    name="test-drive-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="test-drive-viber" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _viber">
+                      <use xlink:href="img/icons/icons.svg#icon-viber"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="test-drive-whatsapp"
+                    name="test-drive-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="test-drive-whatsapp" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _whatsapp">
+                      <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="test-drive-telegram"
+                    name="test-drive-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="test-drive-telegram" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _telegram">
+                      <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
             </div>
-            <div class="hero-test__popup-poster">
-               <div class="hero-test__popup-poster-info">
-                  <p class="hero-test__popup-poster-content">
-                     В сентябре <span>осталось 5 мест</span> на бесплатный тест-драйв
-                  </p>
-               </div>
-               <img src="@img/pictures/woman-scooter-2.jpg" alt="Девушка на скутере" class="hero-test__popup-poster-img">
+            <input
+              type="tel"
+              data-phone-pattern="+7 (___) ___ - __ - __"
+              data-length="22"
+              placeholder="+7 (___) ___ - __ - __"
+              name="test-drive-tel"
+              class="form__input order-cell__input"
+            />
+            <button type="submit" class="btn order-cell__btn">Оформить предзаказ</button>
+            <div class="form__processing-data">
+              <input
+                type="checkbox"
+                name="test-drive__data-processing"
+                class="form__checkbox form__processing-data-checkbox"
+                id="data-processing-test"
+              />
+              <label for="data-processing-test" class="form__processing-data-label">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+                <a href="error.html" class="form__privacy-policy">политикой конфиденциальности</a>
+              </label>
             </div>
-         </div>
+          </form>
+        </div>
+        <div class="hero-test__popup-poster">
+          <div class="hero-test__popup-poster-info">
+            <p class="hero-test__popup-poster-content">
+              В сентябре <span>осталось 5 мест</span> на бесплатный тест-драйв
+            </p>
+          </div>
+          <img src="@img/pictures/woman-scooter-2.jpg" alt="Девушка на скутере" class="hero-test__popup-poster-img" />
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
 </section>

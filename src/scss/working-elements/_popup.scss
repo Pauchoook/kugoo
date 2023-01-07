@@ -6,6 +6,7 @@
       }
       .popup__overlay {
          background-color: rgba(27, 27, 27, 0.15);
+         overflow-y: auto;
       }
       .popup__window {
          transform: translateY(0);
@@ -28,17 +29,15 @@
       z-index: -10;
    }
    &__overlay {
-      // @include flex-center;
       position: fixed;
       display: flex;
       justify-content: center;
-      overflow-y: auto;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       background-color: rgba(27, 27, 27, 0.15);
-      transition: background-color .5s ease, opacity .5s ease;
+      transition: background-color .5s ease;
    }
    &__window {
       position: relative;

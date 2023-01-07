@@ -1,0 +1,70 @@
+.favourites {
+  padding: 20px 0px 100px 0px;
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+  &__prev {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 17px;
+    color: $gray;
+    transition: color 0.2s ease;
+    margin-bottom: 50px;
+    &:hover {
+      color: $main;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__prev-icon {
+    width: 12px;
+    height: 10px;
+    transform: rotate(180deg);
+    color: inherit;
+    fill: currentColor;
+    margin-right: 8px;
+    transition: fill 0.2s ease, color 0.2s ease;
+  }
+  &__title {
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__row-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 1199px) {
+      gap: 20px;
+    }
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(9, 1fr);
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(6, 1fr);
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

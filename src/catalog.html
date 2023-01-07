@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {})
-<body>
+<body class="hidden">
+    @@include('html/_preload.html', {})
     @@include('html/header.html', {})
 
     <main>
@@ -9,7 +10,7 @@
       @@include('html/_category-catalog.html', {})
       @@include('html/_kugo-russia.html', {})
       @@include('html/_video-reviews.html', {})
-      @@include('html/_new-article.html', {})
+      @@include('html/_new-article.html', {"title": "Новые статьи в блоге"})
       @@include('html/_cells-scooters.html', {"title": "Популярные товары"})
       @@include('html/_subscription.html', {})
       @@include('html/_fix-menu.html', {})

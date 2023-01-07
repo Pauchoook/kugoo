@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {})
-<body>
+<body class="hidden">
+    @@include('html/_preload.html', {})
     @@include('html/header.html', {})
 
     <main>
+        <h1 class="title">Сотрудничество</h1>
         @@include('html/_wholesale-prices.html', {})
         @@include('html/_cells-scooters.html', {"title": "Выбирайте популярные товары без наценок посредников"})
         @@include('html/_without-brokers.html', {})

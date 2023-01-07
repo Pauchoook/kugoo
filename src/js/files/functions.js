@@ -1,3 +1,13 @@
+export function onload() {
+  const preload = document.querySelector('.preload');
+  const body = document.body;
+
+  window.onload = () => {
+    preload.remove();
+    body.classList.remove('hidden');
+  }
+}
+
 export function mediaAdaptive() {
   function DynamicAdapt(type) {
     this.type = type;
@@ -335,26 +345,18 @@ export function popup() {
   const buttonsPopup = document.querySelectorAll('.popup-btn');
   if (buttonsPopup.length > 0) {
     buttonsPopup.forEach((btn) => {
-      const idPopup = btn.dataset.popupBtn;
-      const currentPopup = document.querySelector(`[data-popup=${idPopup}]`);
-      const popupWindow = currentPopup.querySelector('.popup__window');
-      const heightPopup = popupWindow.clientHeight;
-
       btn.addEventListener('click', () => {
-        topPopup();
+        const idPopup = btn.dataset.popupBtn;
+        const currentPopup = document.querySelector(`[data-popup=${idPopup}]`);
+        const popupWindow = currentPopup.querySelector('.popup__window');
+
+        topPopup(popupWindow);
+
+        window.addEventListener('resize', resize);
 
         document.body.classList.add('hidden');
         currentPopup.classList.add('open');
       });
-
-      for (let ev of ['load', 'resize']) {
-        window.addEventListener(ev, topPopup);
-      }
-
-      function topPopup() {
-        const popupTop = (window.innerHeight - heightPopup) / 2;
-        popupWindow.style.marginTop = `${popupTop >= 20 ? popupTop : 20}px`;
-      }
     });
 
     document.addEventListener('click', (e) => {
@@ -363,12 +365,27 @@ export function popup() {
       }
     });
 
+    function resize() {
+      const currentPopup = document.querySelector('.popup.open');
+      const popupWindow = currentPopup.querySelector('.popup__window');
+      topPopup(popupWindow);
+    }
+
+    function topPopup(popupWindow) {
+      const heightPopup = popupWindow.clientHeight;
+      const popupTop = (window.innerHeight - heightPopup) / 2;
+
+      popupWindow.style.marginTop = `${popupTop >= 20 ? popupTop : 20}px`;
+    }
+
     function closePopup(popup) {
-      document.body.classList.remove('hidden');
       popup.classList.add('hide');
+
+      window.removeEventListener('resize', resize);
       setTimeout(() => {
-        popup.classList.remove('hide');
         popup.classList.remove('open');
+        popup.classList.remove('hide');
+        document.body.classList.remove('hidden');
       }, 500);
     }
   }

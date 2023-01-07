@@ -1,106 +1,122 @@
 <section class="take-repair">
-   <div class="container _big">
-      <div class="take-repair__body">
-         <h2 class="title-2 take-repair__title">
-            Заберем ваш самокат для ремонта и вернем обратно
-         </h2>
-         <p class="take-repair__content">
-            Доставка электросамокатов в/из сервисного центра курьером в Москве.
-         </p>
-         <h4 class="title-4 take-repair__title-list">
-            Что дает гидроизоляция:
-         </h4>
-         <ul class="take-repair__list">
-            <li class="take-repair__item">
-               <svg class="take-repair__icon">
-                  <use xlink:href='img/icons/icons.svg#icon-check'></use>
-               </svg>
-               <span>600 руб. в одну сторону</span>
-            </li>
-            <li class="take-repair__item">
-               <svg class="take-repair__icon">
-                  <use xlink:href='img/icons/icons.svg#icon-check'></use>
-               </svg>
-               <span>1000 руб. туда-обратно</span>
-            </li>
-         </ul>
-         <button data-popup-btn="order-delivery" class="btn popup-btn take-repair__btn">Заказать доставку</button>
-         <div data-popup="order-delivery" class="popup">
-            <div close-popup class="popup__overlay">
-               <div class="popup__window take-repair__popup-window">
-                  <button close-popup class="popup__close">
-                     <div class="popup__close-line popup__close-line--top"></div>
-                     <div class="popup__close-line popup__close-line--bottom"></div>
-                  </button>
-                  <h3 class="title-3 take-repair__popup-title">
-                     Закажите доставку в сервисный центр
-                  </h3>
-                  <p class="take-repair__popup-content">Менеджер свяжется с вами в течение 5 минут, чтобы уточнить детали доставки</p>
-                  <form action="#" class="form take-repair__form">
-                     <div class="select simple-select take-repair__select">
-                        <input type="text" name="model" class="select__value">
-                        <button type="button" class="select__btn simple-select__btn">
-                           <span class="select__title simple-select__title">
-                              Откуда забрать электросамокат?
-                           </span>
-                           <svg class="simple-select__icon">
-                              <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
-                           </svg>
-                        </button>
-                        <ul class="simple-select__item select__item scrollbar">
-                           <li class="select__element simple-select__element">Квартира</li>
-                           <li class="select__element simple-select__element">Офис</li>
-                           <li class="select__element simple-select__element">Дача</li>
-                           <li class="select__element simple-select__element">Пункт выдачи</li>
-                           <li class="select__element simple-select__element">Подъезд</li>
-                           <li class="select__element simple-select__element">У соседа</li>
-                        </ul>
-                     </div>
-                     <div class="conveniet-communication take-repair__communication">
-                        <p class="conveniet-communication__content">
-                           Как с вами удобнее связаться?
-                        </p>
-                        <div class="conveniet-communication__body">
-                           <div class="conveniet-communication__contact">
-                              <input type="radio" id="order-delivery-viber" name="order-delivery-radio" class="conveniet-communication__conctact-checkbox">
-                              <label for="order-delivery-viber" class="conveniet-communication__conctact-label">
-                                 <svg class="conveniet-communication__conctact-icon _viber">
-                                    <use xlink:href='img/icons/icons.svg#icon-viber'></use>
-                                 </svg>
-                              </label>
-                           </div>
-                           <div class="conveniet-communication__contact">
-                              <input type="radio" id="order-delivery-whatsapp" name="order-delivery-radio" class="conveniet-communication__conctact-checkbox">
-                              <label for="order-delivery-whatsapp" class="conveniet-communication__conctact-label">
-                                 <svg class="conveniet-communication__conctact-icon _whatsapp">
-                                    <use xlink:href='img/icons/icons.svg#icon-whatsapp'></use>
-                                 </svg>
-                              </label>
-                           </div>
-                           <div class="conveniet-communication__contact">
-                              <input type="radio" id="order-delivery-telegram" name="order-delivery-radio" class="conveniet-communication__conctact-checkbox">
-                              <label for="order-delivery-telegram" class="conveniet-communication__conctact-label">
-                                 <svg class="conveniet-communication__conctact-icon _telegram">
-                                    <use xlink:href='img/icons/icons.svg#icon-telegram'></use>
-                                 </svg>
-                              </label>
-                           </div>
-                        </div>
-                     </div>
-                     <input type="tel" data-phone-pattern="+7 (___) ___ - __ - __" data-length="22" placeholder="+7 (___) ___ - __ - __" name="order-cell-tel" class="form__input take-repair__input">
-                     <button type="submit" class="btn take-repair__btn-form">
-                        Записаться на диагностику
-                     </button>
-                     <div class="take-repair__processing-data form__processing-data">
-                        <input type="checkbox" name="order-cell__data-processing" class="form__checkbox form__processing-data-checkbox" id="take-repair-data">
-                        <label for="take-repair-data" class="form__processing-data-label">
-                           Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
-                        </label>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
+  <div class="container _big">
+    <div class="take-repair__body">
+      <h2 class="title-2 take-repair__title">Заберем ваш самокат для ремонта и вернем обратно</h2>
+      <p class="take-repair__content">Доставка электросамокатов в/из сервисного центра курьером в Москве.</p>
+      <h4 class="title-4 take-repair__title-list">Что дает гидроизоляция:</h4>
+      <ul class="take-repair__list">
+        <li class="take-repair__item">
+          <svg class="take-repair__icon">
+            <use xlink:href="img/icons/icons.svg#icon-check"></use>
+          </svg>
+          <span>600 руб. в одну сторону</span>
+        </li>
+        <li class="take-repair__item">
+          <svg class="take-repair__icon">
+            <use xlink:href="img/icons/icons.svg#icon-check"></use>
+          </svg>
+          <span>1000 руб. туда-обратно</span>
+        </li>
+      </ul>
+      <button data-popup-btn="order-delivery" class="btn popup-btn take-repair__btn">Заказать доставку</button>
+      <div data-popup="order-delivery" class="popup">
+        <div close-popup class="popup__overlay">
+          <div class="popup__window take-repair__popup-window">
+            <button close-popup class="popup__close">
+              <div class="popup__close-line popup__close-line--top"></div>
+              <div class="popup__close-line popup__close-line--bottom"></div>
+            </button>
+            <h3 class="title-3 take-repair__popup-title">Закажите доставку в сервисный центр</h3>
+            <p class="take-repair__popup-content">
+              Менеджер свяжется с вами в течение 5 минут, чтобы уточнить детали доставки
+            </p>
+            <form action="#" class="form take-repair__form">
+              <div class="select simple-select take-repair__select">
+                <input type="text" name="model" class="select__value" />
+                <button type="button" class="select__btn simple-select__btn">
+                  <span class="select__title simple-select__title"> Откуда забрать электросамокат? </span>
+                  <svg class="simple-select__icon">
+                    <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <ul class="simple-select__item select__item scrollbar">
+                  <li class="select__element simple-select__element">Квартира</li>
+                  <li class="select__element simple-select__element">Офис</li>
+                  <li class="select__element simple-select__element">Дача</li>
+                  <li class="select__element simple-select__element">Пункт выдачи</li>
+                  <li class="select__element simple-select__element">Подъезд</li>
+                  <li class="select__element simple-select__element">У соседа</li>
+                </ul>
+              </div>
+              <div class="conveniet-communication take-repair__communication">
+                <p class="conveniet-communication__content">Как с вами удобнее связаться?</p>
+                <div class="conveniet-communication__body">
+                  <div class="conveniet-communication__contact">
+                    <input
+                      type="radio"
+                      id="order-delivery-viber"
+                      name="order-delivery-radio"
+                      class="conveniet-communication__conctact-checkbox"
+                    />
+                    <label for="order-delivery-viber" class="conveniet-communication__conctact-label">
+                      <svg class="conveniet-communication__conctact-icon _viber">
+                        <use xlink:href="img/icons/icons.svg#icon-viber"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="conveniet-communication__contact">
+                    <input
+                      type="radio"
+                      id="order-delivery-whatsapp"
+                      name="order-delivery-radio"
+                      class="conveniet-communication__conctact-checkbox"
+                    />
+                    <label for="order-delivery-whatsapp" class="conveniet-communication__conctact-label">
+                      <svg class="conveniet-communication__conctact-icon _whatsapp">
+                        <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="conveniet-communication__contact">
+                    <input
+                      type="radio"
+                      id="order-delivery-telegram"
+                      name="order-delivery-radio"
+                      class="conveniet-communication__conctact-checkbox"
+                    />
+                    <label for="order-delivery-telegram" class="conveniet-communication__conctact-label">
+                      <svg class="conveniet-communication__conctact-icon _telegram">
+                        <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input
+                type="tel"
+                data-phone-pattern="+7 (___) ___ - __ - __"
+                data-length="22"
+                placeholder="+7 (___) ___ - __ - __"
+                name="order-cell-tel"
+                class="form__input take-repair__input"
+              />
+              <button type="submit" class="btn take-repair__btn-form">Записаться на диагностику</button>
+              <div class="take-repair__processing-data form__processing-data">
+                <input
+                  type="checkbox"
+                  name="order-cell__data-processing"
+                  class="form__checkbox form__processing-data-checkbox"
+                  id="take-repair-data"
+                />
+                <label for="take-repair-data" class="form__processing-data-label">
+                  Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+                  <a href="error.html" class="form__privacy-policy">политикой конфиденциальности</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
 </section>

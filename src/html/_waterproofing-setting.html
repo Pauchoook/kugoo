@@ -1,85 +1,111 @@
 <section class="waterproofing-setting">
-   <div class="container">
-      <h2 class="title-2 waterproofing-setting__title">
-         Стоимость гидроизоляции и настройки
-      </h2>
-      <p class="waterproofing-setting__content">
-         Для версии MAX и VIP гидроизоляция и настройка — бесплатно
-      </p>
-      <div data-btns-prices="waterproofing-setting" class="scrollbar prices-buttons waterproofing-setting__buttons">
-         <button data-btn-price="waterproofing" class="btn-price btn bg-gray waterproofing-setting__btn active _disabled">Гидроизоляция</button>
-         <button data-btn-price="setting" class="btn-price btn bg-gray waterproofing-setting__btn">Настройка</button>
-         <button data-btn-price="waterproofing-setting" class="btn-price btn bg-gray waterproofing-setting__btn">Гидроизоляция + Настройка</button>
-      </div>
-      <div data-container-prices="waterproofing-setting" data-type-price="waterproofing" class="container-price waterproofing-setting__container-price"></div>
-      <div data-popup="order-waterproofing-setting" class="popup">
-         <div close-popup class="popup__overlay">
-            <div class="popup__window waterproofing-setting__popup-window">
-               <button close-popup class="popup__close">
-                  <div class="popup__close-line popup__close-line--top"></div>
-                  <div class="popup__close-line popup__close-line--bottom"></div>
-               </button>
-               <h3 class="title-3 waterproofing-setting__popup-title">
-                  Закажите гидроизоляцию и катайтесь на своем самокате в любую  погоду!
-               </h3>
-               <p class="waterproofing-setting__popup-content">Оставьте номер, менеджер свяжется с вами в течение 5 минут</p>
-               <form action="#" class="form waterproofing-setting__form">
-                  <div class="select simple-select waterproofing-setting__select">
-                     <input type="text" name="model" class="select__value">
-                     <button type="button" class="select__btn simple-select__btn">
-                        <span class="select__title simple-select__title">
-                           Выберите модель
-                        </span>
-                        <svg class="simple-select__icon">
-                           <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
-                        </svg>
-                     </button>
-                     <ul class="simple-select__item select__item scrollbar"></ul>
-                  </div>
-                  <div class="conveniet-communication waterproofing-setting__communication">
-                     <p class="conveniet-communication__content">
-                        Как с вами удобнее связаться?
-                     </p>
-                     <div class="conveniet-communication__body">
-                        <div class="conveniet-communication__contact">
-                           <input type="radio" id="waterproofing-setting-viber" name="waterproofing-setting-radio" class="conveniet-communication__conctact-checkbox">
-                           <label for="waterproofing-setting-viber" class="conveniet-communication__conctact-label">
-                              <svg class="conveniet-communication__conctact-icon _viber">
-                                 <use xlink:href='img/icons/icons.svg#icon-viber'></use>
-                              </svg>
-                           </label>
-                        </div>
-                        <div class="conveniet-communication__contact">
-                           <input type="radio" id="waterproofing-setting-whatsapp" name="waterproofing-setting-radio" class="conveniet-communication__conctact-checkbox">
-                           <label for="waterproofing-setting-whatsapp" class="conveniet-communication__conctact-label">
-                              <svg class="conveniet-communication__conctact-icon _whatsapp">
-                                 <use xlink:href='img/icons/icons.svg#icon-whatsapp'></use>
-                              </svg>
-                           </label>
-                        </div>
-                        <div class="conveniet-communication__contact">
-                           <input type="radio" id="waterproofing-setting-telegram" name="waterproofing-setting-radio" class="conveniet-communication__conctact-checkbox">
-                           <label for="waterproofing-setting-telegram" class="conveniet-communication__conctact-label">
-                              <svg class="conveniet-communication__conctact-icon _telegram">
-                                 <use xlink:href='img/icons/icons.svg#icon-telegram'></use>
-                              </svg>
-                           </label>
-                        </div>
-                     </div>
-                  </div>
-                  <input type="tel" data-phone-pattern="+7 (___) ___ - __ - __" data-length="22" placeholder="+7 (___) ___ - __ - __" name="order-cell-tel" class="form__input waterproofing-setting__input">
-                  <button type="submit" class="btn waterproofing-setting__btn-form">
-                     Записаться на диагностику
-                  </button>
-                  <div class="waterproofing-setting__processing-data form__processing-data">
-                     <input type="checkbox" name="order-cell__data-processing" class="form__checkbox form__processing-data-checkbox" id="waterproofing-setting-data">
-                     <label for="waterproofing-setting-data" class="form__processing-data-label">
-                        Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="form__privacy-policy">политикой конфиденциальности</a>
-                     </label>
-                  </div>
-               </form>
+  <div class="container">
+    <h2 class="title-2 waterproofing-setting__title">Стоимость гидроизоляции и настройки</h2>
+    <p class="waterproofing-setting__content">Для версии MAX и VIP гидроизоляция и настройка — бесплатно</p>
+    <div data-btns-prices="waterproofing-setting" class="scrollbar prices-buttons waterproofing-setting__buttons">
+      <button data-btn-price="waterproofing" class="btn-price btn bg-gray waterproofing-setting__btn active _disabled">
+        Гидроизоляция
+      </button>
+      <button data-btn-price="setting" class="btn-price btn bg-gray waterproofing-setting__btn">Настройка</button>
+      <button data-btn-price="waterproofing-setting" class="btn-price btn bg-gray waterproofing-setting__btn">
+        Гидроизоляция + Настройка
+      </button>
+    </div>
+    <div
+      data-container-prices="waterproofing-setting"
+      data-type-price="waterproofing"
+      class="container-price waterproofing-setting__container-price"
+    ></div>
+    <div data-popup="order-waterproofing-setting" class="popup">
+      <div close-popup class="popup__overlay">
+        <div class="popup__window waterproofing-setting__popup-window">
+          <button close-popup class="popup__close">
+            <div class="popup__close-line popup__close-line--top"></div>
+            <div class="popup__close-line popup__close-line--bottom"></div>
+          </button>
+          <h3 class="title-3 waterproofing-setting__popup-title">
+            Закажите гидроизоляцию и катайтесь на своем самокате в любую погоду!
+          </h3>
+          <p class="waterproofing-setting__popup-content">Оставьте номер, менеджер свяжется с вами в течение 5 минут</p>
+          <form action="#" class="form waterproofing-setting__form">
+            <div class="select simple-select waterproofing-setting__select">
+              <input type="text" name="model" class="select__value" />
+              <button type="button" class="select__btn simple-select__btn">
+                <span class="select__title simple-select__title"> Выберите модель </span>
+                <svg class="simple-select__icon">
+                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="simple-select__item select__item scrollbar"></ul>
             </div>
-         </div>
+            <div class="conveniet-communication waterproofing-setting__communication">
+              <p class="conveniet-communication__content">Как с вами удобнее связаться?</p>
+              <div class="conveniet-communication__body">
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-viber"
+                    name="waterproofing-setting-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-viber" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _viber">
+                      <use xlink:href="img/icons/icons.svg#icon-viber"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-whatsapp"
+                    name="waterproofing-setting-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-whatsapp" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _whatsapp">
+                      <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="conveniet-communication__contact">
+                  <input
+                    type="radio"
+                    id="waterproofing-setting-telegram"
+                    name="waterproofing-setting-radio"
+                    class="conveniet-communication__conctact-checkbox"
+                  />
+                  <label for="waterproofing-setting-telegram" class="conveniet-communication__conctact-label">
+                    <svg class="conveniet-communication__conctact-icon _telegram">
+                      <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <input
+              type="tel"
+              data-phone-pattern="+7 (___) ___ - __ - __"
+              data-length="22"
+              placeholder="+7 (___) ___ - __ - __"
+              name="order-cell-tel"
+              class="form__input waterproofing-setting__input"
+            />
+            <button type="submit" class="btn waterproofing-setting__btn-form">Записаться на диагностику</button>
+            <div class="waterproofing-setting__processing-data form__processing-data">
+              <input
+                type="checkbox"
+                name="order-cell__data-processing"
+                class="form__checkbox form__processing-data-checkbox"
+                id="waterproofing-setting-data"
+              />
+              <label for="waterproofing-setting-data" class="form__processing-data-label">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+                <a href="error.html" class="form__privacy-policy">политикой конфиденциальности</a>
+              </label>
+            </div>
+          </form>
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
 </section>

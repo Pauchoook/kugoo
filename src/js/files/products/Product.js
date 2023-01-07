@@ -12,50 +12,50 @@ export default class Product {
                </svg>
          </button>
          <div class="product-card__body">
-               <h4 class="title-4 product-card__title">
-                  ${this.options.name}
-               </h4>
-               <ul class="product-card__characteristic-list">
-                  <li class="product-card__characteristic-item">
-                     <svg class="product-card__characteristic-icon">
-                           <use xlink:href='img/icons/icons.svg#icon-accumulator'></use>
+            <h4 class="title-4 product-card__title">
+               ${this.options.name}
+            </h4>
+            <ul class="product-card__characteristic-list">
+               <li class="product-card__characteristic-item">
+                  <svg class="product-card__characteristic-icon">
+                        <use xlink:href='img/icons/icons.svg#icon-accumulator'></use>
+                  </svg>
+                  <span class="product-card__characteristic-content">${this.options.battery} mAh</span>
+               </li>
+               <li class="product-card__characteristic-item">
+                  <svg class="product-card__characteristic-icon">
+                        <use xlink:href='img/icons/icons.svg#icon-lightning'></use>
+                  </svg>
+                  <span class="product-card__characteristic-content">${this.options.horsepower} л.с.</span>
+               </li>
+               <li class="product-card__characteristic-item">
+                  <svg class="product-card__characteristic-icon">
+                        <use xlink:href='img/icons/icons.svg#icon-speedometer'></use>
+                  </svg>
+                  <span class="product-card__characteristic-content">${this.options.maxSpeed} км/ч</span>
+               </li>
+               <li class="product-card__characteristic-item">
+                  <svg class="product-card__characteristic-icon">
+                        <use xlink:href='img/icons/icons.svg#icon-timer'></use>
+                  </svg>
+                  <span class="product-card__characteristic-content">${this.options.timeCharging} часов</span>
+               </li>
+            </ul>
+            <div class="product-card__nav">
+               <div class="product-card__nav-buttons">
+                  <button add-cart class="product-card__nav-btn">
+                     <svg class="product-card__btn-icon">
+                        <use xlink:href='img/icons/icons.svg#icon-shopping-cart-2'></use>
                      </svg>
-                     <span class="product-card__characteristic-content">${this.options.battery} mAh</span>
-                  </li>
-                  <li class="product-card__characteristic-item">
-                     <svg class="product-card__characteristic-icon">
-                           <use xlink:href='img/icons/icons.svg#icon-lightning'></use>
+                  </button>
+                  <button class="product-card__nav-btn">
+                     <svg class="product-card__btn-icon">
+                        <use xlink:href='img/icons/icons.svg#icon-heart'></use>
                      </svg>
-                     <span class="product-card__characteristic-content">${this.options.horsepower} л.с.</span>
-                  </li>
-                  <li class="product-card__characteristic-item">
-                     <svg class="product-card__characteristic-icon">
-                           <use xlink:href='img/icons/icons.svg#icon-speedometer'></use>
-                     </svg>
-                     <span class="product-card__characteristic-content">${this.options.maxSpeed} км/ч</span>
-                  </li>
-                  <li class="product-card__characteristic-item">
-                     <svg class="product-card__characteristic-icon">
-                           <use xlink:href='img/icons/icons.svg#icon-timer'></use>
-                     </svg>
-                     <span class="product-card__characteristic-content">${this.options.timeCharging} часов</span>
-                  </li>
-               </ul>
-               <div class="product-card__nav">
-                  <div class="product-card__nav-buttons">
-                     <button add-cart class="product-card__nav-btn">
-                        <svg class="product-card__btn-icon">
-                           <use xlink:href='img/icons/icons.svg#icon-shopping-cart-2'></use>
-                        </svg>
-                     </button>
-                     <button class="product-card__nav-btn">
-                        <svg class="product-card__btn-icon">
-                           <use xlink:href='img/icons/icons.svg#icon-heart'></use>
-                        </svg>
-                     </button>
-                  </div>
+                  </button>
                </div>
-               <a href="#" class="btn product-card__btn">Купить в 1 клик</a>
+            </div>
+            <a href="error.html" class="btn product-card__btn">Купить в 1 клик</a>
          </div>
       `);
 
@@ -109,7 +109,7 @@ export default class Product {
 
    #createType(card, type) {
       if (type) {
-         const typeCard = document.createElement('div');
+         const typeCard = document.createElement('span');
          typeCard.classList.add('product-card__type');
    
          switch (type) {

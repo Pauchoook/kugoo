@@ -175,6 +175,11 @@
       border: 1px solid $gray2;
       border-radius: 100%;
       transition: border-color .2s ease;
+      &._liked {
+         fill: $main;
+         background-color: $bg;
+         border: none;
+      }
       &:not(:last-child) {
          margin-right: 10px;
       }
